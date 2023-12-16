@@ -119,7 +119,7 @@ export default function Blog() {
               <span>e</span>
               <span>l</span> <span>Calleros...</span>
             </h1>
-            <p className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p texto-animado ">
+            <p className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
               <span>
                 ¡Bienvenido a mi portafolio! Soy un administrador de empresas
                 con una apasionante dedicación al desarrollo web. Mi enfoque se
