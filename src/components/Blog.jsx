@@ -34,7 +34,7 @@ const posts = [
   {
     id: 2,
     title: "Proyecto CRUD",
-    href: "https://proyecto-landing-ventas-juan.netlify.app/",
+    href: "https://proyecto-crud-juan.netlify.app/",
     description:
       "En este proyecto realizamos una pagina CRUD(Create, Read, Update, Delete), se utiliza el maquetado con HTML5, CSS, javaScript, incluyendo responsive design, guardado la informacion en localStorage.",
     imageUrl:
