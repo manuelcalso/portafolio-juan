@@ -8,7 +8,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white slide-in-top kalnia-medium">
+    <header className="bg-white slide-in-top kalnia-medium rounded-border-about">
       <nav
         className="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8 "
         aria-label="Global"

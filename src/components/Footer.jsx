@@ -61,7 +61,7 @@ export default function Footer() {
 
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav
-          className=" columns-2 sm:flex sm:justify-start sm:space-x-12 bg-white slide-in-top "
+          className=" columns-2 sm:flex sm:justify-start sm:space-x-12 bg-white slide-in-top rounded "
           aria-label="Footer"
         >
           {navigation.main.map((item) => (

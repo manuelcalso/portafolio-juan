@@ -110,8 +110,14 @@ export default function Blog() {
               <span>o</span>
               <span>l</span>
               <span>a</span>
-              <span>!</span> <span>soy</span> <span>Manuel</span>{" "}
-              <span> Calleros...</span>
+              <span>!</span> <span>soy</span>
+              <br />
+              <span>M</span>
+              <span>a</span>
+              <span>n</span>
+              <span>u</span>
+              <span>e</span>
+              <span>l</span> <span>Calleros...</span>
             </h1>
             <p className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p texto-animado ">
               <span>
