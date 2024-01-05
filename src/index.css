@@ -335,3 +335,7 @@
 .rounded-border-about {
   border-radius: 25% 0% 25% 0%;
 }
+
+.transition {
+  transition-duration: 550ms;
+}

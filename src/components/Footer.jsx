@@ -69,15 +69,15 @@ export default function Footer() {
               <div key={item.name} className="pb-6 ">
                 <a
                   href={item.href}
-                  className="text-2xl leading-6 text-black hover:text-gray-900 kalnia-medium"
+                  className="text-2xl leading-6 text-black hover:text-gray-900 kalnia-light"
                 >
                   {item.name}
                 </a>
               </div>
             </>
           ))}
-          <div className="text-black text-2xl hover:text-gray-900 kalnia-light">
-            <p>E-mail: juan.calleross@hotmail.com</p>
+          <div className="text-black text-2xl hover:text-gray-900 kalnia-medium">
+            <p>Email: juan.calleross@hotmail.com</p>
             <p>Telefono: +52 5544475622</p>
           </div>
         </nav>

@@ -40,7 +40,7 @@ export default function Header() {
           <span className="sr-only">Your Company</span>
           <img
             className="h-10 w-auto rounded-full"
-            src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg"
+            src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1704476428/portafolio/Foto_flfttc.jpg"
             alt=""
           />
         </a>

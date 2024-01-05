@@ -14,6 +14,7 @@ const posts = [
       imageUrl:
         "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
     },
+    code: "https://github.com/manuelcalso/JuanRetoSemana2.github.io/tree/main",
   },
   {
     id: 1,
@@ -30,6 +31,7 @@ const posts = [
       imageUrl:
         "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
     },
+    code: "https://github.com/manuelcalso/proyecto-landing-ventas-juan.github.io",
   },
   {
     id: 2,
@@ -46,6 +48,7 @@ const posts = [
       imageUrl:
         "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
     },
+    code: "https://github.com/manuelcalso/proyecto-dos-CRUD?tab=readme-ov-file",
   },
   {
     id: 3,
@@ -62,6 +65,7 @@ const posts = [
       imageUrl:
         "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
     },
+    code: "https://github.com/manuelcalso/proyecto-dashbordapp/tree/master",
   },
   {
     id: 4,
@@ -78,11 +82,12 @@ const posts = [
       imageUrl:
         "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
     },
+    code: "https://github.com/manuelcalso/fullstack-proyecto-restaurante",
   },
   {
     id: 5,
     title: "Proyecto Ecommerce",
-    href: "https://proyecto-5-ecommerce.netlify.app/",
+    href: "https://plasticbeach.shop/",
     description:
       "Desarrollo de una pagina web de ecommerce fullstack, implementando el uso de Mongodb para la base de datos y Stripe para los metodos de pago",
     imageUrl:
@@ -94,6 +99,7 @@ const posts = [
       imageUrl:
         "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
     },
+    code: "https://github.com/manuelcalso/proyecto-ecommerce-fullstack/tree/master",
   },
   // More posts...
 ];
@@ -122,9 +128,9 @@ export default function Blog() {
             <p className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
               <span>
                 ¡Bienvenido a mi portafolio! Soy un administrador de empresas
-                con una apasionante dedicación al desarrollo web. Mi enfoque se
-                caracteriza por una actitud positiva, creatividad y habilidades
-                técnicas.
+                con una apasionante dedicación al desarrollo web full stack. Mi
+                enfoque se caracteriza por una actitud positiva, creatividad y
+                habilidades técnicas.
                 <br />
                 <br></br>
                 En este espacio, te invito a explorar los diversos proyectos que
@@ -220,12 +226,11 @@ export default function Blog() {
                 >
                   <img
                     src={post.imageUrl}
-                    alt=""
+                    alt="imagen-de-proyecto"
                     className="absolute inset-0 -z-10 h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
                   <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
                   <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
                     <time dateTime={post.datetime} className="mr-8">
                       {post.date}
@@ -240,7 +245,7 @@ export default function Blog() {
                       <div className="flex gap-x-2.5">
                         <img
                           src={post.author.imageUrl}
-                          alt=""
+                          alt="imagen-de-autor"
                           className="h-6 w-6 flex-none rounded-full bg-white/10"
                         />
                         {post.author.name}
@@ -248,12 +253,32 @@ export default function Blog() {
                     </div>
                   </div>
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                    <a href={post.href}>
-                      <span className="absolute inset-0" />
+                    <a
+                      href={post.href}
+                      className="text-white hover:text-green-500 transition"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {post.title}
                     </a>
                   </h3>
-                  <p href={post.href}>{post.description}</p>
+                  <a
+                    className="texto-animado"
+                    href={post.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {post.description}
+                  </a>
+                  <br></br>
+                  <a
+                    className="text-white hover:text-green-500 border border-white border-2 hover:border-green-900 rounded flex flex-row justify-center transition"
+                    href={post.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Aqui el codigo!
+                  </a>
                 </article>
               </>
             ))}
