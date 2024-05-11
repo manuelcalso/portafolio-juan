@@ -21,18 +21,21 @@
   font-family: "Kalnia-Medium";
   src: url("./assets//fonts//Kalnia/static/Kalnia-Medium.ttf");
 }
+
 @font-face {
   font-family: "Kalnia-light";
   src: url("./assets//fonts/Kalnia/static/Kalnia-Light.ttf");
 }
 
 .kalnia-medium {
-  font-family: "Kalnia-Medium", sans-serif; /* Utiliza la fuente personalizada */
+  font-family: "Kalnia-Medium", sans-serif;
+  /* Utiliza la fuente personalizada */
 }
 
 .kalnia-light {
   font-family: "Kalnia-Light";
 }
+
 .text-shadow {
   text-shadow: 2px 2px #000000;
 }
@@ -55,9 +58,11 @@
   0% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(10px);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -73,9 +78,11 @@
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -91,9 +98,11 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
@@ -115,21 +124,27 @@
   0% {
     transform: translateX(0) rotate(0deg);
   }
+
   15% {
     transform: translateX(-30px) rotate(-5deg);
   }
+
   30% {
     transform: translateX(15px) rotate(3deg);
   }
+
   45% {
     transform: translateX(-15px) rotate(-3deg);
   }
+
   60% {
     transform: translateX(9px) rotate(2deg);
   }
+
   75% {
     transform: translateX(-6px) rotate(-1deg);
   }
+
   100% {
     transform: translateX(0) rotate(0deg);
   }
@@ -141,27 +156,32 @@
     transform: translateZ(-800px) rotateY(90deg);
     opacity: 0;
   }
+
   54% {
     -webkit-transform: translateZ(-160px) rotateY(87deg);
     transform: translateZ(-160px) rotateY(87deg);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateZ(0) rotateY(0);
     transform: translateZ(0) rotateY(0);
   }
 }
+
 @keyframes slit-in-vertical {
   0% {
     -webkit-transform: translateZ(-800px) rotateY(90deg);
     transform: translateZ(-800px) rotateY(90deg);
     opacity: 0;
   }
+
   54% {
     -webkit-transform: translateZ(-160px) rotateY(87deg);
     transform: translateZ(-160px) rotateY(87deg);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateZ(0) rotateY(0);
     transform: translateZ(0) rotateY(0);
@@ -179,18 +199,21 @@
     transform: translateY(-1000px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -208,6 +231,7 @@
   -webkit-transition: 0.5s, color 0.1s;
   -moz-transition: 0.5s, color 0.1s;
 }
+
 .float:hover {
   box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
   transform: translate(0px, 5px);
@@ -220,6 +244,7 @@
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -240,9 +265,11 @@
 .texto-animado span:nth-child(1) {
   animation-delay: 1s;
 }
+
 .texto-animado span:nth-child(2) {
   animation-delay: 1.5s;
 }
+
 .texto-animado span:nth-child(3) {
   animation-delay: 2s;
 }
@@ -250,12 +277,15 @@
 .texto-animado span:nth-child(4) {
   animation-delay: 2.5s;
 }
+
 .texto-animado span:nth-child(5) {
   animation-delay: 3s;
 }
+
 .texto-animado span:nth-child(6) {
   animation-delay: 3.5s;
 }
+
 .texto-animado span:nth-child(7) {
   animation-delay: 4s;
 }
@@ -271,15 +301,19 @@
 .texto-animado span:nth-child(10) {
   animation-delay: 5.5s;
 }
+
 .texto-animado span:nth-child(11) {
   animation-delay: 6s;
 }
+
 .texto-animado span:nth-child(12) {
   animation-delay: 6.5s;
 }
+
 .texto-animado span:nth-child(13) {
   animation-delay: 7s;
 }
+
 .texto-animado span:nth-child(14) {
   animation-delay: 7.5s;
 }
@@ -294,18 +328,21 @@
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
   }
 }
+
 @keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -322,8 +359,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100wv;
   overflow: hidden;
   z-index: -1;
 }

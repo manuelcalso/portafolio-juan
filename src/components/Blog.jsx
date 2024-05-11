@@ -107,7 +107,7 @@ const posts = [
 export default function Blog() {
   return (
     <>
-      <div className=" max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32 blog-bg rounded-border-about texto-animado ">
+      <div className=" max-w-7xl px-6 pb-24 pt-20 sm:pt-40 lg:px-8 lg:pt-32 blog-bg rounded-border-about texto-animado ">
         <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center ">
           <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-gray-300 sm:text-6xl kalnia-medium text-shadow texto-animado">
@@ -132,28 +132,25 @@ export default function Blog() {
                 enfoque se caracteriza por una actitud positiva, creatividad y
                 habilidades técnicas.
                 <br />
-                <br></br>
-                En este espacio, te invito a explorar los diversos proyectos que
-                he desarrollado a lo largo del emocionante año 2023. Lo que me
-                impulsa es la búsqueda constante de aprendizaje y la resolución
-                efectiva de problemas.
+                <br />
+                En lo que va del 2024, estoy terminando el desarrollo de mis
+                primeros proyectos en Android y iOS utilizando React Native.
+                Esta tecnología me brinda la capacidad de crear aplicaciones
+                móviles de alta calidad de manera eficiente, aprovechando mi
+                experiencia en desarrollo web y llevándola al mundo de las
+                aplicaciones nativas. Estoy explorando las posibilidades que
+                ofrece React Native y creando experiencias móviles innovadoras
+                que cautiven a los usuarios.
                 <br />
                 <br />
-                Creo firmemente en la capacidad del desarrollo web para
+                Creo firmemente en la capacidad del desarrollo web y móvil para
                 transformar ideas en soluciones tangibles y experiencias
                 memorables. Mi portafolio es un reflejo de mi pasión por
                 fusionar los principios empresariales con las últimas
                 tecnologías web.
                 <br />
                 <br />
-                Estoy emocionado de compartir contigo este viaje, donde cada
-                línea de código cuenta una historia de creatividad y ejecución
-                cuidadosa.
-                <br />
-                <br />
-                Gracias por visitar mi espacio virtual. Me emociona conectarme
-                contigo y explorar nuevas oportunidades juntos. ¡Adelante,
-                descubre y disfruta de mi trabajo!
+                Gracias por visitar mi espacio virtual.
               </span>
             </p>
           </div>
@@ -207,11 +204,11 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-300 rounded-border-proyect py-24 sm:py-32 texto-animado">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
+      <div className="bg-gray-300 mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className=" text-center">
             <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
-              Proyectos
+              <span className="texto-animado">Proyectos</span>
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600 kalnia-medium">
               Proyectos desarrollados en Ucamp

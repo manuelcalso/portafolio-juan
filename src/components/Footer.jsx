@@ -51,11 +51,12 @@ export default function Footer() {
         <video autoPlay muted loop className="video">
           <source
             src={
-              "https://res.cloudinary.com/dgzghl0ur/video/upload/v1702696070/portafolio/snow_accvov.mp4"
+              "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715454284/portafolio/3591016-hd_1920_1080_30fps_c00tdi.mp4"
             }
             type="video/mp4"
           />
         </video>
+
         <div />
       </div>
 
