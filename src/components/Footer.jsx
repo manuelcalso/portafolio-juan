@@ -46,7 +46,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer>
+    <section>
       <div className="video-background">
         <video autoPlay muted loop className="video">
           <source
@@ -60,9 +60,9 @@ export default function Footer() {
         <div />
       </div>
 
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-20 lg:px-8 ">
         <nav
-          className=" columns-2 sm:flex sm:justify-start sm:space-x-12 bg-white slide-in-top rounded "
+          className="sm:flex sm:justify-center sm:space-x-4 bg-white slide-in-top rounded p-10"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
@@ -70,25 +70,25 @@ export default function Footer() {
               <div key={item.name} className="pb-6 ">
                 <a
                   href={item.href}
-                  className="text-2xl leading-6 text-black hover:text-gray-900 kalnia-light"
+                  className="text-3xl leading-6 text-black hover:text-gray-900 kalnia-light   "
                 >
                   {item.name}
                 </a>
               </div>
             </>
           ))}
-          <div className="text-black text-xl hover:text-2xl kalnia">
-            <p>Email: juancallerossol@gmail.com</p>
-            <p>Telefono: +52 5544475622</p>
+          <div className="text-black font-bold  hover:text-2xl kalnia sm:text-3xl">
+            <p>juancallerossol@gmail.com</p>
+            <p>+52 5544475622</p>
           </div>
         </nav>
 
-        <div className="mt-5 flex justify-start items-center space-x-10 bg-white rounded slit-in-vertical">
+        <div className="mt-5 flex justify-center items-center space-x-10 bg-transparent rounded slit-in-vertical">
           {navigation.social.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-black hover:text-gray-900"
+              className="text-black hover:text-green-500"
             >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-12 w-12" aria-hidden="true" />
@@ -128,6 +128,6 @@ export default function Footer() {
           &copy; 2023 Juan Calleros, Inc. All rights reserved.
         </p>
       </div>
-    </footer>
+    </section>
   );
 }
