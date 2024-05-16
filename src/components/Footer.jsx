@@ -1,5 +1,5 @@
 const navigation = {
-  main: [{ name: "Redes y contacto:", href: "/" }],
+  main: [{ name: "Contacto:", href: "/" }],
   social: [
     {
       name: "Facebook",
@@ -77,13 +77,13 @@ export default function Footer() {
               </div>
             </>
           ))}
-          <div className="text-black text-2xl hover:text-gray-900 kalnia-medium">
-            <p>Email: juan.calleross@hotmail.com</p>
+          <div className="text-black text-xl hover:text-2xl kalnia">
+            <p>Email: juancallerossol@gmail.com</p>
             <p>Telefono: +52 5544475622</p>
           </div>
         </nav>
 
-        <div className="mt-10 flex flex-inline justify-start items-center space-x-10 bg-white rounded slit-in-vertical">
+        <div className="mt-5 flex justify-start items-center space-x-10 bg-white rounded slit-in-vertical">
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -91,7 +91,7 @@ export default function Footer() {
               className="text-black hover:text-gray-900"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="h-12 w-12" aria-hidden="true" />
             </a>
           ))}
           <div>

@@ -53,7 +53,7 @@ const posts = [
   {
     id: 3,
     title: "Proyecto Dashboard App",
-    href: "https://proyecto-tres-dashbord.netlify.app/#",
+    href: "https://globaly-news.netlify.app/#",
     description:
       "Se desarrollo una aplicacion web la cual tiene conexion a una API financiera y la generacion de una grafica utilizando Chart.js ",
     imageUrl:
@@ -204,15 +204,12 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-300 mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
+      <div className="bg-gradient-to-t from-gray-200 to-white opacity-90 mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className=" text-center">
+          <div className=" text-center ">
             <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
               <span className="texto-animado">Proyectos</span>
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600 kalnia-medium">
-              Proyectos desarrollados en Ucamp
-            </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 text-focus-in">
             {posts.map((post) => (

@@ -45,8 +45,9 @@
 }
 
 .blog-bg {
-  background-image: url("./assets/hojas.jpg");
+  background-image: url("https://res.cloudinary.com/dgzghl0ur/image/upload/v1715454866/portafolio/pexels-luri-2350377_xyhsdv.jpg");
   background-size: cover;
+
 }
 
 .footer-bg {
