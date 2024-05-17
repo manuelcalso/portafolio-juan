@@ -17,6 +17,16 @@
         "floating-chat.donateButton.background-color": "#5bc0de",
         "floating-chat.donateButton.text-color": "#323842",
       });
+
+      setTimeout(function () {
+        // Seleccionar el botón de donación y aplicar estilos en línea
+        const donateButton = document.querySelector(
+          ".floating-chat .donateButton"
+        );
+        if (donateButton) {
+          donateButton.style.overflow = "hidden";
+        }
+      }, 1000);
     </script>
   </body>
 </html>
