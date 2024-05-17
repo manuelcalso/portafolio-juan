@@ -123,7 +123,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-
         <p className="mt-20 text-center text-xs leading-5 text-black italic">
           &copy; 2023 Juan Calleros, Inc. All rights reserved.
         </p>
