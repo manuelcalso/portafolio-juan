@@ -285,7 +285,7 @@ export default function Blog() {
             </h2>
             <br />
             <div className="flex border border-black bg-[#353535] rounded-md">
-              <video autoPlay muted loop className="video">
+              <video autoPlay muted loop controls className="video">
                 <source
                   src={
                     "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4"
