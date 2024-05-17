@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
             </>
           ))}
-          <div className="text-black font-bold  hover:text-2xl kalnia sm:text-3xl slide ">
+          <div className="text-black font-bold kalnia sm:text-3xl slide ">
             <p>juancallerossol@gmail.com</p>
             <p>+52 5544475622</p>
           </div>

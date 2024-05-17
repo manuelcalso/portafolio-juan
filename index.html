@@ -9,24 +9,13 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-    <script>
-      kofiWidgetOverlay.draw("manuelcalso", {
-        type: "floating-chat",
-        "floating-chat.donateButton.text": "Support me",
-        "floating-chat.donateButton.background-color": "#5bc0de",
-        "floating-chat.donateButton.text-color": "#323842",
-      });
-
-      setTimeout(function () {
-        // Seleccionar el botón de donación y aplicar estilos en línea
-        const donateButton = document.querySelector(
-          ".floating-chat .donateButton"
-        );
-        if (donateButton) {
-          donateButton.style.overflow = "hidden";
-        }
-      }, 1000);
+    <script
+      type="text/javascript"
+      src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
+    ></script>
+    <script type="text/javascript">
+      kofiwidget2.init("Support Me", "#22c55e", "J3J3XP2YF");
+      kofiwidget2.draw();
     </script>
   </body>
 </html>
