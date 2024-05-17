@@ -48,7 +48,7 @@ export default function Footer() {
   return (
     <section>
       <div className="video-background">
-        <video autoPlay muted loop className="video">
+        <video autoPlay muted loop>
           <source
             src={
               "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715454284/portafolio/3591016-hd_1920_1080_30fps_c00tdi.mp4"
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
         </nav>
 
-        <div className="mt-5 flex justify-center items-center space-x-10 bg-transparent rounded slit-in-vertical">
+        <div className="mt-5 flex justify-center items-center space-x-10 rounded slit-in-vertical">
           {navigation.social.map((item) => (
             <a
               key={item.name}

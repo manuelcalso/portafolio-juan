@@ -1,3 +1,4 @@
+import AppVideo from "../assets/Citas Veterinaria.mp4";
 const posts = [
   {
     id: 0,
@@ -204,7 +205,7 @@ export default function Blog() {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-t from-gray-200 to-white opacity-90 mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
+      <div className="bg-gradient-to-t from-gray-200 to-white mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className=" text-center ">
             <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
@@ -264,7 +265,7 @@ export default function Blog() {
                   >
                     {post.description}
                   </a>
-                  <br></br>
+                  <br />
                   <a
                     className="text-white hover:text-green-500 border border-white border-2 hover:border-green-900 rounded flex flex-row justify-center transition"
                     href={post.code}
@@ -276,6 +277,38 @@ export default function Blog() {
                 </article>
               </>
             ))}
+          </div>
+          <br />
+          <div className=" text-center ">
+            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
+              <span className="texto-animado">Apps Moviles</span>
+            </h2>
+            <br />
+            <div className="flex border border-black bg-gray-500 rounded-md">
+              <video autoPlay muted loop className="video">
+                <source
+                  src={
+                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4"
+                  }
+                  type="video/mp4"
+                />
+              </video>
+              <div className="flex-col ">
+                <h1 className="text-white kalnia-medium text-3xl text-shadow">
+                  Citas Veterinaria
+                </h1>
+
+                <p className=" text-app text-shadow-p mt-2">
+                  App desarrollada para crear y organizar citas veterinarias.
+                  <br />
+                  En esta app el usuario dueño del negocio puede agregar nuevas
+                  citas programadas y tener un control a traves del nombre de la
+                  mascota, nombre del propietario, email, telefono fecha de cita
+                  y sintomas, area donde puede colocar detalles sobre el
+                  paciente y la futura cita veterinaria.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <br />
