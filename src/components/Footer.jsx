@@ -62,7 +62,7 @@ export default function Footer() {
 
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-20 lg:px-8 ">
         <nav
-          className="sm:flex sm:justify-center sm:space-x-4 bg-white slide-in-top rounded p-10"
+          className="sm:flex sm:justify-center sm:space-x-4 bg-white slide-in-top rounded p-10 "
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
@@ -77,7 +77,7 @@ export default function Footer() {
               </div>
             </>
           ))}
-          <div className="text-black font-bold  hover:text-2xl kalnia sm:text-3xl">
+          <div className="text-black font-bold  hover:text-2xl kalnia sm:text-3xl slide ">
             <p>juancallerossol@gmail.com</p>
             <p>+52 5544475622</p>
           </div>

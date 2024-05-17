@@ -284,7 +284,7 @@ export default function Blog() {
               <span className="texto-animado">Apps Moviles</span>
             </h2>
             <br />
-            <div className="flex border border-black bg-gray-500 rounded-md">
+            <div className="flex border border-black bg-[#353535] rounded-md">
               <video autoPlay muted loop className="video">
                 <source
                   src={
@@ -298,7 +298,7 @@ export default function Blog() {
                   Citas Veterinaria
                 </h1>
 
-                <p className=" text-app text-shadow-p mt-2">
+                <p className="text-app text-shadow-p mt-2">
                   App desarrollada para crear y organizar citas veterinarias.
                   <br />
                   En esta app el usuario dueño del negocio puede agregar nuevas
@@ -306,6 +306,19 @@ export default function Blog() {
                   mascota, nombre del propietario, email, telefono fecha de cita
                   y sintomas, area donde puede colocar detalles sobre el
                   paciente y la futura cita veterinaria.
+                </p>
+                <p className="text-app text-shadow">
+                  App con actualizacion de dependencias y componentes del curso{" "}
+                  <br />
+                  <a
+                    href="https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B"
+                    target="_blank"
+                  >
+                    <span className=" text-2xl text-white text-blue-500  ">
+                      {" "}
+                      Crea aplicaciones para Android y iOS con React
+                    </span>
+                  </a>
                 </p>
               </div>
             </div>
