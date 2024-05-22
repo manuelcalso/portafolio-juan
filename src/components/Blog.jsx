@@ -364,7 +364,7 @@ export default function Blog() {
               <video autoPlay muted loop controls className="video">
                 <source
                   src={
-                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716321215/portafolio/planificador_gastos_xqytdt.webm"
+                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716408014/portafolio/planificador_gastos_uofplz.mp4"
                   }
                   type="video/mp4"
                 />
