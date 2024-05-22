@@ -41,7 +41,7 @@
 }
 
 .text-shadow-p {
-  text-shadow: 1px 1px #000000;
+  text-shadow: 1px 1px #9e9999;
 }
 
 .blog-bg {
@@ -377,7 +377,7 @@
 }
 
 .text-app {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: kalnia-light;
   font-size: 2vw;
 }
@@ -394,6 +394,12 @@
   transition-duration: 550ms;
 }
 
+.curso-section {
+  color: #000000;
+  font-family: kalnia-medium;
+  font-size: 2vw;
+}
+
 @media screen and (max-width:510px) {
   .video {
     width: auto;
@@ -406,8 +412,12 @@
   }
 
   .text-app {
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: kalnia-light;
     font-size: 3vw;
+  }
+
+  .app-container {
+    flex-direction: column;
   }
 }

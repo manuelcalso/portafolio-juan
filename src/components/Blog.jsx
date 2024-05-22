@@ -279,12 +279,43 @@ export default function Blog() {
             ))}
           </div>
           <br />
-          <div className=" text-center ">
+          <div className=" flex-col ">
             <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
               <span className="texto-animado">Apps Moviles</span>
             </h2>
             <br />
-            <div className="flex border border-black bg-[#353535] rounded-md">
+            <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
+              <div>
+                <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
+                  Citas Veterinaria
+                </h1>
+                <div className="m-5 mr-10 border border-gray-300 rounded-md shadow-md ">
+                  <p className="text-app text-shadow-p ">
+                    App desarrollada para crear y organizar citas veterinarias.
+                    <br />
+                    En esta app el usuario dueño del negocio puede agregar
+                    nuevas citas programadas y tener un control a traves del
+                    nombre de la mascota, nombre del propietario, email,
+                    telefono fecha de cita y sintomas, area donde puede colocar
+                    detalles sobre el paciente y la futura cita veterinaria.
+                  </p>
+                  <br />
+                  <p className="text-app">
+                    App con actualizacion de dependencias y componentes del
+                    curso <br />
+                  </p>
+
+                  <br />
+
+                  <a
+                    href="https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B"
+                    target="_blank"
+                    className=" curso-section "
+                  >
+                    <span>Crea aplicaciones para Android y iOS con React</span>
+                  </a>
+                </div>
+              </div>
               <video autoPlay muted loop controls className="video">
                 <source
                   src={
@@ -293,34 +324,51 @@ export default function Blog() {
                   type="video/mp4"
                 />
               </video>
-              <div className="flex-col ">
-                <h1 className="text-white kalnia-medium text-3xl text-shadow">
-                  Citas Veterinaria
+            </div>
+          </div>
+          <br />
+          <div className=" flex-col ">
+            <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
+              <div>
+                <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
+                  Planificador de Gastos
                 </h1>
-
-                <p className="text-app text-shadow-p mt-2">
-                  App desarrollada para crear y organizar citas veterinarias.
+                <div className="m-5 mr-10 border border-gray-300 rounded-md shadow-md ">
+                  <p className="text-app text-shadow-p ">
+                    ¡Con esta App es posible generar un presupuesto y poder
+                    administrarlo!
+                    <br />
+                    Una vez definido el presupuesto podemos asignar los gastos a
+                    diferentes categorias, al mismo tiempo la nos da informacion
+                    grafica de cuanto presupuesto nos queda como disponible,
+                    dentro de los gastos ya definidos podemos editarlos o
+                    eliminarlos si asi lo queremos y se haran los ajustes
+                    necesarios. En este proyecto utilizamos AsyncStorage para
+                    poder mantener la informacion almacenada localmente.
+                  </p>
                   <br />
-                  En esta app el usuario dueño del negocio puede agregar nuevas
-                  citas programadas y tener un control a traves del nombre de la
-                  mascota, nombre del propietario, email, telefono fecha de cita
-                  y sintomas, area donde puede colocar detalles sobre el
-                  paciente y la futura cita veterinaria.
-                </p>
-                <p className="text-app text-shadow">
-                  App con actualizacion de dependencias y componentes del curso{" "}
+                  <p className="text-app">
+                    App con actualizacion de dependencias y componentes del
+                    curso <br />
+                  </p>
                   <br />
                   <a
                     href="https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B"
                     target="_blank"
+                    className=" curso-section "
                   >
-                    <span className=" text-2xl text-white text-blue-500  ">
-                      {" "}
-                      Crea aplicaciones para Android y iOS con React
-                    </span>
+                    <span>Crea aplicaciones para Android y iOS con React</span>
                   </a>
-                </p>
+                </div>
               </div>
+              <video autoPlay muted loop controls className="video">
+                <source
+                  src={
+                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716321215/portafolio/planificador_gastos_xqytdt.webm"
+                  }
+                  type="video/mp4"
+                />
+              </video>
             </div>
           </div>
         </div>
