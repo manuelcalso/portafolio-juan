@@ -6,6 +6,7 @@ const navigation = [
   { name: "Manuel Calleros", href: "/" },
   { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
+  { name: "English version", href: "https://juancalleros.vercel.app/" },
 ];
 
 export default function Header() {
