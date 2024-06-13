@@ -404,6 +404,13 @@
   font-size: 2vw;
 }
 
+.anuncio-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 @media screen and (max-width:510px) {
   .video {
     width: auto;
