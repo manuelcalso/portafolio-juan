@@ -279,6 +279,40 @@ export default function Blog() {
             ))}
           </div>
           <br />
+          <div className=" mb-5 mt-5">
+            <a
+              href="https://plasticbeach.shop/"
+              rel="noopener noreferrer"
+              className="text-2xl italic title flex flex-row justify-center items-center gap-x-4"
+            >
+              <img
+                src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1700587964/products%20ecommerce/greenastronaut_s7hhzh.webp"
+                alt="plastic beach ad"
+                className="w-1/6 rounded-md border border-purple-200 shadow float "
+              />
+              <br />
+              <img
+                src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1700587964/products%20ecommerce/mtv_yy0dbg.webp"
+                alt="plastic beach ad"
+                className="w-1/5 rounded-md border border-purple-200 shadow float "
+              />
+              <img
+                src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1700587964/products%20ecommerce/radiohead_t2tewf.webp"
+                alt="plastic beach ad"
+                className="w-1/6 rounded-md border border-purple-200 shadow float "
+              />
+              <img
+                src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1700587963/products%20ecommerce/girasolardiente_hai9pa.webp"
+                alt="plastic beach ad"
+                className="w-1/6 rounded-md border border-purple-200 shadow float "
+              />
+              <img
+                src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1700587963/products%20ecommerce/gatomorado_ryy6dh.webp"
+                alt="plastic beach ad"
+                className="w-1/6 rounded-md border border-purple-200 shadow float "
+              />
+            </a>
+          </div>
           <br />
           <div className=" flex-col ">
             <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
