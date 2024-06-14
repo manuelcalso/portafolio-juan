@@ -1,4 +1,3 @@
-import AppVideo from "../assets/Citas Veterinaria.mp4";
 const posts = [
   {
     id: 0,
