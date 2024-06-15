@@ -101,6 +101,24 @@ const posts = [
     },
     code: "https://github.com/manuelcalso/proyecto-ecommerce-fullstack/tree/master",
   },
+  {
+    id: 6,
+    title: "Pagina construccion",
+    href: "https://construccionaf.vercel.app",
+    description:
+      "Desarrollo de una pagina web de ecommerce enfocada a la construccion, frontend fabricado con Astro + React, incluye tambien IA para contenido general.",
+    imageUrl:
+      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1718414121/portafolio/Captura_de_pantalla_2024-06-14_a_la_s_7.12.06_p.m._skitc1.png",
+    date: "2024 - current days",
+    datetime: "2024-06-14",
+    author: {
+      name: "Juan Calleros",
+      imageUrl:
+        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+    },
+    code: "",
+  },
+
   // More posts...
 ];
 
@@ -253,7 +271,13 @@ export default function Blog() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {post.title}
+                      {post.title === "Pagina construccion" ? (
+                        <h1 className="text-yellow-500 underline ">
+                          Pagina ferreteria o construccion
+                        </h1>
+                      ) : (
+                        <span>{post.title}</span>
+                      )}
                     </a>
                   </h3>
                   <a
@@ -265,14 +289,24 @@ export default function Blog() {
                     {post.description}
                   </a>
                   <br />
-                  <a
-                    className="text-white hover:text-green-500 border border-white border-2 hover:border-green-900 rounded flex flex-row justify-center transition"
-                    href={post.code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Aqui el codigo!
-                  </a>
+
+                  {post.title === "Pagina construccion" ? (
+                    <p
+                      className="border-dotted border-2 border-yellow-500 flex justify-center rounded-full elevation-4 font-bold
+                    "
+                    >
+                      En Construccion{" "}
+                    </p>
+                  ) : (
+                    <a
+                      className="text-white hover:text-green-500 border border-white  hover:border-green-900 rounded flex flex-row justify-center transition"
+                      href={post.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Aqui el codigo!
+                    </a>
+                  )}
                 </article>
               </>
             ))}
