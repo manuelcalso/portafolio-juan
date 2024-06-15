@@ -13,9 +13,9 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="hover:bg-green-900 bg-white slide-in-top kalnia-medium rounded-border-about mx-auto ">
+    <header className="hover:bg-green-900  bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about mx-auto ">
       <nav
-        className="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8 "
+        className="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8  "
         aria-label="Global"
       >
         <div className="flex flex-1">
@@ -25,7 +25,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 target="_blank"
-                className="text-xl leading-6  text-gray-900 slide float p-2 rounded-full hover:bg-green-900 hover:text-white hover:text-2xl"
+                className="text-xl leading-6   slide float p-2 rounded-full hover:bg-green-800 hover:text-white hover:text-3xl"
               >
                 <span>{item.name}</span>
               </a>
