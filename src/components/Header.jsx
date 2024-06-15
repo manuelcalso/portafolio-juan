@@ -21,17 +21,17 @@ export default function Header() {
           <img
             src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718419676/portafolio/Manuel_Calleros_transparent_bcelia.png"
             alt="manuel calleros logo"
-            className="w-40 m-0 pr-4"
+            className="w-40 slide"
           />
         </a>
-        <div className="flex flex-1">
+        <div className="flex ">
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 target="_blank"
-                className="text-xl leading-6   slide float p-2 rounded-full hover:bg-green-800 hover:text-white hover:text-3xl"
+                className="text-2xl slide float p-2 rounded-full hover:bg-green-800 hover:text-white hover:text-3xl hover:tracking-widest"
               >
                 <span>{item.name}</span>
               </a>
@@ -48,7 +48,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <a href="#" className="-m-1.5 p-1.5">
+        <a href="#" className="-m-1.5 p-1.5 slide">
           <span className="sr-only">JuanCalleros.com</span>
           <img
             className="h-20 w-auto rounded-full"
