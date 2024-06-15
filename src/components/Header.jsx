@@ -3,7 +3,6 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Manuel Calleros", href: "/" },
   { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
   { name: "English version", href: "https://juancalleros.vercel.app/" },
@@ -18,6 +17,13 @@ export default function Header() {
         className="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8  "
         aria-label="Global"
       >
+        <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
+          <img
+            src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718419676/portafolio/Manuel_Calleros_transparent_bcelia.png"
+            alt="manuel calleros logo"
+            className="w-40 m-0 pr-4"
+          />
+        </a>
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
@@ -45,9 +51,9 @@ export default function Header() {
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">JuanCalleros.com</span>
           <img
-            className="h-10 w-auto rounded-full"
+            className="h-20 w-auto rounded-full"
             src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1704476428/portafolio/Foto_flfttc.jpg"
-            alt=""
+            alt="juan calleros img"
           />
         </a>
       </nav>
