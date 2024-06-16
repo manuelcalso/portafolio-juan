@@ -176,7 +176,7 @@ export default function Blog() {
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">
               <div className="relative slide ">
                 <img
-                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702674956/portafolio/sisco_yu1opx.jpg"
+                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718569093/portafolio/IMG_0493_zhrgwg.jpg"
                   alt=""
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />

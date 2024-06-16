@@ -12,16 +12,16 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="hover:bg-green-900  bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about mx-auto ">
+    <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about mx-auto ">
       <nav
-        className="mx-auto flex max-w-6xl items-center justify-between p-6 lg:px-8  "
+        className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8  "
         aria-label="Global"
       >
         <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
           <img
             src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718419676/portafolio/Manuel_Calleros_transparent_bcelia.png"
             alt="manuel calleros logo"
-            className="w-40 slide"
+            className="w-40 slide p-0 m-0"
           />
         </a>
         <div className="flex ">
