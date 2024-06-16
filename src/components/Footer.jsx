@@ -35,9 +35,9 @@ export default function Footer() {
         <div />
       </div>
 
-      <div className="px-auto py-10 sm:py-20 lg:px-8 ">
+      <div className="px-auto py-10 sm:py-20 lg:px-8">
         <nav
-          className=" bg-white slide-in-top rounded p-6 flex justify-center"
+          className=" bg-white slide-in-top rounded p-6 flex justify-center  shadow-xl"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
@@ -76,7 +76,7 @@ export default function Footer() {
           ))}
         </nav>
 
-        <div className="mt-0 flex justify-center items-center space-x-10 rounded-b-md slit-in-vertical bg-gray-400 slide-in-top shadow-xl">
+        <div className="mt-0 flex justify-center items-center space-x-10 rounded-b-md slit-in-vertical bg-gray-400 slide-in-top shadow-md">
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -84,7 +84,10 @@ export default function Footer() {
               className="text-black hover:text-green-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-12 w-12" aria-hidden="true" />
+              <item.icon
+                className="h-12 w-12 hover:text-green-500"
+                aria-hidden="true"
+              />
             </a>
           ))}
           <div>
@@ -116,7 +119,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <p className="m-5 text-center text-xs leading-5 text-black italic">
+        <p className="m-2 text-center text-xs leading-5 text-black hover:text-green-500 italic">
           &copy; 2023 Juan Calleros, Inc. All rights reserved.
         </p>
       </div>
