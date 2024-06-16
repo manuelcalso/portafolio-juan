@@ -35,9 +35,9 @@ export default function Footer() {
         <div />
       </div>
 
-      <div className="px-auto py-10 sm:py-20 lg:px-8 border border-black">
+      <div className="px-auto py-10 sm:py-20 lg:px-8 ">
         <nav
-          className=" bg-white slide-in-top rounded p-6 border border-black flex justify-center"
+          className=" bg-white slide-in-top rounded p-6 flex justify-center"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
