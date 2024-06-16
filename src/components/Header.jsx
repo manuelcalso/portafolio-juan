@@ -12,7 +12,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about mx-auto ">
+    <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8  "
         aria-label="Global"
@@ -37,14 +37,17 @@ export default function Header() {
               </a>
             ))}
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden p-1">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md text-gray-900 hover:text-white p-10"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon
+                className="h-12 w-12 slide hover:text-white m-0"
+                aria-hidden="true"
+              />
             </button>
           </div>
         </div>
@@ -64,7 +67,7 @@ export default function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 slide">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -73,24 +76,30 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon
+                  className="h-6 w-6 text-gray-400"
+                  aria-hidden="true"
+                />
               </button>
             </div>
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a
+              href="/"
+              className="-m-1.5 p-1.5  shadow-lg rounded-full border border-gray-400"
+            >
+              <span className="sr-only">Juan Portafolio</span>
               <img
-                className="h-8 w-auto rounded-full "
+                className="h-10 w-auto rounded-full"
                 src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg"
-                alt=""
+                alt="juan logo"
               />
             </a>
           </div>
-          <div className="mt-2 space-y-2 kalnia-medium">
+          <div className="mt-4 space-y-2 kalnia-medium">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
               >
                 {item.name}
               </a>
