@@ -1,7 +1,7 @@
 import React from "react";
 
 const navigation = {
-  main: [{ name: "Contacto:", href: "/" }],
+  main: [{ name: "Contacto", href: "/" }],
   social: [
     {
       name: "GitHub",
@@ -35,17 +35,17 @@ export default function Footer() {
         <div />
       </div>
 
-      <div className="px-auto py-10 sm:py-20 lg:px-8">
+      <div className="px-auto py-2 sm:py-20 lg:px-8">
         <nav
-          className=" bg-white slide-in-top rounded p-6 flex justify-center  shadow-xl"
+          className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
             <>
-              <div key={item.name} className="pb-4 flex justify-center">
+              <div key={item.name} className="pb-4 flex justify-center itmes-center ">
                 <a
                   href={item.href}
-                  className="text-black text-2xl kalnia-medium "
+                  className="text-black text-3xl kalnia-medium mx-2 my-2"
                 >
                   {item.name}
                 </a>
@@ -76,7 +76,7 @@ export default function Footer() {
           ))}
         </nav>
 
-        <div className="mt-0 flex justify-center items-center space-x-10 rounded-b-md slit-in-vertical bg-gray-400 slide-in-top shadow-md">
+        <div className="mt-0 flex justify-around items-center space-x-5 rounded-b-md slit-in-vertical bg-gray-300 slide-in-top shadow-md">
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -85,7 +85,7 @@ export default function Footer() {
             >
               <span className="sr-only">{item.name}</span>
               <item.icon
-                className="h-12 w-12 hover:text-green-500"
+                className="h-auto w-1/2 hover:text-green-500"
                 aria-hidden="true"
               />
             </a>
@@ -93,9 +93,9 @@ export default function Footer() {
           <div>
             <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
               <svg
-                height="34"
+                height="84"
                 viewBox="0 0 1240 1240"
-                width="34"
+                width="84"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g
