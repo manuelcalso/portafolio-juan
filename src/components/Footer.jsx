@@ -42,7 +42,10 @@ export default function Footer() {
         >
           {navigation.main.map((item) => (
             <>
-              <div key={item.name} className="pb-4 flex justify-center itmes-center ">
+              <div
+                key={item.name}
+                className="pb-4 flex justify-center itmes-center "
+              >
                 <a
                   href={item.href}
                   className="text-black text-3xl kalnia-medium mx-2 my-2"
@@ -75,7 +78,6 @@ export default function Footer() {
             </>
           ))}
         </nav>
-
         <div className="mt-0 flex justify-around items-center space-x-5 rounded-b-md slit-in-vertical bg-gray-300 slide-in-top shadow-md">
           {navigation.social.map((item) => (
             <a
@@ -85,7 +87,7 @@ export default function Footer() {
             >
               <span className="sr-only">{item.name}</span>
               <item.icon
-                className="h-auto w-1/2 hover:text-green-500"
+                className="h-auto w-1/4 hover:text-green-500"
                 aria-hidden="true"
               />
             </a>

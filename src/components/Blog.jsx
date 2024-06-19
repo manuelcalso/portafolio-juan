@@ -1,3 +1,7 @@
+import * as React from "react";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+
 const posts = [
   {
     id: 0,
@@ -122,7 +126,61 @@ const posts = [
   // More posts...
 ];
 
+const projects = [
+  {
+    title: "Citas Veterinaria",
+    description: `
+      App desarrollada para crear y organizar citas veterinarias.
+      En esta app el usuario dueño del negocio puede agregar nuevas citas programadas y tener un control a traves del nombre de la mascota, nombre del propietario, email, telefono fecha de cita y sintomas, area donde puede colocar detalles sobre el paciente y la futura cita veterinaria.
+    `,
+    extra: "App con actualizacion de dependencias y componentes del curso",
+    link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
+    videoSrc:
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4",
+  },
+  {
+    title: "Planificador de Gastos",
+    description: `
+      ¡Con esta App es posible generar un presupuesto y poder administrarlo!
+      Una vez definido el presupuesto podemos asignar los gastos a diferentes categorias, al mismo tiempo la nos da informacion grafica de cuanto presupuesto nos queda como disponible, dentro de los gastos ya definidos podemos editarlos o eliminarlos si asi lo queremos y se haran los ajustes necesarios. En este proyecto utilizamos AsyncStorage para poder mantener la informacion almacenada localmente.
+    `,
+    extra: "App con actualizacion de dependencias y componentes del curso",
+    link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
+    videoSrc:
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716408014/portafolio/planificador_gastos_uofplz.mp4",
+  },
+  {
+    title: "App de alojamiento",
+    description: `
+      Apps como Airbnb es trabajo de grandes equipos de desarrollo, sin embargo esta app funciona muy bien para generar reservaciones y promocionar tus habitaciones, Ademas que es totalmente personalizable y facil de usar, proximamente en google app store
+    `,
+    extra: "App con actualizacion de dependencias y componentes del curso",
+    link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
+    videoSrc:
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716575024/portafolio/Hospedajes_lfcepk_m9lsn1.mp4",
+  },
+  {
+    title: "Cotizador de criptomonedas",
+    description: `
+      Las criptomonedas han llegado para quedarse, con esta app podras cotizar su precio en tiempo real ya que es soportado con servicios API los cuales lo mantienen al dia. Proximamente en google play store
+    `,
+    extra: "App con actualizacion de dependencias y componentes del curso",
+    link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
+    videoSrc:
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716574935/portafolio/criptomonedas_pc6hho_bqjyc6.mp4",
+  },
+];
+
 export default function Blog() {
+  //incluir paginacion PENDIENTE
+  const [page, setPage] = React.useState(1);
+
+  const handleChange = (event, value) => {
+    setPage(value);
+  };
+
+  const project = projects[page - 1]; // Obtén el proyecto correspondiente a la página actual
+
   return (
     <>
       <div className=" max-w-7xl px-6 pb-24 pt-20 sm:pt-40 lg:px-8 lg:pt-32 blog-bg rounded-border-about02 texto-animado ">
@@ -347,182 +405,61 @@ export default function Blog() {
             </a>
           </div>
           <br />
-          <div className=" flex-col ">
-            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
-              <span className="texto-animado">Apps Moviles</span>
-            </h2>
-            <br />
-            <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
-              <div>
-                <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
-                  Citas Veterinaria
-                </h1>
-                <div className="m-5 mr-10 border border-gray-300 rounded-md shadow-md ">
-                  <p className="text-app text-shadow-p ">
-                    App desarrollada para crear y organizar citas veterinarias.
+          <Stack spacing={2}>
+            <div className="flex-col">
+              <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
+                <span className="texto-animado">Apps Moviles</span>
+              </h2>
+              <br />
+              <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
+                <div>
+                  <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
+                    {project.title}
+                  </h1>
+                  <div className="m-5 mr-10 border border-gray-300 rounded-md shadow-md">
+                    <p className="text-app text-shadow-p">
+                      {project.description}
+                    </p>
                     <br />
-                    En esta app el usuario dueño del negocio puede agregar
-                    nuevas citas programadas y tener un control a traves del
-                    nombre de la mascota, nombre del propietario, email,
-                    telefono fecha de cita y sintomas, area donde puede colocar
-                    detalles sobre el paciente y la futura cita veterinaria.
-                  </p>
-                  <br />
-                  <p className="text-app">
-                    App con actualizacion de dependencias y componentes del
-                    curso <br />
-                  </p>
-
-                  <br />
-
-                  <a
-                    href="https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B"
-                    target="_blank"
-                    className=" curso-section "
-                  >
-                    <span>Crea aplicaciones para Android y iOS con React</span>
-                  </a>
-                </div>
-              </div>
-              <video autoPlay muted loop controls className="video">
-                <source
-                  src={
-                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4"
-                  }
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <br />
-          <div className=" flex-col ">
-            <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
-              <div>
-                <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
-                  Planificador de Gastos
-                </h1>
-                <div className="m-5 mr-10 border border-gray-300 rounded-md shadow-md ">
-                  <p className="text-app text-shadow-p ">
-                    ¡Con esta App es posible generar un presupuesto y poder
-                    administrarlo!
+                    <p className="text-app">
+                      {project.extra} <br />
+                    </p>
                     <br />
-                    Una vez definido el presupuesto podemos asignar los gastos a
-                    diferentes categorias, al mismo tiempo la nos da informacion
-                    grafica de cuanto presupuesto nos queda como disponible,
-                    dentro de los gastos ya definidos podemos editarlos o
-                    eliminarlos si asi lo queremos y se haran los ajustes
-                    necesarios. En este proyecto utilizamos AsyncStorage para
-                    poder mantener la informacion almacenada localmente.
-                  </p>
-                  <br />
-                  <p className="text-app">
-                    App con actualizacion de dependencias y componentes del
-                    curso <br />
-                  </p>
-                  <br />
-                  <a
-                    href="https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B"
-                    target="_blank"
-                    className=" curso-section "
-                  >
-                    <span>Crea aplicaciones para Android y iOS con React</span>
-                  </a>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="curso-section"
+                    >
+                      <span>
+                        Crea aplicaciones para Android y iOS con React
+                      </span>
+                    </a>
+                  </div>
                 </div>
+                <video
+                  key={project.videoSrc}
+                  autoPlay
+                  muted
+                  loop
+                  controls
+                  className="video"
+                >
+                  <source src={project.videoSrc} type="video/mp4" />
+                </video>
               </div>
-              <video autoPlay muted loop controls className="video">
-                <source
-                  src={
-                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716408014/portafolio/planificador_gastos_uofplz.mp4"
-                  }
-                  type="video/mp4"
-                />
-              </video>
             </div>
-          </div>
-          <br />
-          <div className=" flex-col ">
-            <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
-              <div>
-                <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
-                  App de alojamiento
-                </h1>
-                <div className="m-5 mr-10 border border-gray-300 rounded-md shadow-md ">
-                  <p className="text-app text-shadow-p ">
-                    Apps como Airbnb es trabajo de grandes equipos de
-                    desarrollo, sin embargo esta app funciona muy bien para
-                    generar reservaciones y promocionar tus habitaciones, Ademas
-                    que es totalmente personalizable y facil de usar,
-                    proximamente en google app store
-                  </p>
-                  <br />
-                  <p className="text-app">
-                    App con actualizacion de dependencias y componentes del
-                    curso <br />
-                  </p>
-                  <br />
-                  <a
-                    href="https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B"
-                    target="_blank"
-                    className=" curso-section "
-                  >
-                    <span>Crea aplicaciones para Android y iOS con React</span>
-                  </a>
-                </div>
-              </div>
-              <video autoPlay muted loop controls className="video">
-                <source
-                  src={
-                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716575024/portafolio/Hospedajes_lfcepk_m9lsn1.mp4"
-                  }
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
-          <br />
-          <div className=" flex-col ">
-            <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
-              <div>
-                <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
-                  Cotizador de criptomonedas
-                </h1>
-                <div className="m-5 mr-10 border border-gray-300 rounded-md shadow-md ">
-                  <p className="text-app text-shadow-p ">
-                    Las criptomonedas han llegado para quedarse, con esta app
-                    podras cotizar su precio en tiempo real ya que es soportado
-                    con servicios API los cuales lo mantienen al dia.
-                    Proximamente en google play store
-                  </p>
-                  <br />
-                  <p className="text-app">
-                    App con actualizacion de dependencias y componentes del
-                    curso <br />
-                  </p>
-                  <br />
-                  <a
-                    href="https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B"
-                    target="_blank"
-                    className=" curso-section "
-                  >
-                    <span>Crea aplicaciones para Android y iOS con React</span>
-                  </a>
-                </div>
-              </div>
-              <video autoPlay muted loop controls className="video">
-                <source
-                  src={
-                    "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716574935/portafolio/criptomonedas_pc6hho_bqjyc6.mp4"
-                  }
-                  type="video/mp4"
-                />
-              </video>
-            </div>
-          </div>
+            <Pagination
+              count={projects.length}
+              page={page}
+              onChange={handleChange}
+            />
+          </Stack>
         </div>
         <br />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <br />
-          <h2 className="text-center text-lg font-semibold leading-8 text-gray-900 texto-animado kalnia-medium ">
+          <h2 className="text-center text-3xl font-semibold leading-8 text-gray-900 texto-animado kalnia-medium ">
             Tecnologias
           </h2>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 text-focus-in">
