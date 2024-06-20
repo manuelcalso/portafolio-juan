@@ -1,16 +1,14 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import Footer from "./Footer";
 const navigation = [
   { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
   { name: "English version", href: "https://juancalleros.vercel.app/" },
 ];
-
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about">
       <nav
@@ -51,7 +49,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <a href="#" className="-m-1.5 p-1.5 slide">
+        <a href="/" className="mr-3.5 slide">
           <span className="sr-only">JuanCalleros.com</span>
           <img
             className="h-20 w-auto rounded-full"
@@ -94,7 +92,8 @@ export default function Header() {
               />
             </a>
           </div>
-          <div className="mt-4 space-y-2 kalnia-medium">
+          <div className="mt-4 space-y-2 kalnia-medium top-0 bg-white">
+            <Footer />
             {navigation.map((item) => (
               <a
                 key={item.name}

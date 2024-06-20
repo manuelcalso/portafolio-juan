@@ -1,4 +1,5 @@
 import React from "react";
+import "../index.css";
 
 const navigation = {
   main: [{ name: "Contacto", href: "/" }],
@@ -31,10 +32,8 @@ export default function Footer() {
             type="video/mp4"
           />
         </video>
-
         <div />
       </div>
-
       <div className="px-auto py-2 sm:py-20 lg:px-8">
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
@@ -48,15 +47,15 @@ export default function Footer() {
               >
                 <a
                   href={item.href}
-                  className="text-black text-3xl kalnia-medium mx-2 my-2"
+                  className="text-black text-xl kalnia-medium mx-2 my-2"
                 >
                   {item.name}
                 </a>
-                <div className=" flex justify-center items-center text-black  font-bold slide">
+                <div className=" flex justify-around items-center text-black  font-bold ">
                   <img
                     src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718431406/portafolio/Let_s_work_together__transparent_kvxoul.png"
                     alt="work together logo"
-                    className="w-1/2"
+                    className="w-1/4"
                   />
                   <div className=" flex-col justify-evenly px-5 py-2 shadow-xl border border-gray-400 rounded-md">
                     <p className="kalnia-medium text-2xl">

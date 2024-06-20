@@ -1,7 +1,6 @@
 import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-
 const posts = [
   {
     id: 0,
@@ -122,10 +121,7 @@ const posts = [
     },
     code: "",
   },
-
-  // More posts...
 ];
-
 const projects = [
   {
     title: "Citas Veterinaria",
@@ -178,9 +174,7 @@ export default function Blog() {
   const handleChange = (event, value) => {
     setPage(value);
   };
-
   const project = projects[page - 1]; // Obtén el proyecto correspondiente a la página actual
-
   return (
     <>
       <div className=" max-w-7xl px-6 pb-24 pt-20 sm:pt-40 lg:px-8 lg:pt-32 blog-bg rounded-border-about02 texto-animado ">
