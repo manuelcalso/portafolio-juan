@@ -22,7 +22,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <section>
+    <section className="bg-yellow-100">
       <div className="video-background">
         <video autoPlay muted loop>
           <source
@@ -42,7 +42,7 @@ export default function Footer() {
           {navigation.main.map((item) => (
             <>
               <div
-                key={item.name}
+                key={item.id}
                 className="pb-4 flex justify-center itmes-center "
               >
                 <a
