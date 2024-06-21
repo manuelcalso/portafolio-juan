@@ -1,6 +1,7 @@
 import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
+import "../../src/index.css"
 const posts = [
   {
     id: 0,
@@ -177,7 +178,7 @@ export default function Blog() {
   const project = projects[page - 1]; // Obtén el proyecto correspondiente a la página actual
   return (
     <>
-      <div className=" max-w-7xl px-6 pb-24 pt-20 sm:pt-40 lg:px-8 lg:pt-32 blog-bg rounded-border-about02 texto-animado ">
+      <div className=" max-w-7xl px-6 pb-24 pt-20 sm:pt-40 lg:px-8 lg:pt-32 blog-bg rounded-border-about02">
         <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center ">
           <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
             <h1 className="text-4xl font-bold tracking-tight text-gray-300 sm:text-6xl kalnia-medium text-shadow texto-animado">
@@ -437,7 +438,7 @@ export default function Blog() {
                   muted
                   loop
                   controls
-                  className="video"
+                  className="video shadow"
                 >
                   <source src={project.videoSrc} type="video/mp4" />
                 </video>
