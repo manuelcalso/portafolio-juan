@@ -209,7 +209,7 @@
 .texto-animado span {
   display: inline-block;
   transform-origin: bottom;
-  animation: fadeInText 0.5s ease-out forwards;
+  animation: fadeInText 15s ease-out infinite;
   opacity: 0;
 }
 .texto-animado span:nth-child(1) {

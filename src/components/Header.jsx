@@ -32,7 +32,20 @@ export default function Header() {
                 target="_blank"
                 className="text-2xl slide float p-2 rounded-full hover:bg-green-800 hover:text-white hover:text-3xl hover:tracking-widest"
               >
-                <span>{item.name}</span>
+                {item.name === "English version" ? (
+                  <p className="text-blue-500 hover:text-white texto-animado">
+                    <span>E</span>
+                    <span>n</span>
+                    <span>g</span>
+                    <span>l</span>
+                    <span>i</span>
+                    <span>s</span>
+                    <span>h</span>
+                    {' '}                    
+                  </p>
+                ) : (
+                  item.name
+                )}
               </a>
             ))}
           </div>
@@ -66,24 +79,24 @@ export default function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 slide">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 slide ">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="pt-4.5 rounded-md p-2.5 text-transparent"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon
-                  className="h-6 w-6 text-gray-400"
+                  className="h-6 w-6 text-transparent "
                   aria-hidden="true"
                 />
               </button>
             </div>
             <a
               href="/"
-              className="-m-1.5 p-1.5  shadow-lg rounded-full border border-gray-400"
+              className="-m-1.5 p-1.5  shadow-lg rounded-md border border-gray-400 bg-black"
             >
               <span className="sr-only">Juan Portafolio</span>
               <img
@@ -91,6 +104,7 @@ export default function Header() {
                 src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg"
                 alt="juan logo"
               />
+              Return
             </a>
           </div>
           <div className="mt-4 space-y-2 kalnia-medium top-0 bg-white">
@@ -101,7 +115,19 @@ export default function Header() {
                 href={item.href}
                 className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
               >
-                {item.name}
+                {item.name === "English version" ? (
+                  <p className="text-blue-500 hover:text-white hover:text-3xl texto-animado text-2xl p-0 m-0">
+                    <span>E</span>
+                    <span>n</span>
+                    <span>g</span>
+                    <span>l</span>
+                    <span>i</span>
+                    <span>s</span>
+                    <span>h</span>                           
+                  </p>
+                ) : (
+                  item.name
+                )}
               </a>
             ))}
           </div>
