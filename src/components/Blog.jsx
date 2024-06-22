@@ -1,7 +1,16 @@
 import * as React from "react";
 import Pagination from "@mui/material/Pagination";
+import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import "../../src/index.css";
+
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+
 const posts = [
   {
     id: 0,
@@ -397,7 +406,44 @@ export default function Blog() {
                 className="w-1/6 rounded-md border border-purple-200 shadow float "
               />
             </a>
+            <br />
+            <div className="flex justify-center items-center">
+              <Card sx={{ maxWidth: 340 }}>
+                <CardMedia
+                  sx={{ height: 440 }}
+                  image="https://res.cloudinary.com/dgzghl0ur/image/upload/v1719072766/portafolio/cia-portada_umjwyd.jpg"
+                  title="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    La CIA en Tlatelolco - Manuel Calleros Pavón
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    En 1968, la Guerra Fría había desencadenado conflictos
+                    armados en distintos puntos del planeta; lo que incrementaba
+                    el temor de Estados Unidos a que el comunismo se adoptara en
+                    los países latinoamericanos...{" "}
+                    <a
+                      href="https://www.amazon.com/dp/9509036773?tag=worldcat-20&linkCode=ogi&th=1&psc=1"
+                      className="text-blue-500"
+                    >
+                      seguir leyendo.
+                    </a>
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <Button
+                    size="small"
+                    href="https://www.amazon.com/dp/9509036773?tag=worldcat-20&linkCode=ogi&th=1&psc=1"
+                  >
+                    Comprar
+                  </Button>
+                  <Button size="small">Mas Libros</Button>
+                </CardActions>
+              </Card>
+            </div>
           </div>
+          <br />
 
           <br />
           <Stack spacing={2}>
