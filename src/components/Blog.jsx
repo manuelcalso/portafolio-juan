@@ -222,11 +222,17 @@ export default function Blog() {
                 Native y creando experiencias móviles innovadoras que cautiven a
                 los usuarios.
                 <br />
+                He avanzado significativamente en el desarrollo de proyectos
+                móviles tanto en Android como en iOS, utilizando la versatilidad
+                de React Native. Mi objetivo es continuar innovando y
+                perfeccionando la experiencia del usuario
                 <br />
-                Creo firmemente en la capacidad del desarrollo web y móvil para
-                transformar ideas en soluciones tangibles y experiencias
-                memorables. Mi portafolio es un reflejo de mi pasión por
-                fusionar las últimas tecnologías.
+                ¿Listo para llevar tu negocio al siguiente nivel digital? Da
+                click en el boton de cotizacion --------------{">"}
+                <br />
+                Realizamos tu pagina web, tu app movil para Android o IOS,
+                campañas de publicidad en GoogleAds y servicios backend, bases
+                de datos y más!
                 <br />
                 <br />
                 Gracias por visitar mi espacio virtual.
@@ -286,9 +292,9 @@ export default function Blog() {
       <div className="bg-gradient-to-t from-gray-200 to-white mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className=" text-center ">
-            <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
-              <span className="texto-animado">Proyectos</span>
-            </h2>
+            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium vibrate-1">
+              Proyectos
+            </h1>
           </div>
           <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 text-focus-in">
             {posts.map((post) => (
@@ -444,13 +450,12 @@ export default function Blog() {
             </div>
           </div>
           <br />
-
           <br />
           <Stack spacing={2}>
             <div className="flex-col">
-              <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium">
+              <h1 className="text-4xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium flex justify-center pulse">
                 <span className="texto-animado">Apps Moviles</span>
-              </h2>
+              </h1>
               <br />
               <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
                 <div>
@@ -500,40 +505,40 @@ export default function Blog() {
         <br />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <br />
-          <h2 className="text-center text-3xl font-semibold leading-8 text-gray-900 texto-animado kalnia-medium ">
+          <h1 className="text-center text-4xl font-semibold leading-8 text-black kalnia-medium vibrate-1 ">
             Tecnologias
-          </h2>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 text-focus-in">
+          </h1>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 focus ">
             <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689857/portafolio/html-5-logo.219x256_kqmcuh.png"
               alt="html"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 bounce"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689905/portafolio/css3.224x256_nnijyp.png"
               alt="css"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689992/portafolio/javascript-js-square.256x256_njlvjw.png"
               alt="js"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 pulse"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689725/portafolio/git_xlcgvs.png"
               alt="github"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689802/portafolio/react.256x228_glbkik.png"
               alt="react"
               width={158}
@@ -541,41 +546,41 @@ export default function Blog() {
             />
 
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690110/portafolio/database-mongo-db.245x256_by2fw7.png"
               alt="mongodb"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690706/portafolio/node-js.256x158_utu2j4.png"
               alt="node"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690810/portafolio/tailwindcss.256x154_vzjono.png"
               alt="tailwind"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690985/portafolio/chartjs.222x256_njmg0r.png"
               alt="chartjs"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702691353/portafolio/express-original-wordmark.256x58_bhywjm.png"
               alt="expresss"
               width={158}
               height={48}
             />
-            <div className=" flex items-center justify-center">
+            <div className=" flex items-center justify-center bounce">
               <svg
                 fill="none"
                 height="100"
@@ -590,7 +595,7 @@ export default function Blog() {
               </svg>
             </div>
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
               src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702691462/portafolio/brand-vscode.243x256_zayqkk.png"
               alt="vscode"
               width={158}

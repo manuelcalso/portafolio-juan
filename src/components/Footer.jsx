@@ -39,7 +39,7 @@ export default function Footer() {
         <img
           src="https://res.cloudinary.com/dgzghl0ur/image/upload/c_crop,ar_16:9/v1718431406/portafolio/Let_s_work_together__transparent_kvxoul.png"
           alt="work together logo"
-          className="w-1/2"
+          className="w-1/2 vibrate-1"
         />
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
