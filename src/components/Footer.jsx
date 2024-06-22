@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 
+
 const navigation = {
   main: [{ name: "Contacto", href: "/" }],
   social: [
@@ -21,6 +22,7 @@ const navigation = {
 };
 
 export default function Footer() {
+ 
   return (
     <section className="bg-yellow-100">
       <div className="video-background">
@@ -34,6 +36,9 @@ export default function Footer() {
         </video>
         <div />
       </div>
+
+     
+
       <div className="px-auto py-2 sm:py-20 lg:px-8">
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"

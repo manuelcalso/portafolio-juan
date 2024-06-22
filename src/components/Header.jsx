@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Footer from "./Footer";
+import WhatsAppFAB from "./WhatsAppFAB";
+
 const navigation = [
   { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
@@ -11,7 +13,7 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about">
+    <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about">      
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8  "
         aria-label="Global"
@@ -40,8 +42,7 @@ export default function Header() {
                     <span>l</span>
                     <span>i</span>
                     <span>s</span>
-                    <span>h</span>
-                    {' '}                    
+                    <span>h</span>{" "}
                   </p>
                 ) : (
                   item.name
@@ -123,7 +124,7 @@ export default function Header() {
                     <span>l</span>
                     <span>i</span>
                     <span>s</span>
-                    <span>h</span>                           
+                    <span>h</span>
                   </p>
                 ) : (
                   item.name
