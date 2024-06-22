@@ -1,7 +1,7 @@
 import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
-import "../../src/index.css"
+import "../../src/index.css";
 const posts = [
   {
     id: 0,
@@ -399,6 +399,7 @@ export default function Blog() {
               />
             </a>
           </div>
+
           <br />
           <Stack spacing={2}>
             <div className="flex-col">

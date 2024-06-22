@@ -16,9 +16,15 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="fixed bottom-4 right-4 z-50">
-        <Fab color="primary" aria-label="whatsapp" onClick={handleClick}>
+      <div className="fixed bottom-40 right-5 z-50 w-28 flex justify-center items-center bg-[#2E7D32] hover:bg-[#1B5E20] rounded-lg heartbeat">
+        <Fab
+          color="success"
+          aria-label="whatsapp"
+          size="medium"
+          onClick={handleClick}
+        >
           <WhatsAppIcon />
+          <p>cotizacion</p>
         </Fab>
       </div>
       <Blog />

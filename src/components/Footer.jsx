@@ -1,7 +1,6 @@
 import React from "react";
 import "../index.css";
 
-
 const navigation = {
   main: [{ name: "Contacto", href: "/" }],
   social: [
@@ -22,7 +21,6 @@ const navigation = {
 };
 
 export default function Footer() {
- 
   return (
     <section className="bg-yellow-100">
       <div className="video-background">
@@ -37,17 +35,20 @@ export default function Footer() {
         <div />
       </div>
 
-     
-
-      <div className="px-auto py-2 sm:py-20 lg:px-8">
+      <div className="px-auto flex flex-col justify-center items-center">
+        <img
+          src="https://res.cloudinary.com/dgzghl0ur/image/upload/c_crop,ar_16:9/v1718431406/portafolio/Let_s_work_together__transparent_kvxoul.png"
+          alt="work together logo"
+          className="w-1/2"
+        />
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
           aria-label="Footer"
         >
-          {navigation.main.map((item) => (
+          {navigation.main.map((item, i) => (
             <>
               <div
-                key={item.id}
+                key={item.id + i}
                 className="pb-4 flex justify-center itmes-center "
               >
                 <a
@@ -56,12 +57,8 @@ export default function Footer() {
                 >
                   {item.name}
                 </a>
-                <div className=" flex justify-around items-center text-black  font-bold ">
-                  <img
-                    src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718431406/portafolio/Let_s_work_together__transparent_kvxoul.png"
-                    alt="work together logo"
-                    className="w-1/4"
-                  />
+
+                <div className=" flex justify-center items-center text-black  font-bold ">
                   <div className=" flex-col justify-evenly px-5 py-2 shadow-xl border border-gray-400 rounded-md">
                     <p className="kalnia-medium text-2xl">
                       <span className="italic kalnia-light">Correo:</span>{" "}
@@ -82,7 +79,7 @@ export default function Footer() {
             </>
           ))}
         </nav>
-        <div className="mt-0 flex justify-around items-center space-x-5 rounded-b-md slit-in-vertical bg-gray-300 slide-in-top shadow-md">
+        <div className="mt-0 flex justify-around items-center space-x-5 rounded-b-md slit-in-vertical bg-gray-300 slide-in-top shadow-lg">
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -96,6 +93,7 @@ export default function Footer() {
               />
             </a>
           ))}
+
           <div>
             <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
               <svg
