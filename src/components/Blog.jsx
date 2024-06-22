@@ -204,21 +204,20 @@ export default function Blog() {
                 habilidades técnicas.
                 <br />
                 <br />
-                En lo que va del 2024, estoy terminando el desarrollo de mis
-                primeros proyectos en Android y iOS utilizando React Native.
-                Esta tecnología me brinda la capacidad de crear aplicaciones
-                móviles de alta calidad de manera eficiente, aprovechando mi
-                experiencia en desarrollo web y llevándola al mundo de las
-                aplicaciones nativas. Estoy explorando las posibilidades que
-                ofrece React Native y creando experiencias móviles innovadoras
-                que cautiven a los usuarios.
+                En lo que va del 2024, estoy terminando el desarrollo de
+                proyectos en Android y iOS utilizando React Native. Esta
+                tecnología me brinda la capacidad de crear aplicaciones móviles
+                de alta calidad de manera eficiente, aprovechando mi experiencia
+                en desarrollo web y llevándola al mundo de las aplicaciones
+                nativas. Estoy explorando las posibilidades que ofrece React
+                Native y creando experiencias móviles innovadoras que cautiven a
+                los usuarios.
                 <br />
                 <br />
                 Creo firmemente en la capacidad del desarrollo web y móvil para
                 transformar ideas en soluciones tangibles y experiencias
                 memorables. Mi portafolio es un reflejo de mi pasión por
-                fusionar los principios empresariales con las últimas
-                tecnologías web.
+                fusionar las últimas tecnologías.
                 <br />
                 <br />
                 Gracias por visitar mi espacio virtual.
