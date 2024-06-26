@@ -494,34 +494,17 @@ export default function Blog() {
                     </a>
                   </div>
                 </div>
-                {!project.title === "Restaurant App" ? (
-                  <video
-                    key={project.videoSrc}
-                    autoPlay
-                    muted
-                    loop
-                    controls
-                    className="video shadow"
-                  >
-                    <source src={project.videoSrc} type="video/mp4" />
-                  </video>
-                ): (
-                  
-                  <video
-                    key={project.videoSrc}
-                    autoPlay
-                    muted
-                    loop
-                    controls
-                    className="video shadow  flex justify-center"
-                  >
-                    <source src={project.videoSrc} type="video/mp4" />
-                  </video>
 
-
-
-
-                )}
+                <video
+                  key={project.videoSrc}
+                  autoPlay
+                  muted
+                  loop
+                  controls
+                  className="video shadow"
+                >
+                  <source src={project.videoSrc} type="video/mp4" />
+                </video>
               </div>
             </div>
             <Pagination
