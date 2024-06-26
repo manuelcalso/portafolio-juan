@@ -17,7 +17,7 @@ const posts = [
     title: "Ejercicio espejo de Spotify",
     href: "https://manuelcalso.github.io/JuanRetoSemana2.github.io/",
     description:
-      "En este proyecto se ejercito el uso de HTML, CSS para el maquetado, tomando como ejemplo la pagina landing de spotify Mexico.",
+      "En este proyecto se ejercito el uso de HTML, CSS para el maquetado, tomando como ejemplo la pagina landing de spotify Mexico.(No Responsivo)",
     imageUrl:
       "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702681729/portafolio/spoty_vu6oeu.jpg",
     date: "Mayo 2023",
@@ -116,12 +116,12 @@ const posts = [
   },
   {
     id: 6,
-    title: "Pagina construccion",
-    href: "https://construccionaf.vercel.app",
+    title: "Nido Bacalar",
+    href: "https://nidobacalar.vercel.app",
     description:
-      "Desarrollo de una pagina web de ecommerce enfocada a la construccion, frontend fabricado con Astro + React, incluye tambien IA para contenido general.",
+      "Desarrollo de una pagina web de ecommerce enfocada en la reservacion e informacion hotelera, frontend fabricado con Astro + React, incluye tambien IA para contenido general. (sitio en constuccion)",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1718414121/portafolio/Captura_de_pantalla_2024-06-14_a_la_s_7.12.06_p.m._skitc1.png",
+      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1719436837/Captura_de_pantalla_2024-06-26_a_la_s_3.19.36_p.m._m7ioqj.png",
     date: "2024 - current days",
     datetime: "2024-06-14",
     author: {
@@ -133,6 +133,17 @@ const posts = [
   },
 ];
 const projects = [
+  {
+    title: "Citas Veterinaria",
+    description: `
+      App desarrollada para crear y organizar citas veterinarias.
+      En esta app el usuario dueño del negocio puede agregar nuevas citas programadas y tener un control a traves del nombre de la mascota, nombre del propietario, email, telefono fecha de cita y sintomas, area donde puede colocar detalles sobre el paciente y la futura cita veterinaria.
+    `,
+    extra: "App con actualizacion de dependencias y componentes del curso",
+    link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
+    videoSrc:
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4",
+  },
   {
     title: "Citas Veterinaria",
     description: `
@@ -357,7 +368,7 @@ export default function Blog() {
                   </a>
                   <br />
 
-                  {post.title === "Pagina construccion" ? (
+                  {post.title === "Nido Bacalar" ? (
                     <p
                       className="border-dotted border-2 border-yellow-500 flex justify-center rounded-full elevation-4 font-bold
                     "
