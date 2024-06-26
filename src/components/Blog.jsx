@@ -134,26 +134,35 @@ const posts = [
 ];
 const projects = [
   {
-    title: "Citas Veterinaria",
+    title: "Restaurant App",
     description: `
-      App desarrollada para crear y organizar citas veterinarias.
-      En esta app el usuario dueño del negocio puede agregar nuevas citas programadas y tener un control a traves del nombre de la mascota, nombre del propietario, email, telefono fecha de cita y sintomas, area donde puede colocar detalles sobre el paciente y la futura cita veterinaria.
+      En esta app desarrollamos una aplicacion movil para los clientes, donde pueden revisar el menu, generar ordenes, por otro lado tenemos una aplicacion web para la administracion del Menu,
+      asi como otro apartado para las ordenes, las dos aplicaciones se comunican en tiempo real usando una base de datos de Firebase,
     `,
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4",
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1719439257/Grabaci%C3%B3n_de_pantalla_2024-06-26_a_la_s_2.00.28_p.m._o4argq.mp4",
   },
   {
-    title: "Citas Veterinaria",
+    title: "Cotizador de criptomonedas",
     description: `
-      App desarrollada para crear y organizar citas veterinarias.
-      En esta app el usuario dueño del negocio puede agregar nuevas citas programadas y tener un control a traves del nombre de la mascota, nombre del propietario, email, telefono fecha de cita y sintomas, area donde puede colocar detalles sobre el paciente y la futura cita veterinaria.
+      Las criptomonedas han llegado para quedarse, con esta app podras cotizar su precio en tiempo real ya que es soportado con servicios API los cuales lo mantienen al dia. Proximamente en google play store
     `,
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4",
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716574935/portafolio/criptomonedas_pc6hho_bqjyc6.mp4",
+  },
+  {
+    title: "App de alojamiento",
+    description: `
+      Apps como Airbnb es trabajo de grandes equipos de desarrollo, sin embargo esta app funciona muy bien para generar reservaciones y promocionar tus habitaciones, Ademas que es totalmente personalizable y facil de usar, proximamente en google app store
+    `,
+    extra: "App con actualizacion de dependencias y componentes del curso",
+    link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
+    videoSrc:
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716575024/portafolio/Hospedajes_lfcepk_m9lsn1.mp4",
   },
   {
     title: "Planificador de Gastos",
@@ -167,24 +176,15 @@ const projects = [
       "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716408014/portafolio/planificador_gastos_uofplz.mp4",
   },
   {
-    title: "App de alojamiento",
+    title: "Citas Veterinaria",
     description: `
-      Apps como Airbnb es trabajo de grandes equipos de desarrollo, sin embargo esta app funciona muy bien para generar reservaciones y promocionar tus habitaciones, Ademas que es totalmente personalizable y facil de usar, proximamente en google app store
+      App desarrollada para crear y organizar citas veterinarias.
+      En esta app el usuario dueño del negocio puede agregar nuevas citas programadas y tener un control a traves del nombre de la mascota, nombre del propietario, email, telefono fecha de cita y sintomas, area donde puede colocar detalles sobre el paciente y la futura cita veterinaria.
     `,
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716575024/portafolio/Hospedajes_lfcepk_m9lsn1.mp4",
-  },
-  {
-    title: "Cotizador de criptomonedas",
-    description: `
-      Las criptomonedas han llegado para quedarse, con esta app podras cotizar su precio en tiempo real ya que es soportado con servicios API los cuales lo mantienen al dia. Proximamente en google play store
-    `,
-    extra: "App con actualizacion de dependencias y componentes del curso",
-    link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
-    videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716574935/portafolio/criptomonedas_pc6hho_bqjyc6.mp4",
+      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4",
   },
 ];
 
@@ -494,16 +494,34 @@ export default function Blog() {
                     </a>
                   </div>
                 </div>
-                <video
-                  key={project.videoSrc}
-                  autoPlay
-                  muted
-                  loop
-                  controls
-                  className="video shadow"
-                >
-                  <source src={project.videoSrc} type="video/mp4" />
-                </video>
+                {!project.title === "Restaurant App" ? (
+                  <video
+                    key={project.videoSrc}
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    className="video shadow"
+                  >
+                    <source src={project.videoSrc} type="video/mp4" />
+                  </video>
+                ): (
+                  
+                  <video
+                    key={project.videoSrc}
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    className="video shadow  flex justify-center"
+                  >
+                    <source src={project.videoSrc} type="video/mp4" />
+                  </video>
+
+
+
+
+                )}
               </div>
             </div>
             <Pagination
