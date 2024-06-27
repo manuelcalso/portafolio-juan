@@ -17,7 +17,7 @@ const posts = [
     title: "Ejercicio espejo de Spotify",
     href: "https://manuelcalso.github.io/JuanRetoSemana2.github.io/",
     description:
-      "En este proyecto se ejercito el uso de HTML, CSS para el maquetado, tomando como ejemplo la pagina landing de spotify Mexico.(No Responsivo)",
+      "En este proyecto se ejercito el uso de HTML, CSS para el maquetado, tomando como ejemplo la pagina landing de spotify Mexico.*(No Responsivo)",
     imageUrl:
       "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702681729/portafolio/spoty_vu6oeu.jpg",
     date: "Mayo 2023",
@@ -300,6 +300,7 @@ export default function Blog() {
           </div>
         </div>
       </div>
+      <br />
       <div className="bg-gradient-to-t from-gray-200 to-white mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className=" text-center ">
@@ -468,7 +469,7 @@ export default function Blog() {
                 <span className="texto-animado">Apps Moviles</span>
               </h1>
               <br />
-              <div className="flex border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
+              <div className="flex flex-col border border-gray-500 bg-[#c9c9c9] rounded-md shadow-xl app-container">
                 <div>
                   <h1 className="text-black kalnia-medium text-3xl text-shadow-white text-center">
                     {project.title}
@@ -494,25 +495,30 @@ export default function Blog() {
                     </a>
                   </div>
                 </div>
-
-                <video
-                  key={project.videoSrc}
-                  autoPlay
-                  muted
-                  loop
-                  controls
-                  className="video shadow"
-                >
-                  <source src={project.videoSrc} type="video/mp4" />
-                </video>
+                <div className="flex-row justify-center items-center">
+                  <video
+                    key={project.videoSrc}
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    className="video shadow"
+                  >
+                    <source src={project.videoSrc} type="video/mp4" />
+                  </video>
+                </div>
               </div>
             </div>
-            <Pagination
-              count={projects.length}
-              page={page}
-              onChange={handleChange}
-            />
+            <div className="flex justify-center items-center">
+              <Pagination
+                count={projects.length}
+                page={page}
+                onChange={handleChange}
+                style={{ fontWeight: 900, fontSize: "large" }}
+              />
+            </div>
           </Stack>
+          <br />
         </div>
         <br />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
