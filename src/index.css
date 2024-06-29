@@ -491,11 +491,10 @@
   animation: vibrate-1 2.3s linear infinite both;
 }
 
-
 .float {
-  transition: .5s, color .10s;
-  -webkit-transition: .5s, color .10s;
-  -moz-transition: .5s, color .10s;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .float:hover {
@@ -504,8 +503,6 @@
   -webkit-transform: translate(0px, 5px);
   -moz-transform: translate(0px, 5px);
 }
-
-
 
 .video-background {
   position: fixed;
@@ -525,7 +522,6 @@
   margin: 1vw;
   border: 4 px solid #000;
   box-shadow: 3 px 3 px #797979;
-
 }
 
 .text-app {
@@ -556,6 +552,15 @@
   font-size: 2vw;
 }
 
+.custom-gradient {
+  background: rgb(0, 252, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 252, 255, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
 @media screen and (max-width: 510px) {
   .video {
     width: auto;
@@ -580,6 +585,4 @@
   .app-container {
     flex-direction: column;
   }
-
-
 }
