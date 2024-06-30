@@ -17,6 +17,16 @@ export const fetchWeatherData = async () => {
         const weatherContainer = document.querySelector(".weather");
         const icon = data.weather[0].icon;
         const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+
+        const temperature = data.main.temp;
+        if (temperature < 15) {
+          weatherContainer.style.backgroundColor = "blue";
+        } else if (temperature > 20) {
+          weatherContainer.style.backgroundColor = "orange";
+        } else if (temperature > 25) {
+          weatherContainer.style.backgroundColor = "red";
+        }
+
         weatherContainer.innerHTML = `<div class="weather-section">
         <h1>El clima en ${data.name}</h1>
         <p>${data.main.temp} °C</p>
