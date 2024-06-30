@@ -1,10 +1,11 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Blog from "./Blog";
-import WhatsAppFAB from "./WhatsAppFAB";
+import React, { useEffect } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Blog from "./components/Blog";
+import WhatsAppFAB from "./components/WhatsAppFAB";
 import Fab from "@mui/material/Fab";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { fetchWeatherData } from "../apis/fetchWeatherData";
 
 export default function Home() {
   const phoneNumber = "525544475622"; // Reemplaza con tu número de teléfono
@@ -13,6 +14,10 @@ export default function Home() {
     const url = `https://wa.me/${phoneNumber}`;
     window.open(url, "_blank");
   };
+
+  useEffect(() => {
+    fetchWeatherData();
+  }, []);
   return (
     <>
       <Header />
@@ -28,7 +33,8 @@ export default function Home() {
         </Fab>
       </div>
       <Blog />
-      <Footer />{" "}
+      <div className="weather"></div>
+      <Footer />
     </>
   );
 }

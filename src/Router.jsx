@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./Home";
 import WhatsAppFAB from "./components/WhatsAppFAB";
 export default function Router() {
   return (
