@@ -570,6 +570,13 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.custom-gradient {
+  background: rgb(34, 193, 195);
+  background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+}
+
+
 @media screen and (max-width: 510px) {
   .video {
     width: auto;
