@@ -26,7 +26,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <section className="bg-yellow-100">
+    <section className="custom-gradient">
       <div className="video-background">
         <video autoPlay muted loop>
           <source
