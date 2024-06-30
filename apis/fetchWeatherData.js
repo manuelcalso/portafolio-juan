@@ -19,7 +19,7 @@ export const fetchWeatherData = async () => {
         const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
 
         const temperature = data.main.temp;
-        if (temperature < 15) {
+        if (temperature > 15) {
           weatherContainer.style.backgroundColor = "blue";
         } else if (temperature > 20) {
           weatherContainer.style.backgroundColor = "orange";
