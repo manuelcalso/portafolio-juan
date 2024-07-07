@@ -217,39 +217,93 @@ export default function Blog() {
               <span>e</span>
               <span>l</span> <span>Calleros...</span>
             </h1>
-            <p className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
-              <span>
+            <div className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
+            <p className="texto-animado">
                 ¡Bienvenido a mi portafolio! Soy un administrador de empresas
-                con una apasionante dedicación al desarrollo web full stack. Mi
-                enfoque se caracteriza por una actitud positiva, creatividad y
-                habilidades técnicas.
+                quien encontró su pasión en el{" "}
+                <span className="text-yellow-300">
+                  desarrollo de aplicaciones web y móviles{" "}
+                </span>{" "}
+                nivel fullstack. Cursé el bootcamp de desarrollo web fullstack
+                en 2023 el cual se basa en proyectos con React, Node.js,
+                Express.js, MongoDB, también bases de Next.js todo con librerías
+                como, Tailwind, Bootstrap, MaterialUI, Bulma, entre otros, sin
+                embargo, desde la pandemia de 2020 incluso antes había generado
+                mis primeras maquetas en HTML, CSS y JavaScript.
+                <br />
+                <picture>
+                  <img
+                    src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1720331929/portafolio/diploma-ucamp_nhsmfl.jpg"
+                    alt="Diploma Ucamp"
+                    className="rounded-lg shadow-lg"
+                  />
+                </picture>
+                <br />
+                Mi enfoque se caracteriza por una actitud positiva, creatividad
+                y habilidades técnicas, basado en la búsqueda de soluciones y
+                análisis de problemas con metodologías agiles como ITIL, PMBOK y
+                Scrum, conocimientos adquiridos en Universidad TecMilenio previo
+                al bootcamp.
                 <br />
                 <br />
-                En lo que va del 2024, estoy terminando el desarrollo de
-                proyectos en Android y iOS utilizando React Native. Esta
-                tecnología me brinda la capacidad de crear aplicaciones móviles
-                de alta calidad de manera eficiente, aprovechando mi experiencia
-                en desarrollo web y llevándola al mundo de las aplicaciones
-                nativas. Estoy explorando las posibilidades que ofrece React
-                Native y creando experiencias móviles innovadoras que cautiven a
-                los usuarios.
+                En este 2024, continuo con mi preparación en el área móvil,
+                terminando el curso de en{" "}
+                <span className="text-yellow-300">Udemy</span> de Juan Pablo De
+                la torre Valdez, basado en React Native adaptándose para Android
+                o iOS como sistemas operativos, en este curso abarcamos
+                diferentes dependencias y librerías las cuales busque
+                alternativas de solución a errores en actualizaciones y
+                adaptaciones de arranque que se ajustaran a diferentes
+                emuladores para iOS y para Android Studio.
                 <br />
-                He avanzado significativamente en el desarrollo de proyectos
-                móviles tanto en Android como en iOS, utilizando la versatilidad
-                de React Native. Mi objetivo es continuar innovando y
-                perfeccionando la experiencia del usuario
+                <p>Esto fue algo de lo aprendido</p>
+                <picture>
+                  <img
+                    src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1720332517/portafolio/aprendido-react-native_bu8bls.jpg"
+                    alt="aptitudes curso udemy"
+                    className="rounded-lg shadow-lg"
+                  />
+                </picture>
                 <br />
-                ¿Listo para llevar tu negocio al siguiente nivel digital? Da
-                click en el boton de cotizacion --------------{">"}
+                Seria gratificante poder trabajar en proyectos colaborativos y
+                poder desarrollar emociones o ideas al cliente final con el
+                producto terminado, por lo que, si eres{" "}
+                <span className="text-yellow-300">reclutador</span> bueno,
+                comentar que soy comprometido, responsable, enfocado; por lo que
+                te pido me contactes si crees que pueda colaborar con un perfil
+                disponible.
+                <br />Y si entraste para conocer mis proyectos, buscas algún
+                proyecto específico que te gustaría{" "}
+                <span className="text-yellow-300">
+                  desarrollar para tu negocio
+                </span>
+                , no dudes en contactarme y explorar las opciones para
+                posicionar e impulsar tus ideas de negocio.
                 <br />
-                Realizamos tu pagina web, tu app movil para Android o IOS,
-                campañas de publicidad en GoogleAds y servicios backend, bases
-                de datos y más!
+                En este sitio utilizamos solo algunas áreas con secciones
+                comerciales, si te gustaría implementar anuncios publicitarios
+                en{" "}
+                <span className="text-yellow-300">
+                  {" "}
+                  tu sitio web y monetizarlo
+                </span>{" "}
+                o poder generar campañas publicitarias para conocer tu nicho de
+                mercado, ¡de igual forma contáctame y empecemos!
                 <br />
                 <br />
-                Gracias por visitar mi espacio virtual.
-              </span>
-            </p>
+                Se aceptan aportaciones voluntarias{" "}
+                <a
+                  href="https://buy.stripe.com/4gwcOy6TXfnc7jG4gg"
+                  className="text-yellow-300"
+                >
+                  <span> a</span>
+                  <span>q</span>
+                  <span>u</span>
+                  <span>i</span>
+                </a>{" "}
+                o al final, ¡gracias y por tu visita!
+              </p>
+            </div>
           </div>
           <div className="mt-14 flex justify-end gap-6 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0 ">
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">

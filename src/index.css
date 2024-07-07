@@ -242,7 +242,7 @@
 .texto-animado span {
   display: inline-block;
   transform-origin: bottom;
-  animation: fadeInText 15s ease-out infinite;
+  animation: fadeInText 5s ease-out infinite;
   opacity: 0;
 }
 
@@ -491,11 +491,10 @@
   animation: vibrate-1 2.3s linear infinite both;
 }
 
-
 .float {
-  transition: .5s, color .10s;
-  -webkit-transition: .5s, color .10s;
-  -moz-transition: .5s, color .10s;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .float:hover {
@@ -504,8 +503,6 @@
   -webkit-transform: translate(0px, 5px);
   -moz-transform: translate(0px, 5px);
 }
-
-
 
 .video-background {
   position: fixed;
@@ -525,7 +522,6 @@
   margin: 1vw;
   border: 4 px solid #000;
   box-shadow: 3 px 3 px #797979;
-
 }
 
 .text-app {
@@ -563,20 +559,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .weather-section p {
   font-size: 48px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .custom-gradient {
   background: rgb(34, 193, 195);
-  background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
 }
-
 
 @media screen and (max-width: 510px) {
   .video {
@@ -605,8 +602,6 @@
 
   .weather-section p {
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
   }
-
-
 }

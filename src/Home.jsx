@@ -7,6 +7,7 @@ import Fab from "@mui/material/Fab";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { fetchWeatherData } from "../apis/fetchWeatherData";
 
+
 export default function Home() {
   const phoneNumber = "525544475622"; // Reemplaza con tu número de teléfono
 

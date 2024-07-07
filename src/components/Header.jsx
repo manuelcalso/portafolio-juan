@@ -3,17 +3,17 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Footer from "./Footer";
 import WhatsAppFAB from "./WhatsAppFAB";
+import Stacked from "./Stacked";
 
 const navigation = [
   { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
-  { name: "MujerMovil", href: "https://mujermovilnext.netlify.app" },
   { name: "English version", href: "https://juancalleros.vercel.app/" },
 ];
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about">      
+    <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8  "
         aria-label="Global"
@@ -26,7 +26,8 @@ export default function Header() {
           />
         </a>
         <div className="flex ">
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-12 items-center">
+            <Stacked />
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -35,7 +36,7 @@ export default function Header() {
                 className="text-2xl slide float p-2 rounded-full hover:bg-green-800 hover:text-white hover:text-3xl hover:tracking-widest"
               >
                 {item.name === "English version" ? (
-                  <p className="text-blue-500 hover:text-white texto-animado">
+                  <p className=" texto-animado">
                     <span>E</span>
                     <span>n</span>
                     <span>g</span>
@@ -50,6 +51,7 @@ export default function Header() {
               </a>
             ))}
           </div>
+
           <div className="flex lg:hidden p-1">
             <button
               type="button"
@@ -114,10 +116,10 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
+                className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black hover:text-white text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
               >
                 {item.name === "English version" ? (
-                  <p className="text-blue-500 hover:text-white hover:text-3xl texto-animado text-2xl p-0 m-0">
+                  <p className=" hover:text-3xl texto-animado text-2xl p-0 m-0">
                     <span>E</span>
                     <span>n</span>
                     <span>g</span>
