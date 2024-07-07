@@ -8,7 +8,7 @@ import Stacked from "./Stacked";
 const navigation = [
   { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
-  { name: "Hello CATaaS", href: "https://cat-service.netlify.app/" },
+  { name: "CATaaS", href: "https://cat-service.netlify.app/" },
   { name: "English version", href: "https://juancalleros.vercel.app/" },
 ];
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
       >
         <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
           <img
-            src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718419676/portafolio/Manuel_Calleros_transparent_bcelia.png"
+            src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1719624598/Manuel_Calleros_transparent_oq6f5l.png"
             alt="manuel calleros logo"
             className="w-40 slide p-0 m-0"
           />

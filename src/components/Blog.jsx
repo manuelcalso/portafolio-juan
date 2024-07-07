@@ -309,8 +309,8 @@ export default function Blog() {
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">
               <div className="relative slide ">
                 <img
-                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1718569093/portafolio/IMG_0493_zhrgwg.jpg"
-                  alt=""
+                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1717713721/portafolio/1688101018202_epuwxy.jpg"
+                  alt="foto de frente"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -320,7 +320,7 @@ export default function Blog() {
               <div className="relative slide">
                 <img
                   src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702675158/portafolio/volaris_aaonio.jpg"
-                  alt=""
+                  alt="foto volaris"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -328,7 +328,7 @@ export default function Blog() {
               <div className="relative pulse">
                 <img
                   src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702675336/portafolio/tec_arlqda.jpg"
-                  alt=""
+                  alt="titulo maestria"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -338,7 +338,7 @@ export default function Blog() {
               <div className="relative bounce">
                 <img
                   src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702675810/portafolio/office_s9qnt5.jpg"
-                  alt=""
+                  alt="cumple office depot"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -346,7 +346,7 @@ export default function Blog() {
               <div className="relative wobble">
                 <img
                   src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702677245/portafolio/softek_l2lbx1.jpg"
-                  alt=""
+                  alt="foto sofftek"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
