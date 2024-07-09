@@ -142,7 +142,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1719439257/Grabaci%C3%B3n_de_pantalla_2024-06-26_a_la_s_2.00.28_p.m._o4argq.mp4",
+      "https://storage.cloud.google.com/portafilo/Grabacio%CC%81n%20de%20pantalla%202024-06-26%20a%20la(s)%202.00.28%E2%80%AFp.m..mp4",
   },
   {
     title: "Cotizador de criptomonedas",
@@ -152,7 +152,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716574935/portafolio/criptomonedas_pc6hho_bqjyc6.mp4",
+      "https://storage.cloud.google.com/portafilo/criptomonedas.mp4",
   },
   {
     title: "App de alojamiento",
@@ -162,7 +162,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716575024/portafolio/Hospedajes_lfcepk_m9lsn1.mp4",
+      "https://storage.cloud.google.com/portafilo/Hospedajes.mp4",
   },
   {
     title: "Planificador de Gastos",
@@ -173,7 +173,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1716408014/portafolio/planificador_gastos_uofplz.mp4",
+      "https://storage.cloud.google.com/portafilo/planificador%20gastos.mp4",
   },
   {
     title: "Citas Veterinaria",
@@ -184,7 +184,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715959183/portafolio/CitasVeterinaria_qcgz5d.mp4",
+      "https://storage.cloud.google.com/portafilo/Citas%20Veterinaria.mp4",
   },
 ];
 
@@ -195,6 +195,7 @@ export default function Blog() {
   const handleChange = (event, value) => {
     setPage(value);
   };
+
   const project = projects[page - 1];
 
   return (
@@ -218,7 +219,7 @@ export default function Blog() {
               <span>l</span> <span>Calleros...</span>
             </h1>
             <div className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
-            <p className="texto-animado">
+              <p className="texto-animado">
                 ¡Bienvenido a mi portafolio! Soy un administrador de empresas
                 quien encontró su pasión en el{" "}
                 <span className="text-yellow-300">

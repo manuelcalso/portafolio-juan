@@ -41,7 +41,7 @@ export default function Footer() {
 
       <div className="px-auto flex flex-col justify-center items-center">
         <img
-          src="https://res.cloudinary.com/dgzghl0ur/image/upload/c_crop,ar_16:9/v1718431406/portafolio/Let_s_work_together__transparent_kvxoul.png"
+          src="https://storage.cloud.google.com/portafilo/Let's%20work%20together!_transparent.png"
           alt="work together logo"
           className="w-1/2 vibrate-1"
         />

@@ -21,7 +21,7 @@ export default function Header() {
       >
         <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
           <img
-            src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1719624598/Manuel_Calleros_transparent_oq6f5l.png"
+            src="https://storage.cloud.google.com/portafilo/Manuel%20Calleros_transparent.png"
             alt="manuel calleros logo"
             className="w-40 slide p-0 m-0"
           />

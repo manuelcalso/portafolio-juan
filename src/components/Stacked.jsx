@@ -18,15 +18,9 @@ import {
 const solutions = [
   {
     name: "Dev Tools",
-    description: "Obten herramientas de desarrollo",
+    description: "Obten herramientas de desarrollo, proximamente...",
     href: "#",
     icon: WrenchScrewdriverIcon,
-  },
-  {
-    name: "Engagement",
-    description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
   },
 ];
 
