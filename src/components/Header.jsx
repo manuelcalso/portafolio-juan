@@ -21,7 +21,7 @@ export default function Header() {
       >
         <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
           <img
-            src="https://storage.cloud.google.com/portafilo/Manuel%20Calleros_transparent.png"
+            src="https://storage.googleapis.com/portafilo/Manuel%20Calleros_transparent.png"
             alt="manuel calleros logo"
             className="w-40 slide p-0 m-0"
           />
@@ -97,7 +97,7 @@ export default function Header() {
               <span className="sr-only">Juan Portafolio</span>
               <img
                 className="h-10 w-auto rounded-full"
-                src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg"
+                src="https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg"
                 alt="juan logo"
               />
               Return
@@ -109,7 +109,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black hover:text-white text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
+                className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
               >
                 {item.name === "English version" ? (
                   <p className=" hover:text-3xl texto-animado text-2xl p-0 m-0">

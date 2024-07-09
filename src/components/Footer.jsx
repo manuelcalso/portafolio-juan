@@ -31,7 +31,7 @@ export default function Footer() {
         <video autoPlay muted loop>
           <source
             src={
-              "https://storage.cloud.google.com/portafilo/chichen.mp4"
+              "https://storage.googleapis.com/portafilo/chichen.mp4"
             }
             type="video/mp4"
           />
@@ -41,7 +41,7 @@ export default function Footer() {
 
       <div className="px-auto flex flex-col justify-center items-center">
         <img
-          src="https://storage.cloud.google.com/portafilo/Let's%20work%20together!_transparent.png"
+          src="https://storage.googleapis.com/portafilo/Let's%20work%20together!_transparent.png"
           alt="work together logo"
           className="w-1/2 vibrate-1"
         />
