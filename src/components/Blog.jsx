@@ -1,6 +1,5 @@
 import * as React from "react";
 import Pagination from "@mui/material/Pagination";
-import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import "../../src/index.css";
 
@@ -19,13 +18,13 @@ const posts = [
     description:
       "En este proyecto se ejercito el uso de HTML, CSS para el maquetado, tomando como ejemplo la pagina landing de spotify Mexico.*(No Responsivo)",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702681729/portafolio/spoty_vu6oeu.jpg",
+      "https://storage.cloud.google.com/portafilo/spoty_vu6oeu.jpg",
     date: "Mayo 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/JuanRetoSemana2.github.io/tree/main",
   },
@@ -42,7 +41,7 @@ const posts = [
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-landing-ventas-juan.github.io",
   },
@@ -53,13 +52,13 @@ const posts = [
     description:
       "En este proyecto realizamos una pagina CRUD(Create, Read, Update, Delete), se utiliza el maquetado con HTML5, CSS, javaScript, incluyendo responsive design, guardado la informacion en localStorage.",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702683091/portafolio/crud_pi7rtr.jpg",
+      "https://storage.cloud.google.com/portafilo/crud_pi7rtr.jpg",
     date: "Julio 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-dos-CRUD?tab=readme-ov-file",
   },
@@ -70,13 +69,13 @@ const posts = [
     description:
       "Se desarrollo una aplicacion web la cual tiene conexion a una API financiera y la generacion de una grafica utilizando Chart.js ",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702684064/portafolio/dashboard_zhu8yu.jpg",
+      "https://storage.cloud.google.com/portafilo/dashboard_zhu8yu.jpg",
     date: "Agosto-Septiembre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-dashbordapp/tree/master",
   },
@@ -87,13 +86,13 @@ const posts = [
     description:
       "Desarrollo de una aplicación que cuente con la presentación de un restaurante, su menú, información de contacto. Así mismo, se integra un sistema para que los clientes puedan reservar una mesa",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702687496/portafolio/restaurante_r7hlkc.jpg",
+      "https://storage.cloud.google.com/portafilo/restaurante_r7hlkc.jpg",
     date: "Octubre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/fullstack-proyecto-restaurante",
   },
@@ -104,13 +103,13 @@ const posts = [
     description:
       "Desarrollo de una pagina web de ecommerce fullstack, implementando el uso de Mongodb para la base de datos y Stripe para los metodos de pago",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689077/portafolio/pb_s25bkl.jpg",
+      "https://storage.cloud.google.com/portafilo/pb_s25bkl.jpg",
     date: "Noviembre-Diciembre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-ecommerce-fullstack/tree/master",
   },
@@ -121,13 +120,13 @@ const posts = [
     description:
       "Desarrollo de una pagina web de ecommerce enfocada en la reservacion e informacion hotelera, frontend fabricado con Astro + React, incluye tambien IA para contenido general. (sitio en constuccion)",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1719436837/Captura_de_pantalla_2024-06-26_a_la_s_3.19.36_p.m._m7ioqj.png",
+      "https://storage.cloud.google.com/portafilo/Nido.png",
     date: "2024 - current days",
     datetime: "2024-06-14",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702673530/portafolio/icono_tbcmzg.jpg",
+        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "",
   },
@@ -234,7 +233,7 @@ export default function Blog() {
                 <br />
                 <picture>
                   <img
-                    src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1720331929/portafolio/diploma-ucamp_nhsmfl.jpg"
+                    src="https://storage.cloud.google.com/portafilo/diploma-ucamp.JPG"
                     alt="Diploma Ucamp"
                     className="rounded-lg shadow-lg"
                   />
@@ -260,7 +259,7 @@ export default function Blog() {
                 <p>Esto fue algo de lo aprendido</p>
                 <picture>
                   <img
-                    src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1720332517/portafolio/aprendido-react-native_bu8bls.jpg"
+                    src="https://storage.cloud.google.com/portafilo/aprendido-react-native.JPG"
                     alt="aptitudes curso udemy"
                     className="rounded-lg shadow-lg"
                   />
@@ -310,7 +309,7 @@ export default function Blog() {
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">
               <div className="relative slide ">
                 <img
-                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1717713721/portafolio/1688101018202_epuwxy.jpg"
+                  src="https://storage.cloud.google.com/portafilo/Foto_flfttc.jpg"
                   alt="foto de frente"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -320,7 +319,7 @@ export default function Blog() {
             <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
               <div className="relative slide">
                 <img
-                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702675158/portafolio/volaris_aaonio.jpg"
+                  src="https://storage.cloud.google.com/portafilo/volaris_yjxpgu.jpg"
                   alt="foto volaris"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -328,7 +327,7 @@ export default function Blog() {
               </div>
               <div className="relative pulse">
                 <img
-                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702675336/portafolio/tec_arlqda.jpg"
+                  src="https://storage.cloud.google.com/portafilo/playa_mjsbep.jpg"
                   alt="titulo maestria"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -338,7 +337,7 @@ export default function Blog() {
             <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
               <div className="relative bounce">
                 <img
-                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702675810/portafolio/office_s9qnt5.jpg"
+                  src="https://storage.cloud.google.com/portafilo/office_s9qnt5.jpg"
                   alt="cumple office depot"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -346,7 +345,7 @@ export default function Blog() {
               </div>
               <div className="relative wobble">
                 <img
-                  src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702677245/portafolio/softek_l2lbx1.jpg"
+                  src="https://storage.cloud.google.com/portafilo/softek_l2lbx1.jpg"
                   alt="foto sofftek"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -550,7 +549,7 @@ export default function Blog() {
             <Card sx={{ maxWidth: 340 }}>
               <CardMedia
                 sx={{ height: 440 }}
-                image="https://res.cloudinary.com/dgzghl0ur/image/upload/v1719072766/portafolio/cia-portada_umjwyd.jpg"
+                image="https://storage.cloud.google.com/portafilo/cia-portada_umjwyd.jpg"
                 title="green iguana"
               />
               <CardContent>
@@ -591,35 +590,35 @@ export default function Blog() {
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 focus ">
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689857/portafolio/html-5-logo.219x256_kqmcuh.png"
+              src="https://storage.cloud.google.com/portafilo/html-5-logo.219x256_kqmcuh.png"
               alt="html"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 bounce"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689905/portafolio/css3.224x256_nnijyp.png"
+              src="https://storage.cloud.google.com/portafilo/css3.224x256_nnijyp.png"
               alt="css"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689992/portafolio/javascript-js-square.256x256_njlvjw.png"
+              src="https://storage.cloud.google.com/portafilo/javascript-js-square.256x256_njlvjw.png"
               alt="js"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 pulse"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689725/portafolio/git_xlcgvs.png"
+              src="https://storage.cloud.google.com/portafilo/git_xlcgvs.png"
               alt="github"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702689802/portafolio/react.256x228_glbkik.png"
+              src="https://storage.cloud.google.com/portafilo/react.256x228_glbkik.png"
               alt="react"
               width={158}
               height={48}
@@ -627,35 +626,35 @@ export default function Blog() {
 
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690110/portafolio/database-mongo-db.245x256_by2fw7.png"
+              src="https://storage.cloud.google.com/portafilo/database-mongo-db.245x256_agk32s.png"
               alt="mongodb"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690706/portafolio/node-js.256x158_utu2j4.png"
+              src="https://storage.cloud.google.com/portafilo/node-js.256x158_ybovdk.png"
               alt="node"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690810/portafolio/tailwindcss.256x154_vzjono.png"
+              src="https://storage.cloud.google.com/portafilo/tailwindcss.256x154_vzjono.png"
               alt="tailwind"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702690985/portafolio/chartjs.222x256_njmg0r.png"
+              src="https://storage.cloud.google.com/portafilo/chartjs.222x256_njmg0r.png"
               alt="chartjs"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702691353/portafolio/express-original-wordmark.256x58_bhywjm.png"
+              src="https://storage.cloud.google.com/portafilo/express-original-wordmark.256x58_bhywjm.png"
               alt="expresss"
               width={158}
               height={48}
