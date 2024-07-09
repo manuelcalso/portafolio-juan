@@ -31,7 +31,7 @@ export default function Footer() {
         <video autoPlay muted loop>
           <source
             src={
-              "https://res.cloudinary.com/dgzghl0ur/video/upload/v1715454284/portafolio/3591016-hd_1920_1080_30fps_c00tdi.mp4"
+              "https://storage.cloud.google.com/portafilo/chichen.mp4"
             }
             type="video/mp4"
           />

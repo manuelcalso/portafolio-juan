@@ -67,14 +67,6 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <a href="/" className="mr-3.5 slide">
-          <span className="sr-only">JuanCalleros.com</span>
-          <img
-            className="h-20 w-auto rounded-full"
-            src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1704476428/portafolio/Foto_flfttc.jpg"
-            alt="juan calleros img"
-          />
-        </a>
       </nav>
       <Dialog
         as="div"

@@ -515,9 +515,9 @@ export default function Blog() {
                       </span>
                       <img
                         src={
-                          "https://res.cloudinary.com/dgzghl0ur/image/upload/v1719625612/cursoRn_utsrqf_huuoxk.jpg"
+                          "https://storage.cloud.google.com/portafilo/cursoRn_utsrqf.jpg"
                         }
-                        alt=""
+                        alt="curso udemy"
                       />
                     </a>
                   </div>
