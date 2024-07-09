@@ -18,13 +18,13 @@ const posts = [
     description:
       "En este proyecto se ejercito el uso de HTML, CSS para el maquetado, tomando como ejemplo la pagina landing de spotify Mexico.*(No Responsivo)",
     imageUrl:
-      "https://storage.cloud.google.com/portafilo/spoty_vu6oeu.jpg",
+      "https://storage.googleapis.com/portafilo/spoty_vu6oeu.jpg",
     date: "Mayo 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/JuanRetoSemana2.github.io/tree/main",
   },
@@ -35,13 +35,13 @@ const posts = [
     description:
       "En este proyecto realizamos una langin page para una libreria, se utiliza el maquetado con HTML5 y CSS, incluyendo responsive design.",
     imageUrl:
-      "https://res.cloudinary.com/dgzghl0ur/image/upload/v1702682205/portafolio/libreria_yiuvw6.jpg",
+      "https://storage.googleapis.com/portafilo/libreria_yiuvw6.jpg",
     date: "Junio 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-landing-ventas-juan.github.io",
   },
@@ -52,13 +52,13 @@ const posts = [
     description:
       "En este proyecto realizamos una pagina CRUD(Create, Read, Update, Delete), se utiliza el maquetado con HTML5, CSS, javaScript, incluyendo responsive design, guardado la informacion en localStorage.",
     imageUrl:
-      "https://storage.cloud.google.com/portafilo/crud_pi7rtr.jpg",
+      "https://storage.googleapis.com/portafilo/crud_pi7rtr.jpg",
     date: "Julio 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-dos-CRUD?tab=readme-ov-file",
   },
@@ -69,13 +69,13 @@ const posts = [
     description:
       "Se desarrollo una aplicacion web la cual tiene conexion a una API financiera y la generacion de una grafica utilizando Chart.js ",
     imageUrl:
-      "https://storage.cloud.google.com/portafilo/dashboard_zhu8yu.jpg",
+      "https://storage.googleapis.com/portafilo/dashboard_zhu8yu.jpg",
     date: "Agosto-Septiembre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-dashbordapp/tree/master",
   },
@@ -86,13 +86,13 @@ const posts = [
     description:
       "Desarrollo de una aplicación que cuente con la presentación de un restaurante, su menú, información de contacto. Así mismo, se integra un sistema para que los clientes puedan reservar una mesa",
     imageUrl:
-      "https://storage.cloud.google.com/portafilo/restaurante_r7hlkc.jpg",
+      "https://storage.googleapis.com/portafilo/restaurante_r7hlkc.jpg",
     date: "Octubre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/fullstack-proyecto-restaurante",
   },
@@ -103,13 +103,13 @@ const posts = [
     description:
       "Desarrollo de una pagina web de ecommerce fullstack, implementando el uso de Mongodb para la base de datos y Stripe para los metodos de pago",
     imageUrl:
-      "https://storage.cloud.google.com/portafilo/pb_s25bkl.jpg",
+      "https://storage.googleapis.com/portafilo/pb_s25bkl.jpg",
     date: "Noviembre-Diciembre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-ecommerce-fullstack/tree/master",
   },
@@ -120,13 +120,13 @@ const posts = [
     description:
       "Desarrollo de una pagina web de ecommerce enfocada en la reservacion e informacion hotelera, frontend fabricado con Astro + React, incluye tambien IA para contenido general. (sitio en constuccion)",
     imageUrl:
-      "https://storage.cloud.google.com/portafilo/Nido.png",
+      "https://storage.googleapis.com/portafilo/Nido.png",
     date: "2024 - current days",
     datetime: "2024-06-14",
     author: {
       name: "Juan Calleros",
       imageUrl:
-        "https://storage.cloud.google.com/portafilo/icono_tbcmzg.jpg",
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "",
   },
@@ -141,7 +141,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://storage.cloud.google.com/portafilo/Grabacio%CC%81n%20de%20pantalla%202024-06-26%20a%20la(s)%202.00.28%E2%80%AFp.m..mp4",
+      "https://storage.googleapis.com/portafilo/Grabacio%CC%81n%20de%20pantalla%202024-06-26%20a%20la(s)%202.00.28%E2%80%AFp.m..mp4",
   },
   {
     title: "Cotizador de criptomonedas",
@@ -151,7 +151,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://storage.cloud.google.com/portafilo/criptomonedas.mp4",
+      "https://storage.googleapis.com/portafilo/criptomonedas.mp4",
   },
   {
     title: "App de alojamiento",
@@ -161,7 +161,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://storage.cloud.google.com/portafilo/Hospedajes.mp4",
+      "https://storage.googleapis.com/portafilo/Hospedajes.mp4",
   },
   {
     title: "Planificador de Gastos",
@@ -172,7 +172,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://storage.cloud.google.com/portafilo/planificador%20gastos.mp4",
+      "https://storage.googleapis.com/portafilo/planificador%20gastos.mp4",
   },
   {
     title: "Citas Veterinaria",
@@ -183,7 +183,7 @@ const projects = [
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
     videoSrc:
-      "https://storage.cloud.google.com/portafilo/Citas%20Veterinaria.mp4",
+      "https://storage.googleapis.com/portafilo/Citas%20Veterinaria.mp4",
   },
 ];
 
@@ -233,7 +233,7 @@ export default function Blog() {
                 <br />
                 <picture>
                   <img
-                    src="https://storage.cloud.google.com/portafilo/diploma-ucamp.JPG"
+                    src="https://storage.googleapis.com/portafilo/diploma-ucamp.JPG"
                     alt="Diploma Ucamp"
                     className="rounded-lg shadow-lg"
                   />
@@ -259,7 +259,7 @@ export default function Blog() {
                 <p>Esto fue algo de lo aprendido</p>
                 <picture>
                   <img
-                    src="https://storage.cloud.google.com/portafilo/aprendido-react-native.JPG"
+                    src="https://storage.googleapis.com/portafilo/aprendido-react-native.JPG"
                     alt="aptitudes curso udemy"
                     className="rounded-lg shadow-lg"
                   />
@@ -309,7 +309,7 @@ export default function Blog() {
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">
               <div className="relative slide ">
                 <img
-                  src="https://storage.cloud.google.com/portafilo/Foto_flfttc.jpg"
+                  src="https://storage.googleapis.com/portafilo/Foto_flfttc.jpg"
                   alt="foto de frente"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -319,7 +319,7 @@ export default function Blog() {
             <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
               <div className="relative slide">
                 <img
-                  src="https://storage.cloud.google.com/portafilo/volaris_yjxpgu.jpg"
+                  src="https://storage.googleapis.com/portafilo/volaris_yjxpgu.jpg"
                   alt="foto volaris"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -327,7 +327,7 @@ export default function Blog() {
               </div>
               <div className="relative pulse">
                 <img
-                  src="https://storage.cloud.google.com/portafilo/playa_mjsbep.jpg"
+                  src="https://storage.googleapis.com/portafilo/playa_mjsbep.jpg"
                   alt="titulo maestria"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -337,7 +337,7 @@ export default function Blog() {
             <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
               <div className="relative bounce">
                 <img
-                  src="https://storage.cloud.google.com/portafilo/office_s9qnt5.jpg"
+                  src="https://storage.googleapis.com/portafilo/office_s9qnt5.jpg"
                   alt="cumple office depot"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -345,7 +345,7 @@ export default function Blog() {
               </div>
               <div className="relative wobble">
                 <img
-                  src="https://storage.cloud.google.com/portafilo/softek_l2lbx1.jpg"
+                  src="https://storage.googleapis.com/portafilo/softek_l2lbx1.jpg"
                   alt="foto sofftek"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
                 />
@@ -407,7 +407,7 @@ export default function Blog() {
                     >
                       {post.title === "Pagina construccion" ? (
                         <h1 className="text-yellow-500 underline ">
-                          Pagina ferreteria o construccion
+                          Pagina Nido Bacalar
                         </h1>
                       ) : (
                         <span>{post.title}</span>
@@ -514,7 +514,7 @@ export default function Blog() {
                       </span>
                       <img
                         src={
-                          "https://storage.cloud.google.com/portafilo/cursoRn_utsrqf.jpg"
+                          "https://storage.googleapis.com/portafilo/cursoRn_utsrqf.jpg"
                         }
                         alt="curso udemy"
                       />
@@ -549,7 +549,7 @@ export default function Blog() {
             <Card sx={{ maxWidth: 340 }}>
               <CardMedia
                 sx={{ height: 440 }}
-                image="https://storage.cloud.google.com/portafilo/cia-portada_umjwyd.jpg"
+                image="https://storage.googleapis.com/portafilo/cia-portada_umjwyd.jpg"
                 title="green iguana"
               />
               <CardContent>
@@ -590,35 +590,35 @@ export default function Blog() {
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 focus ">
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
-              src="https://storage.cloud.google.com/portafilo/html-5-logo.219x256_kqmcuh.png"
+              src="https://storage.googleapis.com/portafilo/html-5-logo.219x256_kqmcuh.png"
               alt="html"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 bounce"
-              src="https://storage.cloud.google.com/portafilo/css3.224x256_nnijyp.png"
+              src="https://storage.googleapis.com/portafilo/css3.224x256_nnijyp.png"
               alt="css"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
-              src="https://storage.cloud.google.com/portafilo/javascript-js-square.256x256_njlvjw.png"
+              src="https://storage.googleapis.com/portafilo/javascript-js-square.256x256_njlvjw.png"
               alt="js"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 pulse"
-              src="https://storage.cloud.google.com/portafilo/git_xlcgvs.png"
+              src="https://storage.googleapis.com/portafilo/git_xlcgvs.png"
               alt="github"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
-              src="https://storage.cloud.google.com/portafilo/react.256x228_glbkik.png"
+              src="https://storage.googleapis.com/portafilo/react.256x228_glbkik.png"
               alt="react"
               width={158}
               height={48}
@@ -626,35 +626,35 @@ export default function Blog() {
 
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
-              src="https://storage.cloud.google.com/portafilo/database-mongo-db.245x256_agk32s.png"
+              src="https://storage.googleapis.com/portafilo/database-mongo-db.245x256_agk32s.png"
               alt="mongodb"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
-              src="https://storage.cloud.google.com/portafilo/node-js.256x158_ybovdk.png"
+              src="https://storage.googleapis.com/portafilo/node-js.256x158_ybovdk.png"
               alt="node"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
-              src="https://storage.cloud.google.com/portafilo/tailwindcss.256x154_vzjono.png"
+              src="https://storage.googleapis.com/portafilo/tailwindcss.256x154_vzjono.png"
               alt="tailwind"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
-              src="https://storage.cloud.google.com/portafilo/chartjs.222x256_njmg0r.png"
+              src="https://storage.googleapis.com/portafilo/chartjs.222x256_njmg0r.png"
               alt="chartjs"
               width={158}
               height={48}
             />
             <img
               className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
-              src="https://storage.cloud.google.com/portafilo/express-original-wordmark.256x58_bhywjm.png"
+              src="https://storage.googleapis.com/portafilo/express-original-wordmark.256x58_bhywjm.png"
               alt="expresss"
               width={158}
               height={48}
