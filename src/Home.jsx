@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="fixed bottom-20 right-5 z-50 w-48 flex justify-center items-center bg-[#2E7D32] hover:bg-[#1B5E20] rounded-lg heartbeat">
+      <div className="fixed bottom-20 right-5 z-50 w-48 flex justify-center items-center bg-[#2E7D32] hover:bg-[#1B5E20] rounded-lg heartbeat01">
         <Fab
           color="success"
           aria-label="whatsapp"

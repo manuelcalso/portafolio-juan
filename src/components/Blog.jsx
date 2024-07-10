@@ -307,7 +307,7 @@ export default function Blog() {
           </div>
           <div className="mt-14 flex justify-end gap-6 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0 ">
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">
-              <div className="relative slide ">
+              <div className="relative slide01 ">
                 <img
                   src="https://storage.googleapis.com/portafilo/Foto_flfttc.jpg"
                   alt="foto de frente"
@@ -317,7 +317,7 @@ export default function Blog() {
               </div>
             </div>
             <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-              <div className="relative slide">
+              <div className="relative slide01">
                 <img
                   src="https://storage.googleapis.com/portafilo/volaris_yjxpgu.jpg"
                   alt="foto volaris"
@@ -325,7 +325,7 @@ export default function Blog() {
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              <div className="relative pulse">
+              <div className="relative pulse01">
                 <img
                   src="https://storage.googleapis.com/portafilo/playa_mjsbep.jpg"
                   alt="titulo maestria"

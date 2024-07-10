@@ -339,12 +339,12 @@
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-.heartbeat {
-  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-  animation: heartbeat 1.5s ease-in-out infinite both;
+.heartbeat01 {
+  -webkit-animation: heartbeat01 1.5s ease-in-out infinite both;
+  animation: heartbeat01 1.5s ease-in-out infinite both;
 }
 
-@-webkit-keyframes heartbeat {
+@-webkit-keyframes heartbeat01 {
   from {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -383,7 +383,7 @@
   }
 }
 
-@keyframes heartbeat {
+@keyframes heartbeat01 {
   from {
     -webkit-transform: scale(1);
     transform: scale(1);
