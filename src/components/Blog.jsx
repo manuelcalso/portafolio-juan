@@ -296,7 +296,7 @@ export default function Blog() {
                   href="https://buy.stripe.com/4gwcOy6TXfnc7jG4gg"
                   className="text-yellow-300"
                 >
-                  <span> a</span>
+                  <span>a</span>
                   <span>q</span>
                   <span>u</span>
                   <span>i</span>
