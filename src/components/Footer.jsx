@@ -1,10 +1,6 @@
 import React from "react";
 import "../index.css";
 
-
-
-
-
 const navigation = {
   main: [{ name: "Contacto", href: "/" }],
   social: [
@@ -38,12 +34,11 @@ export default function Footer() {
         </video>
         <div />
       </div>
-
       <div className="px-auto flex flex-col justify-center items-center">
         <img
           src="https://storage.googleapis.com/portafilo/Let's%20work%20together!_transparent.png"
           alt="work together logo"
-          className="w-1/2 vibrate-1"
+          className="w-1/3 vibrate-01"
         />
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
@@ -61,7 +56,6 @@ export default function Footer() {
                 >
                   {item.name}
                 </a>
-
                 <div className=" flex justify-center items-center text-black  font-bold ">
                   <div className=" flex-col justify-evenly px-5 py-2 shadow-xl border border-gray-400 rounded-md">
                     <p className="kalnia-medium text-2xl">
@@ -83,7 +77,7 @@ export default function Footer() {
             </>
           ))}
         </nav>
-        <div className="mt-0 flex justify-around items-center space-x-5 rounded-b-md slit-in-vertical bg-gray-300 slide-in-top shadow-lg">
+        <div className="mt-0 flex items-center rounded-md bg-gray-300 slide-in-top shadow-lg">
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -97,7 +91,6 @@ export default function Footer() {
               />
             </a>
           ))}
-
           <div>
             <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
               <svg

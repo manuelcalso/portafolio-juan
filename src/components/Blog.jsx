@@ -235,7 +235,7 @@ export default function Blog() {
                   <img
                     src="https://storage.googleapis.com/portafilo/diploma-ucamp.JPG"
                     alt="Diploma Ucamp"
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg slide01"
                   />
                 </picture>
                 <br />
@@ -311,7 +311,7 @@ export default function Blog() {
                 <img
                   src="https://storage.googleapis.com/portafilo/Foto_flfttc.jpg"
                   alt="foto de frente"
-                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float01"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
@@ -321,7 +321,7 @@ export default function Blog() {
                 <img
                   src="https://storage.googleapis.com/portafilo/volaris_yjxpgu.jpg"
                   alt="foto volaris"
-                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float01"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
@@ -329,25 +329,25 @@ export default function Blog() {
                 <img
                   src="https://storage.googleapis.com/portafilo/playa_mjsbep.jpg"
                   alt="titulo maestria"
-                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float01"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
             </div>
             <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-              <div className="relative bounce">
+              <div className="relative bounce01">
                 <img
                   src="https://storage.googleapis.com/portafilo/office_s9qnt5.jpg"
                   alt="cumple office depot"
-                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float01"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              <div className="relative wobble">
+              <div className="relative wobble01">
                 <img
                   src="https://storage.googleapis.com/portafilo/softek_l2lbx1.jpg"
                   alt="foto sofftek"
-                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float"
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float01"
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
@@ -359,7 +359,7 @@ export default function Blog() {
       <div className="bg-gradient-to-t from-gray-200 to-white mx-auto max-w-7xl rounded-border-proyect py-24 sm:py-32 ">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className=" text-center ">
-            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium vibrate-1">
+            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium vibrate-01">
               Proyectos
             </h1>
           </div>
@@ -584,40 +584,40 @@ export default function Blog() {
         <br />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <br />
-          <h1 className="text-center text-4xl font-semibold leading-8 text-black kalnia-medium vibrate-1 ">
+          <h1 className="text-center text-4xl font-semibold leading-8 text-black kalnia-medium vibrate-01 ">
             Tecnologias
           </h1>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 focus ">
             <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide01"
               src="https://storage.googleapis.com/portafilo/html-5-logo.219x256_kqmcuh.png"
               alt="html"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 bounce"
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 bounce01"
               src="https://storage.googleapis.com/portafilo/css3.224x256_nnijyp.png"
               alt="css"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide"
+              className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 slide01"
               src="https://storage.googleapis.com/portafilo/javascript-js-square.256x256_njlvjw.png"
               alt="js"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 pulse"
+              className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1 pulse01"
               src="https://storage.googleapis.com/portafilo/git_xlcgvs.png"
               alt="github"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce01"
               src="https://storage.googleapis.com/portafilo/react.256x228_glbkik.png"
               alt="react"
               width={158}
@@ -625,41 +625,41 @@ export default function Blog() {
             />
 
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide01"
               src="https://storage.googleapis.com/portafilo/database-mongo-db.245x256_agk32s.png"
               alt="mongodb"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse01"
               src="https://storage.googleapis.com/portafilo/node-js.256x158_ybovdk.png"
               alt="node"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 bounce01"
               src="https://storage.googleapis.com/portafilo/tailwindcss.256x154_vzjono.png"
               alt="tailwind"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide01"
               src="https://storage.googleapis.com/portafilo/chartjs.222x256_njmg0r.png"
               alt="chartjs"
               width={158}
               height={48}
             />
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 pulse01"
               src="https://storage.googleapis.com/portafilo/express-original-wordmark.256x58_bhywjm.png"
               alt="expresss"
               width={158}
               height={48}
             />
-            <div className=" flex items-center justify-center bounce">
+            <div className=" flex items-center justify-center bounce01">
               <svg
                 fill="none"
                 height="100"
@@ -674,8 +674,8 @@ export default function Blog() {
               </svg>
             </div>
             <img
-              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide"
-              src="https://res.cloudinary.com/dgzghl0ur/image/upload/v1702691462/portafolio/brand-vscode.243x256_zayqkk.png"
+              className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 slide01"
+              src="https://storage.googleapis.com/portafilo/brand-vscode.243x256_zayqkk.png"
               alt="vscode"
               width={158}
               height={48}

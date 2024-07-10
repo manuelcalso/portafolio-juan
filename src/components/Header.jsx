@@ -19,14 +19,14 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8  "
         aria-label="Global"
       >
-        <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
+        <a href="/">
           <img
             src="https://storage.googleapis.com/portafilo/Manuel%20Calleros_transparent.png"
             alt="manuel calleros logo"
-            className="w-40 slide p-0 m-0"
+            className="w-40 slide01 p-0 m-0"
           />
         </a>
-        <div className="flex ">
+        <div className="flex">
           <div className="hidden lg:flex lg:gap-x-12 items-center">
             <Stacked />
             {navigation.map((item) => (
@@ -34,7 +34,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 target="_blank"
-                className="text-2xl slide float p-2 rounded-full hover:bg-green-800 hover:text-white hover:text-3xl hover:tracking-widest"
+                className="text-2xl slide01 float p-2 rounded-full hover:bg-green-800 hover:text-white hover:text-3xl hover:tracking-widest"
               >
                 {item.name === "English version" ? (
                   <p className=" texto-animado">
@@ -61,7 +61,7 @@ export default function Header() {
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
-                className="h-12 w-12 slide hover:text-white m-0"
+                className="h-12 w-12 slide01 hover:text-white m-0"
                 aria-hidden="true"
               />
             </button>
@@ -75,7 +75,7 @@ export default function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 slide ">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 slide01 ">
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -84,15 +84,12 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon
-                  className="h-6 w-6 text-transparent "
-                  aria-hidden="true"
-                />
+                <Stacked/>
               </button>
             </div>
             <a
               href="/"
-              className="-m-1.5 p-1.5  shadow-lg rounded-md border border-gray-400 bg-black"
+              className="-m-1.5 p-1.5 shadow-lg rounded-md border border-gray-400 bg-black"
             >
               <span className="sr-only">Juan Portafolio</span>
               <img
@@ -109,7 +106,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
+                className="-mx-3 flex rounded-xl border border-gray-600 px-3 py-2 text-black first:text-xl hover:text-2xl shadow-lg font-semibold leading-7 hover:bg-green-800 hover:text-white justify-center hover:leading-7"
               >
                 {item.name === "English version" ? (
                   <p className=" hover:text-3xl texto-animado text-2xl p-0 m-0">

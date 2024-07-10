@@ -7,27 +7,19 @@ import {
   WrenchScrewdriverIcon
 } from "@heroicons/react/20/solid";
 
-import {
-  ArrowPathIcon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-} from "@heroicons/react/24/outline";
-
 const solutions = [
   {
     name: "Dev Tools",
-    description: "Obten herramientas de desarrollo, proximamente...",
-    href: "#",
+    description: "Obten herramientas de desarrollo CSS para tu pagina web!",
+    href: "/tools",
     icon: WrenchScrewdriverIcon,
   },
 ];
 
 export default function Stacked() {
   return (
-    <Popover className="relative">
-      <Popover.Button className="inline-flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900  hover:text-white slide">
+    <Popover className="relative font-kalnia">
+      <Popover.Button className="inline-flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900  hover:text-white slide01">
         <span>Tools</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>

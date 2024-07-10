@@ -51,7 +51,7 @@
   background-size: cover;
 }
 
-@keyframes slide {
+@keyframes slide01 {
   0% {
     transform: translateX(0);
   }
@@ -65,13 +65,13 @@
   }
 }
 
-.slide {
+.slide01 {
   animation-name: slide;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
-@keyframes bounce {
+@keyframes bounce01 {
   0% {
     transform: translateY(0);
   }
@@ -85,13 +85,13 @@
   }
 }
 
-.bounce {
+.bounce01 {
   animation-name: bounce;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
-@keyframes pulse {
+@keyframes pulse01 {
   0% {
     transform: scale(1);
   }
@@ -105,19 +105,19 @@
   }
 }
 
-.pulse {
+.pulse01 {
   animation-name: pulse;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
-.wobble {
+.wobble01 {
   animation-name: wobble;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 
-@keyframes wobble {
+@keyframes wobble01 {
   0% {
     transform: translateX(0) rotate(0deg);
   }
@@ -219,7 +219,7 @@
 }
 
 .slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-top 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -422,7 +422,7 @@
   }
 }
 
-@-webkit-keyframes vibrate-1 {
+@-webkit-keyframes vibrate-01 {
   0% {
     -webkit-transform: translate(0);
     transform: translate(0);
@@ -454,7 +454,7 @@
   }
 }
 
-@keyframes vibrate-1 {
+@keyframes vibrate-01 {
   0% {
     -webkit-transform: translate(0);
     transform: translate(0);
@@ -486,18 +486,18 @@
   }
 }
 
-.vibrate-1 {
-  -webkit-animation: vibrate-1 1.3s linear infinite both;
-  animation: vibrate-1 2.3s linear infinite both;
+.vibrate-01 {
+  -webkit-animation: vibrate-01 1.3s linear infinite both;
+  animation: vibrate-01 2.3s linear infinite both;
 }
 
-.float {
+.float01 {
   transition: 0.5s, color 0.1s;
   -webkit-transition: 0.5s, color 0.1s;
   -moz-transition: 0.5s, color 0.1s;
 }
 
-.float:hover {
+.float01:hover {
   box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
   transform: translate(0px, 5px);
   -webkit-transform: translate(0px, 5px);
@@ -573,6 +573,631 @@
     rgba(34, 193, 195, 1) 0%,
     rgba(253, 187, 45, 1) 100%
   );
+}
+
+.img01 {
+  width: 26vw;
+}
+
+.tool-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.code-text {
+  font-size: large;
+}
+
+/*tools section*****************/
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.vibrate-1 {
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+.shake {
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.heartbeat {
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slide {
+  animation: slide 1s infinite;
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.flicker {
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+}
+
+.rotate {
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.wobble {
+  animation: wobble 1s infinite;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  15% {
+    transform: translateX(-30px) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1deg);
+  }
+}
+
+.float {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.float:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
+}
+
+.rotate-3608 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.rotate-3608:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+}
+
+.rotate-360 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.rotate-360:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: rotateZ(360deg);
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+}
+
+.flex01 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.flex01:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: matrix(3, 0.5, 0, 1, 1, 1);
+  -webkit-transform: matrix(3, 0.5, 0, 1, 1, 1);
+  -moz-transform: matrix(3, 0.5, 0, 1, 1, 1);
+}
+
+.transLeft {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.transLeft:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translatex(-20px);
+  -webkit-transform: translatex(-20px);
+  -moz-transform: translatex(-20px);
+}
+
+.transRight {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.transRight:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translatex(20px);
+  -webkit-transform: translatex(20px);
+  -moz-transform: translatex(20px);
+}
+
+.transUp {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.transUp:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translatey(-20px);
+  -webkit-transform: translatey(-20px);
+  -moz-transform: translatey(-20px);
+}
+
+.transDown {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.transDown:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translatey(20px);
+  -webkit-transform: translatey(20px);
+  -moz-transform: translatey(20px);
+}
+
+.toStretch {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.toStretch:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: scale(2, 0.5);
+  -webkit-transform: scale(1.2, 0.5);
+  -moz-transform: scale(1.2, 0.5);
+}
+
+.skew {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.skew:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: skew(30deg, 20deg);
+  -webkit-transform: skew(30deg, 20deg);
+  -moz-transform: skew(30deg, 20deg);
+}
+
+.skewX {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.skewX:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: skewX(30deg);
+  -webkit-transform: skewX(30deg);
+  -moz-transform: skewX(30deg);
+}
+
+.skewY {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.skewY:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: skewY(1.07rad);
+  -webkit-transform: skewY(15deg);
+  -moz-transform: skewY(15deg);
+}
+
+.float-fluid {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.float-fluid:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate3d(12px, 50%, 3em);
+  -webkit-transform: translate3d(12px, 50%, 3em);
+  -moz-transform: translate3d(12px, 50%, 3em);
+}
+
+.grow {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.grow:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: scale3d(1.5, 1.5, 0.3);
+  -webkit-transform: scale3d(1.5, 1.5, 0.3);
+  -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+
+.flipUp-360 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.flipUp-360:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: rotateX(360deg);
+  -webkit-transform: rotateX(360deg);
+  -moz-transform: rotateX(360deg);
+}
+
+.flipUp-180 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.flipUp-180:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+}
+
+.flipSide-180 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.flipSide-180:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.flipSide-360 {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+.flipSide-360:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+}
+
+.shake2:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  animation: shake 1s infinite;
+}
+
+@keyframes shake2 {
+  0%,
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+  10%,
+  90% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30%,
+  70% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40%,
+  60% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+}
+
+.bounceShakeX:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  animation-name: bounce-shakeX;
+  -webkit-animation-name: bounce-shakeX;
+  -moz-animation-name: bounce-shakeX;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+}
+
+@keyframes bounce-shakeX {
+  0% {
+    transform: translateX(-50%);
+  }
+  12% {
+    transform: translateX(50%);
+  }
+  24% {
+    transform: translateX(-20%);
+  }
+  36% {
+    transform: translateX(20%);
+  }
+  48% {
+    transform: translateX(-10%);
+  }
+  60% {
+    transform: translateX(10%);
+  }
+  72% {
+    transform: translateX(-5%);
+  }
+  84% {
+    transform: translateX(5%);
+  }
+  96% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.bounceShakeY:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  animation: bounce-shakeY 1s;
+}
+
+@keyframes bounce-shakeY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  12% {
+    transform: translateY(50%);
+  }
+  24% {
+    transform: translateY(-20%);
+  }
+  36% {
+    transform: translateY(20%);
+  }
+  48% {
+    transform: translateY(-10%);
+  }
+  60% {
+    transform: translateY(10%);
+  }
+  72% {
+    transform: translateY(-5%);
+  }
+  84% {
+    transform: translateY(5%);
+  }
+  96% {
+    transform: translateY(0);
+  }
+}
+
+.surprise:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  animation: surprise 0.8s;
+}
+
+@keyframes surprise {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(7deg) scale(2);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(-7deg) scale(2);
+  }
+}
+
+.jello:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  animation: jello 1s;
+  transform-origin: center;
+}
+
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  22.2% {
+    transform: skew(-12.5deg, -12.5deg);
+  }
+  33.3% {
+    transform: skew(6.25deg, 6.25deg);
+  }
+  44.4% {
+    transform: skew(-3.125deg, -3.125deg);
+  }
+  55.5% {
+    transform: skew(1.5625deg, 1.5625deg);
+  }
+  66.6% {
+    transform: skew(-0.78125deg, -0.78125deg);
+  }
+  77.7% {
+    transform: skew(0.390625deg, 0.390625deg);
+  }
+  88.8% {
+    transform: skew(-0.1953125deg, -0.1953125deg);
+  }
+}
+
+.swing:hover {
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  animation: swing 1s;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+/*///*/
+
+@media screen and (max-width: 1000px) {
+  .tool-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .code-text {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width: 510px) {
