@@ -2,6 +2,8 @@ import React, { useState, Fragment } from 'react';
 import Tabs from './Tabs';
 import CodeBlock from './Codeblock.jsx';
 import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+
 
 
 export default function Tools() {
@@ -843,9 +845,10 @@ export default function Tools() {
     <Fragment>
       <Header />
       <section className="blog-bg general-font">
-        <br />
+        
         <Tabs tabs={tabs} />
       </section>
+      <Footer/>
     </Fragment>
   );
 }
