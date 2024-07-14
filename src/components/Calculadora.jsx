@@ -69,23 +69,23 @@ const Calculator = () => {
                 <h2 className="text-2xl font-bold mb-6 text-center text-black">Calculadora de Interés Compuesto</h2>
                 <div className="mb-4">
                     <label className="block mb-2 text-sm font-medium text-gray-700">Inversión inicial:</label>
-                    <input type="number" value={initialInvestment} onChange={e => setInitialInvestment(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md" />
+                    <input type="number" value={initialInvestment} onChange={e => setInitialInvestment(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white" />
                 </div>
                 <div className="mb-4">
                     <label className="block mb-2 text-sm font-medium text-gray-700">Contribución mensual:</label>
-                    <input type="number" value={monthlyContribution} onChange={e => setMonthlyContribution(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md" />
+                    <input type="number" value={monthlyContribution} onChange={e => setMonthlyContribution(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white" />
                 </div>
                 <div className="mb-4">
                     <label className="block mb-2 text-sm font-medium text-gray-700">Cantidad de tiempo en años:</label>
-                    <input type="number" value={years} onChange={e => setYears(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md" />
+                    <input type="number" value={years} onChange={e => setYears(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white" />
                 </div>
                 <div className="mb-4">
                     <label className="block mb-2 text-sm font-medium text-gray-700">Tasa de interés estimada (%):</label>
-                    <input type="number" value={interestRate} onChange={e => setInterestRate(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md" />
+                    <input type="number" value={interestRate} onChange={e => setInterestRate(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white" />
                 </div>
                 <div className="mb-4">
                     <label className="block mb-2 text-sm font-medium text-gray-700">Frecuencia de capitalización:</label>
-                    <select value={compoundFrequency} onChange={e => setCompoundFrequency(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md">
+                    <select value={compoundFrequency} onChange={e => setCompoundFrequency(e.target.value)} className="w-full p-2 border border-gray-300 rounded-md bg-gray-700 text-white">
                         <option value="1">Anual</option>
                         <option value="4">Trimestral</option>
                         <option value="12">Mensual</option>
