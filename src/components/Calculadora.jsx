@@ -65,7 +65,7 @@ const Calculator = () => {
     return (
         <>
             <Header />
-            <div className="max-w-lg mx-auto m-10 p-6 bg-white rounded-lg shadow-md">
+            <div className="max-w-lg mx-auto m-10 p-6 bg-white rounded-lg shadow-lg slit-in-vertical">
                 <h2 className="text-2xl font-bold mb-6 text-center text-black">Calculadora de Interés Compuesto</h2>
                 <div className="mb-4">
                     <label className="block mb-2 text-sm font-medium text-gray-700">Inversión inicial:</label>

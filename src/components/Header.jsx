@@ -8,7 +8,6 @@ import Stacked from "./Stacked";
 const navigation = [
   { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
-  { name: "CATaaS", href: "https://cat-service.netlify.app/" },
   { name: "English version", href: "https://juancalleros.vercel.app/" },
 ];
 export default function Header() {
@@ -16,7 +15,7 @@ export default function Header() {
   return (
     <header className="hover:bg-green-900 bg-white hover:text-white text-black slide-in-top kalnia-medium rounded-border-about">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-0 lg:px-8  "
+        className="mx-auto flex max-w-7xl items-center justify-center gap-x-10 p-0 lg:px-8  "
         aria-label="Global"
       >
         <a href="/">
@@ -27,7 +26,7 @@ export default function Header() {
           />
         </a>
         <div className="flex">
-          <div className="hidden lg:flex lg:gap-x-12 items-center">
+          <div className="hidden lg:flex lg:gap-x-4 items-center">
             <Stacked />
             {navigation.map((item) => (
               <a
