@@ -10,13 +10,13 @@ import {
 const solutions = [
   {
     name: "Dev Tools",
-    description: "Obten herramientas de desarrollo CSS para tu pagina web!",
+    description: "Obten herramientas de desarrollo",
     href: "/developer-tools",
     icon: WrenchScrewdriverIcon,
   },
   {
-    name: "Calculadora des interes compuesto",
-    description: "Calcula el crecimiento de tu inversión con nuestra herramienta de interés compuesto",
+    name: "Calculadora de interes compuesto",
+    description: "Calcula el crecimiento de tu inversión",
     href: "/calculadora-de-interes-compuesto",
     icon: PlayCircleIcon,
   },
@@ -38,24 +38,25 @@ export default function Stacked() {
             {solutions.map((item) => (
               <div
                 key={item.name}
-                className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50"
+                className="group relative flex gap-x-2 rounded-lg p-2 hover:bg-gray-50"
               >
-                <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <div className="mr-4 flex h-10 w-10 flex-none items-center justify-center rounded-lg group-hover:bg-white">
                   <item.icon
-                    className="h-6 w-6 text-green-400 group-hover:text-indigo-600"
+                    className="h-4 w-4 text-green-400 group-hover:text-indigo-600"
                     aria-hidden="true"
                   />
                 </div>
                 <div>
                   <a
                     href={item.href}
-                    className="font-semibold text-black font-bellerose text-lg"
+                    className="font-semibold text-black font-bellerose text-sm"
                   >
                     {item.name}
                     <span className="absolute inset-0" />
                   </a>
-                  <p className="mt-1 text-gray-600 text-md ">{item.description}</p>
+                  <p className="text-gray-600 text-xs ">{item.description}</p>
                 </div>
+
               </div>
             ))}
           </div>
