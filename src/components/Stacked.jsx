@@ -4,7 +4,9 @@ import {
   ChevronDownIcon,
   PhoneIcon,
   PlayCircleIcon,
-  WrenchScrewdriverIcon
+  WrenchScrewdriverIcon,
+  SpeakerWaveIcon,
+  ChartBarIcon,
 } from "@heroicons/react/20/solid";
 
 const solutions = [
@@ -18,7 +20,13 @@ const solutions = [
     name: "Calculadora de interes compuesto",
     description: "Calcula el crecimiento de tu inversión",
     href: "/calculadora-de-interes-compuesto",
-    icon: PlayCircleIcon,
+    icon: ChartBarIcon,
+  },
+  {
+    name: "Voz de inteligencia artificial",
+    description: "Prueba la voz generada con texto",
+    href: "/voz-de-inteligencia-artificial",
+    icon: SpeakerWaveIcon,
   },
 ];
 
@@ -56,7 +64,6 @@ export default function Stacked() {
                   </a>
                   <p className="text-gray-600 text-xs ">{item.description}</p>
                 </div>
-
               </div>
             ))}
           </div>
