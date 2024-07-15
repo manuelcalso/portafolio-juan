@@ -8,6 +8,7 @@ const VoiceGenerator = () => {
   const [text, setText] = useState("");
   const [audioUrl, setAudioUrl] = useState("");
   const [loading, setLoading] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(null);
 
   const handleGenerateVoice = async () => {
     setLoading(true);
@@ -15,9 +16,19 @@ const VoiceGenerator = () => {
       // Limpiar el audio anterior
       setAudioUrl("");
 
+      // Descargar el modelo de voz
+      await tts.download("en_US-hfc_female-medium", (progress) => {
+        setDownloadProgress(
+          Math.round((progress.loaded * 100) / progress.total)
+        );
+      });
+
+      // Restablecer el progreso de descarga una vez completado
+      setDownloadProgress(null);
+
       const wav = await tts.predict({
         text: text,
-        voiceId: "en_US-hfc_male-medium",
+        voiceId: "en_US-hfc_female-medium",
       });
 
       // Crear un Blob directamente desde la respuesta de audio
@@ -59,6 +70,11 @@ const VoiceGenerator = () => {
           >
             {loading ? "Generating Voice..." : "Generate Voice"}
           </button>
+          {downloadProgress !== null && (
+            <div className="mt-4 text-center text-sm text-gray-500">
+              Downloading model: {downloadProgress}%
+            </div>
+          )}
           {audioUrl && (
             <div className="mt-4">
               <audio controls className="w-full">
