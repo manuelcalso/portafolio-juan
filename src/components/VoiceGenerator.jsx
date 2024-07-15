@@ -16,9 +16,11 @@ const VoiceGenerator = () => {
       setAudioUrl("");
 
       const wav = await tts.predict({
-        text: "Welcome to juancalleros.com",
-        voiceId: "en_US-hfc_male-medium",
+        text: text,
+        voiceId: "es_ES-hfc_male-medium",
       });
+
+      // Crear un Blob directamente desde la respuesta de audio
       const audioBlob = new Blob([wav], { type: "audio/wav" });
       setAudioUrl(URL.createObjectURL(audioBlob));
     } catch (error) {
@@ -41,7 +43,7 @@ const VoiceGenerator = () => {
             />
           </picture>
           <h1 className="text-2xl font-bold mb-4 text-center text-black">
-            Test our AI Voice Generator
+            Test our AI Voice Generator *demo
           </h1>
 
           <textarea
