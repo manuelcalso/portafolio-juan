@@ -17,7 +17,7 @@ const VoiceGenerator = () => {
 
       const wav = await tts.predict({
         text: text,
-        voiceId: "en_US-hfc_norman-medium",
+        voiceId: "en_US-hfc_male-medium",
       });
 
       // Crear un Blob directamente desde la respuesta de audio
