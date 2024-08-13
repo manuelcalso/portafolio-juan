@@ -256,10 +256,9 @@ export default function Blog() {
                 adaptaciones de arranque que se ajustaran a diferentes
                 emuladores para iOS y para Android Studio.
                 <br />
-                <p>Esto fue algo de lo aprendido</p>
                 <picture>
                   <img
-                    src="https://storage.googleapis.com/portafilo/aprendido-react-native.JPG"
+                    src="https://storage.googleapis.com/portafilo/UdemyCertificate.jpg"
                     alt="aptitudes curso udemy"
                     className="rounded-lg shadow-lg"
                   />
