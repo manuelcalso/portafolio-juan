@@ -20,7 +20,7 @@ export default function Header() {
       >
         <a href="/">
           <img
-            src="https://storage.googleapis.com/portafilo/Manuel%20Calleros_transparent.png"
+            src="https://storage.googleapis.com/portafilo/img-zB3Sv3B0ZvJj8dLRukBcSl3t-removebg-preview.png"
             alt="manuel calleros logo"
             className="w-40 slide01 p-0 m-0"
           />
