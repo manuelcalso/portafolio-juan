@@ -115,12 +115,12 @@ const posts = [
   },
   {
     id: 6,
-    title: "Nido Bacalar",
-    href: "https://nidobacalar.vercel.app",
+    title: "Arquitectura Fotovoltaica",
+    href: "https://construccionaf.vercel.app/",
     description:
-      "Desarrollo de una pagina web de ecommerce enfocada en la reservacion e informacion hotelera, frontend fabricado con Astro + React, incluye tambien IA para contenido general. (sitio en constuccion)",
+      "Desarrollo web para un cliente, enfocado en proyectos de Construccion y reparaciones para residencial o negocios. (sitio en constuccion)",
     imageUrl:
-      "https://storage.googleapis.com/portafilo/Nido.png",
+      "https://storage.googleapis.com/portafilo/construccionafpage.png",
     date: "2024 - current days",
     datetime: "2024-06-14",
     author: {
@@ -406,9 +406,9 @@ export default function Blog() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {post.title === "Pagina construccion" ? (
+                      {post.title === "Arquitectura Fotovoltaica" ? (
                         <h1 className="text-yellow-500 underline ">
-                          Pagina Nido Bacalar
+                          Arquitectura Fotovoltaica S.A. de C.V.
                         </h1>
                       ) : (
                         <span>{post.title}</span>
@@ -425,7 +425,7 @@ export default function Blog() {
                   </a>
                   <br />
 
-                  {post.title === "Nido Bacalar" ? (
+                  {post.title === "Arquitectura Fotovoltaica" ? (
                     <p
                       className="border-dotted border-2 border-yellow-500 flex justify-center rounded-full elevation-4 font-bold
                     "
