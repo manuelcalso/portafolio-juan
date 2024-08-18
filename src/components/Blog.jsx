@@ -546,41 +546,6 @@ export default function Blog() {
             </div>
           </Stack>
           <br />
-          <div className="flex justify-center items-center">
-            <Card sx={{ maxWidth: 340 }}>
-              <CardMedia
-                sx={{ height: 440 }}
-                image="https://storage.googleapis.com/portafilo/cia-portada_umjwyd.jpg"
-                title="green iguana"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  La CIA en Tlatelolco - Manuel Calleros Pavón
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  En 1968, la Guerra Fría había desencadenado conflictos armados
-                  en distintos puntos del planeta; lo que incrementaba el temor
-                  de Estados Unidos a que el comunismo se adoptara en los países
-                  latinoamericanos...{" "}
-                  <a
-                    href="https://www.amazon.com/dp/9509036773?tag=worldcat-20&linkCode=ogi&th=1&psc=1"
-                    className="text-blue-500"
-                  >
-                    seguir leyendo.
-                  </a>
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button
-                  size="small"
-                  href="https://www.amazon.com/dp/9509036773?tag=worldcat-20&linkCode=ogi&th=1&psc=1"
-                >
-                  Comprar
-                </Button>
-                <Button size="small">Mas Libros</Button>
-              </CardActions>
-            </Card>
-          </div>
         </div>
         <br />
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
