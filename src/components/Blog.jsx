@@ -10,6 +10,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+import plantillas from "../assets/Plantillas.png"
+
 const posts = [
   {
     id: 0,
@@ -219,7 +221,7 @@ export default function Blog() {
               <span>e</span>
               <span>l</span> <span>Calleros</span>
             </h1>
-            <div className="relative mt-6 text-lg leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
+            <div className="relative mt-6 text-2xl leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
               <p className="texto-animado">
                 ¡Bienvenido a mi portafolio! Soy un administrador de empresas
                 quien encontró su pasión en el{" "}
@@ -446,8 +448,28 @@ export default function Blog() {
               </>
             ))}
           </div>
+          <div className="text-center my-10">
+            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium vibrate-01">
+              Plantillas
+            </h1>
+            <p className="text-black kalnia-regular text-2xl my-10">
+              ¡Desarrolla tu negocio más rápido con nuestras plantillas! Dando click en la imagen
+              encontrarás una selección de plantillas diseñadas para acelerar el proceso de creación
+              de sitios web profesionales y atractivos. Ya sea que estés iniciando un nuevo proyecto
+              o renovando tu presencia en línea, nuestras plantillas te permiten enfocarte en lo que realmente importa: hacer crecer tu negocio.
+              ¡Elige la plantilla perfecta, personalízala a tu gusto, y lanza tu sitio en tiempo récord! </p>
+            <picture className="borde border-black">
+              <a href="https://preview.themeforest.net/item/betheme-html-responsive-multipurpose-template/full_screen_preview/13925633?_ga=2.163095868.1069896872.1723849257-665215538.1723849257&_gac=1.48293844.1723851301.CjwKCAjw8fu1BhBsEiwAwDrsjI3NLum8MdEvrt2fsCswobZNbneHwNqRtwSc4ff1VLaojFx_rQTdjBoC6fgQAvD_BwE">
+                <img
+                  src={plantillas} alt="imagen de las plantillas" />
+              </a>
+            </picture>
+          </div>
           <br />
-          <div className=" mb-5 mt-5">
+          <div className=" mb-5 mt-5 bg-orange-100">
+            <h1 className="text-2xl font-bold tracking-tight text-black sm:text-2xl kalnia-medium vibrate-01">
+              Nuestros productos
+            </h1>
             <a
               href="https://plasticbeach.shop/"
               rel="noopener noreferrer"

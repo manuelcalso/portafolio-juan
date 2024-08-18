@@ -25,12 +25,23 @@
   src: url(./assets//fonts/Kalnia/static/Kalnia-Light.ttf);
 }
 
+
+@font-face {
+  font-family: "Kalnia-regular";
+  src: url(./assets//fonts/Kalnia/static/Kalnia-Expanded-Regular.ttf);
+}
+
+
 .kalnia-medium {
   font-family: "Kalnia-Medium", sans-serif;
 }
 
 .kalnia-light {
   font-family: "Kalnia-Light";
+}
+
+.kalnia-regular {
+  font-family: "Kalnia-Regular";
 }
 
 .text-shadow {
