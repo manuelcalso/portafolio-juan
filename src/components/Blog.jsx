@@ -2,14 +2,6 @@ import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import "../../src/index.css";
-
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-
 import plantillas from "../assets/Plantillas.png"
 
 const posts = [
@@ -123,6 +115,23 @@ const posts = [
       "Desarrollo web para un cliente, enfocado en proyectos de Construccion y reparaciones para residencial o negocios. (sitio en constuccion)",
     imageUrl:
       "https://storage.googleapis.com/portafilo/construccionafpage.png",
+    date: "2024 - current days",
+    datetime: "2024-06-14",
+    author: {
+      name: "Juan Calleros",
+      imageUrl:
+        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
+    },
+    code: "",
+  },
+  {
+    id: 7,
+    title: "HubSpot Server",
+    href: "https://manuelcalso.github.io/hbfront/",
+    description:
+      "Servidor que actúa como middleware para comunicarse con la API de HubSpot, permitiendo realizar operaciones como la creación, recuperación, actualización, búsqueda y eliminación de contactos.",
+    imageUrl:
+      "https://storage.googleapis.com/portafilo/Captura%20de%20pantalla%202024-09-03%20a%20la(s)%207.45.35%E2%80%AFa.m..png",
     date: "2024 - current days",
     datetime: "2024-06-14",
     author: {
