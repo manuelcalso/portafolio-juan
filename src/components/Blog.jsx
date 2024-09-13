@@ -127,7 +127,7 @@ const posts = [
   {
     id: 7,
     title: "HubSpot Server",
-    href: "https://manuelcalso.github.io/hbfront/",
+    href: "https://hubspotapi.netlify.app",
     description:
       "Servidor que actúa como middleware para comunicarse con la API de HubSpot, permitiendo realizar operaciones como la creación, recuperación, actualización, búsqueda y eliminación de contactos.",
     imageUrl:
