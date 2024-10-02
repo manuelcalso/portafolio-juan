@@ -232,17 +232,23 @@ export default function Blog() {
             </h1>
             <div className="relative mt-6 text-2xl leading-8 text-white sm:max-w-md lg:max-w-none italic kalnia-light text-shadow-p">
               <p className="texto-animado">
-                ¡Bienvenido a mi portafolio! Soy un administrador de empresas
-                quien encontró su pasión en el{" "}
+                ¡Bienvenido a mi portafolio!
+                <br />
+                <br />
+                Soy un licenciado en administrador de empresas
+                quien encontró su pasión en el
                 <span className="text-yellow-300">
-                  desarrollo de aplicaciones web y móviles{" "}
+                  desarrollo de aplicaciones web y móviles
                 </span>{" "}
-                nivel fullstack. Cursé el bootcamp de desarrollo web fullstack
-                en 2023 el cual se basa en proyectos con React, Node.js,
-                Express.js, MongoDB, también bases de Next.js todo con librerías
+                nivel fullstack {"(backend y frontend)"}.
+                <br />
+                <br />
+                En 2023 curse mi estudios en Ucamp, el cual se basa en proyectos con React, Node.js,
+                Express.js, MongoDB, también en Next.js todo con librerías
                 como, Tailwind, Bootstrap, MaterialUI, Bulma, entre otros, sin
                 embargo, desde la pandemia de 2020 incluso antes había generado
                 mis primeras maquetas en HTML, CSS y JavaScript.
+                <br />
                 <br />
                 <picture>
                   <img
@@ -255,7 +261,8 @@ export default function Blog() {
                 Mi enfoque se caracteriza por una actitud positiva, creatividad
                 y habilidades técnicas, basado en la búsqueda de soluciones y
                 análisis de problemas con metodologías agiles como ITIL, PMBOK y
-                Scrum, conocimientos adquiridos en Universidad TecMilenio previo
+                Scrum. Conocimientos adquiridos en el Master en Gestion de 
+                Tecnologias de la Informaicon en la Universidad TecMilenio previo
                 al bootcamp.
                 <br />
                 <br />
@@ -269,6 +276,7 @@ export default function Blog() {
                 adaptaciones de arranque que se ajustaran a diferentes
                 emuladores para iOS y para Android Studio.
                 <br />
+                <br />
                 <picture>
                   <img
                     src="https://storage.googleapis.com/portafilo/UdemyCertificate.jpg"
@@ -277,26 +285,28 @@ export default function Blog() {
                   />
                 </picture>
                 <br />
-                Seria gratificante poder trabajar en proyectos colaborativos y
-                poder desarrollar emociones o ideas al cliente final con el
-                producto terminado, por lo que, si eres{" "}
-                <span className="text-yellow-300">reclutador</span> bueno,
+                Busco poder trabajar en proyectos colaborativos y
+                poder desarrollar productos utiles al cliente final,
+                por lo que, si eres{" "}
+                <span className="text-yellow-300 text-3xl">reclutador</span> bueno,
                 comentar que soy comprometido, responsable, enfocado; por lo que
                 te pido me contactes si crees que pueda colaborar con un perfil
                 disponible.
-                <br />Y si entraste para conocer mis proyectos, buscas algún
-                proyecto específico que te gustaría{" "}
-                <span className="text-yellow-300">
+                <br />
+                <br />
+                Y si entraste para conocer mis proyectos, buscas algún
+                proyecto específico que te gustaría
+                <span className="text-yellow-300 text-3xl">
                   desarrollar para tu negocio
                 </span>
                 , no dudes en contactarme y explorar las opciones para
                 posicionar e impulsar tus ideas de negocio.
                 <br />
+                <br />
                 En este sitio utilizamos solo algunas áreas con secciones
                 comerciales, si te gustaría implementar anuncios publicitarios
-                en{" "}
-                <span className="text-yellow-300">
-                  {" "}
+                en
+                <span className="text-yellow-300 text-3xl">
                   tu sitio web y monetizarlo
                 </span>{" "}
                 o poder generar campañas publicitarias para conocer tu nicho de
@@ -339,7 +349,7 @@ export default function Blog() {
               </div>
               <div className="relative pulse01">
                 <img
-                  src="https://storage.googleapis.com/portafilo/playa_mjsbep.jpg"
+                  src="https://storage.googleapis.com/portafilo/tec_arlqda.jpg"
                   alt="titulo maestria"
                   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float01"
                 />
