@@ -4,6 +4,10 @@ import WhatsAppFAB from "./components/WhatsAppFAB";
 import Tools from "./components/Tools";
 import Calculator from "./components/Calculadora";
 import VoiceGenerator from "./components/VoiceGenerator";
+import Blog from './components/Blog'
+import Blogger from './components/Blogger'
+import Blogger01 from "./components/Blogger/Blogger01";
+
 
 export default function Router() {
   return (
@@ -11,6 +15,8 @@ export default function Router() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blogger />} />
+          <Route path="/blog01" element={<Blogger01 />} />
           <Route path="/cotizacion" element={<WhatsAppFAB />} />
           <Route path="/developer-tools" element={<Tools />} />
           <Route
