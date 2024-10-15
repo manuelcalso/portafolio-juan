@@ -3,12 +3,11 @@
 const posts = [
   {
     id: 1,
-    title: 'Mi proyecto actual',
-    href: '/blog01',
+    title: 'Creando "Yo Voy": Tecnología, Negocios y Delivery a la Mexicana',
+    href: '/blog-app-delivery',
     description:
-      'En este espacio les contare del desarrollo de una aplicacion de delivery que proximamente estara en funcionamiento',
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+      'Sigue mi aventura en la creación de "Yo Voy", una app de delivery diseñada para adaptarse a las necesidades locales. Aquí comparto el proceso de desarrollo, los desafíos tecnológicos y las oportunidades de negocio, todo con un toque único mexicano. Un espacio donde la innovación se une con la experiencia del emprendimiento.',
+    imageUrl: "https://storage.googleapis.com/portafilo/yovoylogo.jpg",
     date: 'Octubre 14 , 2024',
     datetime: '2020-03-16',
     category: { title: 'Technology', href: '#' },
@@ -24,13 +23,15 @@ const posts = [
 
 export default function Blogger() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-gray-100 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Reflexiones y Creaciones de Juan</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
+            Bienvenido a mi espacio personal, donde comparto reflexiones, investigaciones, teorías y novedades, principalmente enfocadas en el fascinante mundo de la tecnología.
+            Aquí encontrarás una mezcla de ideas, aprendizajes y experiencias que espero te inspiren y aporten valor.
           </p>
+          <a className="text-base font-semibold leading-7 text-orange-600" href='/'>Regresar al inicio</a>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
@@ -62,7 +63,7 @@ export default function Blogger() {
                       {post.title}
                     </a>
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
+                  <p className="mt-5 line-clamp-12 text-sm leading-6 text-gray-600">{post.description}</p>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
                   <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-100" />
@@ -79,8 +80,11 @@ export default function Blogger() {
               </div>
             </article>
           ))}
+
         </div>
+
       </div>
+
     </div>
   )
 }

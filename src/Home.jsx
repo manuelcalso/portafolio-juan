@@ -19,10 +19,11 @@ export default function Home() {
   useEffect(() => {
     fetchWeatherData();
   }, []);
+  
   return (
     <>
       <Header />
-      <div className="fixed bottom-20 right-5 z-50 w-48 flex justify-center items-center bg-[#2E7D32] hover:bg-[#1B5E20] rounded-lg heartbeat01">
+      <div className="fixed bottom-10 right-5 z-50 flex justify-center items-center bg-transparent hover:bg-[#1B5E20] rounded-lg heartbeat01">
         <Fab
           color="success"
           aria-label="whatsapp"
@@ -30,7 +31,7 @@ export default function Home() {
           onClick={handleClick}
         >
           <WhatsAppIcon />
-          <p className="text-2xl">cotizacion</p>
+
         </Fab>
       </div>
       <Blog />

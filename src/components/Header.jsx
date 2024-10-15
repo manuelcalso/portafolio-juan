@@ -6,7 +6,7 @@ import WhatsAppFAB from "./WhatsAppFAB";
 import Stacked from "./Stacked";
 
 const navigation = [
-  { name: "NoFooter.com", href: "https://nofooter.com/#gsc.tab=0" },
+  { name: "Blog 'El Escritorio'", href: "/blog" },
   { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
   { name: "English version", href: "https://juancalleros.vercel.app/" },
 ];
