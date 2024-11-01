@@ -172,7 +172,7 @@ const Calculator = () => {
       <section className="mt-10 p-6 sm:p-10 md:p-20 bg-gray-100 rounded-lg max-w-full flex flex-col md:flex-row">
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-3xl font-bold text-center md:text-left text-black">
-            ¿Qué es el interés compuesto y cómo se calcula?
+            ¿Qué es el interés compuesto y cómo se calcula? - Inversiones a largo plazo
           </h2>
           <p className="text-gray-700 mt-4 text-lg md:text-2xl">
             El interés compuesto es una poderosa herramienta financiera que permite calcular el crecimiento
