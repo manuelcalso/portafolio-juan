@@ -35,7 +35,7 @@ export default function BlogAppDelivery() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <a className="text-base font-semibold leading-7 text-orange-600" href='/blog'>Regresar al blog</a>
+                <a className="text-lg font-semibold leading-7 text-orange-600" href='/blog'>Regresar al blog</a>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Desarrollo de app de delivery "Yo Voy"</h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   En este post te contaré cómo surgió la idea, las tecnologías que estoy utilizando y los retos que encuentro en el proceso de negocio.
@@ -47,7 +47,7 @@ export default function BlogAppDelivery() {
             <img
               className="w-[28rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[27rem]"
               src="https://storage.googleapis.com/portafilo/yovoyapp.png"
-              alt=""
+              alt="Captura de pantalla de la app de delivery 'Yo Voy'"
             />
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -73,7 +73,7 @@ export default function BlogAppDelivery() {
                 </p>
 
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
-                  <p className="text-base font-semibold leading-7 text-orange-600">Tecnologias que utilizo para la aplicacion:</p>
+                  <h2 className="text-base font-semibold leading-7 text-orange-600">Tecnologias que utilizo para la aplicacion:</h2>
                   <li className="flex gap-x-3">
                     <CpuChipIcon className="mt-1 h-5 w-5 flex-none text-orange-600" aria-hidden="true" />
                     <span>
@@ -107,7 +107,7 @@ export default function BlogAppDelivery() {
                   Una de las más notables es la falta de apoyo a los repartidores, quienes no cuentan con seguro social ni protección adecuada por los servicios que brindan.
                   Esto es un aspecto clave que buscamos mejorar a largo plazo, asegurando que nuestros colaboradores cuenten con mejores condiciones laborales.
                 </p>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">¿Y ahora, qué sigue?</h2>
+                <h3 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">¿Y ahora, qué sigue?</h3>
                 <p className="mt-6">
                   Con el objetivo de llevar el proyecto a su máximo potencial, el siguiente paso es conectar con personas con experiencia en incubación de startups y desarrollo de negocios.
                   Esto nos permitirá evolucionar de manera sólida y estratégica. Por ello, hago una invitación abierta a quienes estén interesados en colaborar y aportar su conocimiento para hacer crecer este proyecto.
@@ -117,8 +117,46 @@ export default function BlogAppDelivery() {
               </div>
             </div>
           </div>
+
+        </div>
+
+      </div>
+      {/* Nueva sección */}
+      <div className="bg-gray-50 py-12 mt-5 mb-5">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Explora más herramientas útiles</h2>
+          <div className="mt-6 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6">
+            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+              <h3 className="text-lg font-semibold text-gray-800">Calculadora de Interés Compuesto</h3>
+              <p className="mt-2 text-gray-600">
+                Utiliza nuestra calculadora de interés compuesto para planificar tu futuro financiero y maximizar tus ahorros.
+              </p>
+              <a href="/calculadora-de-interes-compuesto-online" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+                Calcular Ahora
+              </a>
+            </div>
+            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+              <h3 className="text-lg font-semibold text-gray-800">Generador de Voz con IA</h3>
+              <p className="mt-2 text-gray-600">
+                Convierte texto en audio de alta calidad con nuestro generador de voz impulsado por inteligencia artificial.
+              </p>
+              <a href="/voz-de-inteligencia-artificial" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+                Probar Generador
+              </a>
+            </div>
+            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+              <h3 className="text-lg font-semibold text-gray-800">Herramientas de Delivery CSS</h3>
+              <p className="mt-2 text-gray-600">
+                Descubre nuestras herramientas de CSS diseñadas específicamente para mejorar la experiencia de entrega en tu aplicación.
+              </p>
+              <a href="/developer-tools" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+                Ver Herramientas
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
     </>
   )
 }
