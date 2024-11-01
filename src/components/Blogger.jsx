@@ -26,7 +26,7 @@ export default function Blogger() {
     <div className="bg-gray-100 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Reflexiones y Creaciones de Juan</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Reflexiones y Creaciones en "El Escritorio"</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
             Bienvenido a mi espacio personal, donde comparto reflexiones, investigaciones, teorías y novedades, principalmente enfocadas en el fascinante mundo de la tecnología.
             Aquí encontrarás una mezcla de ideas, aprendizajes y experiencias que espero te inspiren y aporten valor.
@@ -66,7 +66,9 @@ export default function Blogger() {
                   <p className="mt-5 line-clamp-12 text-sm leading-6 text-gray-600">{post.description}</p>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
+                  {/**
                   <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-100" />
+                  */}
                   <div className="text-sm leading-6">
                     <p className="font-semibold text-gray-900">
                       <a href={post.author.href}>

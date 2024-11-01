@@ -16,10 +16,9 @@ export default function Router() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blogger />} />
           <Route path="/blog-app-delivery" element={<BlogAppDelivery />} />
-          <Route path="/cotizacion" element={<WhatsAppFAB />} />
           <Route path="/developer-tools" element={<Tools />} />
           <Route
-            path="/calculadora-de-interes-compuesto"
+            path="/calculadora-de-interes-compuesto-online"
             element={<Calculator />}
           />
           <Route

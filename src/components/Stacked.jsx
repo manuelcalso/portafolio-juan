@@ -19,7 +19,7 @@ const solutions = [
   {
     name: "Calculadora de interes compuesto",
     description: "Calcula el crecimiento de tu inversión",
-    href: "/calculadora-de-interes-compuesto",
+    href: "/calculadora-de-interes-compuesto-online",
     icon: ChartBarIcon,
   },
   {

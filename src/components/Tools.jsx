@@ -425,9 +425,7 @@ export default function Tools() {
 
   const toolsContent = (
     <>
-
       <div>
-
         <section className="flex justify-center news-item general-font p-4 tool-section ">
           <div className="tool-section w-full">
             <h1 className="text-center text-2xl font-bold mr-4">Vibrate</h1>
