@@ -3,6 +3,7 @@ import { Bar } from "react-chartjs-2";
 import { Chart, registerables } from "chart.js";
 import Footer from "./Footer";
 import Header from "./Header";
+import imageninversion from "../assets/interescompuesto.jpg"
 Chart.register(...registerables);
 
 const Calculator = () => {
@@ -168,16 +169,45 @@ const Calculator = () => {
       </div>
 
       {/* Sección para SEO */}
-      <section className="mt-10 p-6 bg-gray-100 rounded-lg max-w-lg mx-auto">
-        <h2 className="text-2xl font-bold text-center text-black">
-          ¿Qué es el interés compuesto y cómo se calcula?
-        </h2>
-        <p className="text-gray-700 mt-4">
-          El interés compuesto es una fórmula financiera que permite calcular el crecimiento
-          de una inversión a lo largo del tiempo, reinvirtiendo los intereses generados.
-          Utilizando una calculadora de interés compuesto, puedes proyectar tus inversiones
-          futuras con precisión.
-        </p>
+      <section className="mt-10 p-20 bg-gray-100 rounded-lg max-w-full  flex">
+        <div className="flex flex-col">
+          <h2 className="text-3xl font-bold text-center text-black">
+            ¿Qué es el interés compuesto y cómo se calcula?
+          </h2>
+          <p className="text-gray-700 mt-4 text-2xl">
+            El interés compuesto es una poderosa herramienta financiera que permite calcular el crecimiento
+            de una inversión a lo largo del tiempo al reinvertir los intereses generados, es decir,
+            se obtienen ganancias sobre las ganancias. La fórmula del interés compuesto ha sido fundamental
+            en la historia de las finanzas y es ampliamente utilizada para planificar inversiones a largo plazo.
+          </p>
+          <p className="text-gray-700 mt-4 text-2xl">
+            Históricamente, el concepto de interés compuesto se remonta a la antigua Mesopotamia,
+            donde ya se aplicaban conceptos de crecimiento acumulativo en préstamos y acuerdos comerciales.
+            Más tarde, el matemático Leonardo Fibonacci popularizó su cálculo en Europa durante la Edad Media,
+            introduciendo la idea en su libro "Liber Abaci". Desde entonces, el interés compuesto ha sido
+            un pilar fundamental en la creación de riqueza, tanto para individuos como para instituciones.
+          </p>
+          <p className="text-gray-700 mt-4 text-2xl">
+            Por ejemplo, si inviertes $1,000 con una tasa de interés anual compuesta del 5%, después de
+            10 años, tu inversión podría crecer significativamente gracias al efecto acumulativo.
+            Es decir, no solo se obtienen beneficios sobre la inversión inicial, sino que también se generan
+            intereses sobre los intereses ganados en cada periodo.
+          </p>
+          <p className="text-gray-700 mt-4 text-2xl">
+            Hoy en día, el interés compuesto se aplica en diversas áreas, como cuentas de ahorro,
+            fondos de inversión, préstamos y hasta en la planificación de fondos para la jubilación.
+            Utilizando una calculadora de interés compuesto, puedes proyectar de forma precisa el
+            crecimiento de tus inversiones, ajustar tus contribuciones y visualizar cómo tu dinero
+            podría crecer a lo largo de los años.
+          </p>
+        </div>
+        <div className="flex justify-center mt-4 p-6">
+          <img
+            src={imageninversion}
+            alt="Gráfico de crecimiento del interés compuesto"
+            className="rounded-lg shadow-lg max-w-full h-auto"
+          />
+        </div>
       </section>
 
       <Footer />
