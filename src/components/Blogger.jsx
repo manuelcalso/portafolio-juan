@@ -26,12 +26,13 @@ export default function Blogger() {
     <div className="bg-gray-100 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Reflexiones y Creaciones en "El Escritorio"</h2>
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Reflexiones y Creaciones en "El Escritorio"</h1>
           <p className="mt-2 text-lg leading-8 text-gray-600">
             Bienvenido a mi espacio personal, donde comparto reflexiones, investigaciones, teorías y novedades, principalmente enfocadas en el fascinante mundo de la tecnología.
             Aquí encontrarás una mezcla de ideas, aprendizajes y experiencias que espero te inspiren y aporten valor.
           </p>
-          <a className="text-base font-semibold leading-7 text-orange-600" href='/'>Regresar al inicio</a>
+          <a className="text-xl font-semibold leading-7 text-orange-600" href='/'>Regresar al inicio</a>
+
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
@@ -39,7 +40,7 @@ export default function Blogger() {
               <div className="relative w-full">
                 <img
                   src={post.imageUrl}
-                  alt=""
+                  alt={`Imagen de la app "Yo Voy": ${post.title}`}
                   className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />

@@ -17,14 +17,8 @@ export default function Router() {
           <Route path="/blog" element={<Blogger />} />
           <Route path="/blog-app-delivery" element={<BlogAppDelivery />} />
           <Route path="/developer-tools" element={<Tools />} />
-          <Route
-            path="/calculadora-de-interes-compuesto-online"
-            element={<Calculator />}
-          />
-          <Route
-            path="/voz-de-inteligencia-artificial"
-            element={<VoiceGenerator />}
-          />
+          <Route path="/calculadora-de-interes-compuesto-online" element={<Calculator />} />
+          <Route path="/voz-de-inteligencia-artificial" element={<VoiceGenerator />} />
         </Routes>
       </BrowserRouter>
     </>
