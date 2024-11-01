@@ -1,4 +1,5 @@
 //BLOG
+import libro from "../assets/lacatedral.jpg"
 
 const posts = [
   {
@@ -19,6 +20,24 @@ const posts = [
         'https://storage.googleapis.com/portafilo/Foto_flfttc.jpg',
     },
   },
+  {
+    id: 2,
+    title: 'La catedral de Turing: Reflexiones sobre Tecnología y Espiritualidad',
+    href: '/blog-analisis-libro-catedral-de-turin',
+    description:
+      'Explora la obra "La catedral de Turing" de George Dyson, que analiza la historia de la computación y su impacto en la sociedad. A través de la vida de pioneros como Alan Turing, se examinan los enfoques de desarrollo en tecnología y su intersección con la espiritualidad. Este libro invita a reflexionar sobre las implicaciones éticas y sociales de nuestras creaciones tecnológicas y cómo estas pueden moldear el futuro.',
+    imageUrl: libro,  // Usando el enlace de imagen importado
+    date: 'Octubre 31, 2024',
+    datetime: '2024-10-31',
+    category: { title: 'Literature', href: '#' },
+    author: {
+      name: 'Juan Manuel Calleros',
+      role: 'CTO',
+      href: 'https://juancalleros.com/',
+      imageUrl:
+        'https://storage.googleapis.com/portafilo/Foto_flfttc.jpg',
+    },
+  }
 ]
 
 export default function Blogger() {
