@@ -261,7 +261,7 @@ export default function Blog() {
                 Mi enfoque se caracteriza por una actitud positiva, creatividad
                 y habilidades técnicas, basado en la búsqueda de soluciones y
                 análisis de problemas con metodologías agiles como ITIL, PMBOK y
-                Scrum. Conocimientos adquiridos en el Master en Gestion de 
+                Scrum. Conocimientos adquiridos en el Master en Gestion de
                 Tecnologias de la Informaicon en la Universidad TecMilenio previo
                 al bootcamp.
                 <br />
@@ -687,6 +687,50 @@ export default function Blog() {
               width={158}
               height={48}
             />
+          </div>
+        </div>
+      </div>
+      {/* Nueva sección */}
+      <div className="bg-gray-50 py-12 mt-5 mb-5">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Explora más herramientas útiles</h2>
+          <div className="mt-6 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6">
+            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+              <h3 className="text-lg font-semibold text-gray-800">Reflexiones y Creaciones en "El Escritorio"</h3>
+              <p className="mt-2 text-gray-600">
+                Visita mi espacio personal, donde comparto reflexiones, investigaciones, teorías y novedades.
+              </p>
+              <a href="/blog" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+                Leer Ahora
+              </a>
+            </div>
+            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+              <h3 className="text-lg font-semibold text-gray-800">Generador de Voz con IA</h3>
+              <p className="mt-2 text-gray-600">
+                Convierte texto en audio de alta calidad con nuestro generador de voz impulsado por inteligencia artificial.
+              </p>
+              <a href="/voz-de-inteligencia-artificial" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+                Probar Generador
+              </a>
+            </div>
+            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+              <h3 className="text-lg font-semibold text-gray-800">Herramientas de Delivery CSS</h3>
+              <p className="mt-2 text-gray-600">
+                Descubre nuestras herramientas de CSS diseñadas específicamente para mejorar la experiencia de entrega en tu aplicación.
+              </p>
+              <a href="/developer-tools" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+                Ver Herramientas
+              </a>
+            </div>
+            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+              <h3 className="text-lg font-semibold text-gray-800">Calculadora de Interés Compuesto</h3>
+              <p className="mt-2 text-gray-600">
+                Utiliza nuestra calculadora de interés compuesto para planificar tu futuro financiero y maximizar tus ahorros.
+              </p>
+              <a href="/calculadora-de-interes-compuesto-online" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+                Calcular Ahora
+              </a>
+            </div>
           </div>
         </div>
       </div>
