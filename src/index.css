@@ -564,17 +564,22 @@
 }
 
 .weather-section {
-  font-family: kalnia-light;
-
-  font-size: 4vw;
+  font-size: 3vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: auto;
+  margin-bottom: 2vw;
+  color: #4c4c4c;
 }
 
 .weather-section p {
-  font-size: 48px;
-  font-family: "Courier New", Courier, monospace;
+  font-size: 3vw;
+  border: 1px solid red;
+  padding: 2vw;
+  border-radius: 100%;
+  background-color: #d5d4d4;
+  
 }
 
 .custom-gradient {
