@@ -5,8 +5,6 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
 
-
-
 export default function Tools() {
   const cssCode = `@keyframes vibrate-1 {
     0% {
@@ -411,427 +409,82 @@ export default function Tools() {
 }`;
 
 
-  const [modalVisible, setModalVisible] = useState(false);
+  const animations = [
+    { title: "Float", code: cssCode10, animationClass: "float" },
+    { title: "Rotate-180", code: cssCode11, animationClass: "rotate-3608" },
+    { title: "Rotate-360", code: cssCode12, animationClass: "rotate-360" },
+    { title: "Flex", code: cssCode13, animationClass: "flex01" },
+    { title: "transLeft", code: cssCode14, animationClass: "transLeft" },
+    { title: "transRight", code: cssCode15, animationClass: "transRight" },
+    { title: "transUp", code: cssCode16, animationClass: "transUp" },
+    { title: "transDown", code: cssCode17, animationClass: "transDown" },
+    { title: "toStretch", code: cssCode18, animationClass: "toStretch" },
+    { title: "Skew", code: cssCode19, animationClass: "skew" },
+    { title: "SkewX", code: cssCode20, animationClass: "skewX" },
+    { title: "SkewY", code: cssCode21, animationClass: "skewY" },
+    { title: "Float-fluid", code: cssCode22, animationClass: "float-fluid" },
+    { title: "Grow", code: cssCode23, animationClass: "grow" },
+    { title: "FlipUp-360", code: cssCode24, animationClass: "flipUp-360" },
+    { title: "FlipUp-180", code: cssCode25, animationClass: "flipUp-180" },
+    { title: "FlipSide-180", code: cssCode26, animationClass: "flipSide-180" },
+    { title: "FlipSide-360", code: cssCode27, animationClass: "flipSide-360" },
+    { title: "Shake", code: cssCode28, animationClass: "shake2" },
+    { title: "BounceShakeX", code: cssCode29, animationClass: "bounceShakeX" },
+    { title: "BounceShakeY", code: cssCode30, animationClass: "bounceShakeY" },
+  ];
 
-  const openModal = () => {
-    setModalVisible(true);
-  };
-
-  const closeModal = () => {
-    setModalVisible(false);
-  };
-
+  const toolAnimations = [
+    { name: "Vibrate", code: cssCode },
+    { name: "Shake", code: cssCode2 },
+    { name: "Pulse", code: cssCode3 },
+    { name: "Bounce", code: cssCode4 },
+    { name: "Heartbeat", code: cssCode5 },
+    { name: "Slide", code: cssCode6 },
+    { name: "Flicker", code: cssCode7 },
+    { name: "Rotate", code: cssCode8 },
+    { name: "Wobble", code: cssCode9 },
+  ];
 
 
   const toolsContent = (
     <>
       <div>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Vibrate</h1>
-            <pre>
-              <CodeBlock code={cssCode} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 vibrate-1 rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Shake</h1>
-            <pre>
-              <CodeBlock code={cssCode2} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 shake rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full ">
-            <h1 className="text-center text-2xl font-bold mr-4">Pulse</h1>
-            <pre>
-              <CodeBlock code={cssCode3} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 pulse rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Bounce</h1>
-            <pre>
-              <CodeBlock code={cssCode4} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 bounce rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Heartbeat</h1>
-            <pre>
-              <CodeBlock code={cssCode5} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 heartbeat rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Slide</h1>
-            <pre>
-              <CodeBlock code={cssCode6} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 slide rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Flicker</h1>
-            <pre>
-              <CodeBlock code={cssCode7} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 flicker rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Rotate</h1>
-            <pre>
-              <CodeBlock code={cssCode8} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 rotate rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
-        <section className="flex justify-center news-item general-font p-4 tool-section ">
-          <div className="tool-section w-full">
-            <h1 className="text-center text-2xl font-bold mr-4">Wobble</h1>
-            <pre>
-              <CodeBlock code={cssCode9} />
-            </pre>
-            <picture>
-              <img
-                src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
-                alt="example image"
-                className="img01 wobble rounded-full"
-              />
-            </picture>
-          </div>
-        </section>
+        {toolAnimations.map((toolAnimation, index) => (
+          <section key={index} className="flex justify-center news-item general-font p-4 tool-section">
+            <div className="tool-section w-full">
+              <h1 className="text-center text-2xl font-bold mr-4">{toolAnimation.name}</h1>
+              <pre>
+                <CodeBlock code={toolAnimation.code} />
+              </pre>
+              <picture>
+                <img
+                  src="https://storage.googleapis.com/portafilo/Let's%20work%20together!%20yellow.png"
+                  alt={`example image for ${toolAnimation.name}`}
+                  className={`img01 ${toolAnimation.name.toLowerCase()} rounded-full`}
+                />
+              </picture>
+            </div>
+          </section>
+        ))}
       </div>
     </>
   );
 
   const postsContent = (
     <section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Float</h1>
-          <pre>
-            <CodeBlock code={cssCode10} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full float bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Float</p>
-          </button>
-
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Rotate-180</h1>
-          <pre>
-            <CodeBlock code={cssCode11} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full rotate-3608 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Rotate-180</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Rotate-360</h1>
-          <pre>
-            <CodeBlock code={cssCode12} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full rotate-360 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Rotate-360</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Flex</h1>
-          <pre>
-            <CodeBlock code={cssCode13} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full flex01 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Flex</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">transLeft</h1>
-          <pre>
-            <CodeBlock code={cssCode14} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full transLeft bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>transLeft</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">transRight</h1>
-          <pre>
-            <CodeBlock code={cssCode15} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full transRight bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>transRight</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">transUp</h1>
-          <pre>
-            <CodeBlock code={cssCode15} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full transUp bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>transUp</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">transDown</h1>
-          <pre>
-            <CodeBlock code={cssCode16} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full transDown bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>transDown</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">toStretch</h1>
-          <pre>
-            <CodeBlock code={cssCode17} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full toStretch bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>toStretch</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Skew</h1>
-          <pre>
-            <CodeBlock code={cssCode18} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full skew bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Skew</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">SkewX</h1>
-          <pre>
-            <CodeBlock code={cssCode19} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full skewX bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>SkewX</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">SkewY</h1>
-          <pre>
-            <CodeBlock code={cssCode20} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full skewY bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>SkewY</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Float-fluid</h1>
-          <pre>
-            <CodeBlock code={cssCode21} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full float-fluid bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Float-fluid</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Grow</h1>
-          <pre>
-            <CodeBlock code={cssCode22} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full grow bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Grow</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">FlipUp-360</h1>
-          <pre>
-            <CodeBlock code={cssCode23} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full flipUp-360 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>FlipUp-360</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">FlipUp-180</h1>
-          <pre>
-            <CodeBlock code={cssCode24} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full flipUp-180 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>FlipUp-180</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">FlipSide-180</h1>
-          <pre>
-            <CodeBlock code={cssCode25} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full flipSide-180 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>FlipSide-180</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">FlipSide-360</h1>
-          <pre>
-            <CodeBlock code={cssCode26} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full flipSide-360 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>FlipSide-360</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Shake</h1>
-          <pre>
-            <CodeBlock code={cssCode27} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full shake2 bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Shake</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">BounceShakeX</h1>
-          <pre>
-            <CodeBlock code={cssCode28} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full bounceShakeX bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>BounceShakeX</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">BounceShakeY</h1>
-          <pre>
-            <CodeBlock code={cssCode29} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full bounceShakeY bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>BounceShakeY</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Surprise</h1>
-          <pre>
-            <CodeBlock code={cssCode30} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full surprise bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Surprise</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Jello</h1>
-          <pre>
-            <CodeBlock code={cssCode31} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full jello bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Jello</p>
-          </button>
-        </div>
-      </section>
-      <section className="flex justify-center news-item general-font p-4 tool-section ">
-        <div className="tool-section w-full">
-          <h1 className="text-center text-2xl font-bold mr-4">Swing</h1>
-          <pre>
-            <CodeBlock code={cssCode32} />
-          </pre>
-          <button className=' px-20 py-10 rounded-full swing bg-[#a52a2a]'>
-            <p className='text-xl text-bold font-kalnia text-white'>Swing</p>
-          </button>
-        </div>
-      </section>
+      {animations.map(({ title, code, animationClass }, index) => (
+        <section key={index} className="flex justify-center news-item general-font p-4 tool-section ">
+          <div className="tool-section w-full">
+            <h1 className="text-center text-2xl font-bold mr-4">{title}</h1>
+            <pre>
+              <CodeBlock code={code} />
+            </pre>
+            <button className={`px-20 py-10 rounded-full ${animationClass} bg-[#a52a2a]`}>
+              <p className='text-xl text-bold font-kalnia text-white'>{title}</p>
+            </button>
+          </div>
+        </section>
+      ))}
     </section>
   );
 
@@ -840,14 +493,67 @@ export default function Tools() {
     { title: 'Hover', content: postsContent },
   ];
 
+
+
   return (
     <Fragment>
       <Header />
-      <section className="blog-bg general-font">
-        
+      <main className="blog-bg general-font">
         <Tabs tabs={tabs} />
-      </section>
-      <Footer/>
+
+        {/* Nueva sección */}
+        <section className="bg-gray-50 py-12 mt-5 mb-5">
+          <div className="mx-auto max-w-7xl px-6">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Explora más herramientas útiles</h2>
+            <div className="mt-6 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6">
+
+              <article className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+                <h3 className="text-lg font-semibold text-gray-800">Reflexiones y Creaciones en "El Escritorio"</h3>
+                <p className="mt-2 text-gray-600">
+                  Visita mi espacio personal, donde comparto reflexiones, investigaciones, teorías y novedades.
+                </p>
+                <a
+                  href="/blog"
+                  className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
+                  aria-label="Leer sobre reflexiones y creaciones en el blog"
+                >
+                  Leer Ahora
+                </a>
+              </article>
+
+              <article className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+                <h3 className="text-lg font-semibold text-gray-800">Generador de Voz con IA</h3>
+                <p className="mt-2 text-gray-600">
+                  Convierte texto en audio de alta calidad con nuestro generador de voz impulsado por inteligencia artificial.
+                </p>
+                <a
+                  href="/voz-de-inteligencia-artificial"
+                  className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
+                  aria-label="Probar el generador de voz con inteligencia artificial"
+                >
+                  Probar Generador
+                </a>
+              </article>
+
+              <article className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+                <h3 className="text-lg font-semibold text-gray-800">Calculadora de Interés Compuesto</h3>
+                <p className="mt-2 text-gray-600">
+                  Utiliza nuestra calculadora de interés compuesto para planificar tu futuro financiero y maximizar tus ahorros.
+                </p>
+                <a
+                  href="/calculadora-de-interes-compuesto-online"
+                  className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
+                  aria-label="Calcular interés compuesto online"
+                >
+                  Calcular Ahora
+                </a>
+              </article>
+
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
     </Fragment>
   );
 }
