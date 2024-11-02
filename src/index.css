@@ -570,12 +570,12 @@
   align-items: center;
   margin-top: auto;
   margin-bottom: 2vw;
-  color: #4c4c4c;
+  color: #000000;
 }
 
 .weather-section p {
   font-size: 3vw;
-  border: 1px solid red;
+  border: 1px solid gray;
   padding: 2vw;
   border-radius: 100%;
   background-color: #d5d4d4;

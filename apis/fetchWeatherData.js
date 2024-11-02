@@ -20,13 +20,13 @@ export const fetchWeatherData = async () => {
         
         // Cambiar el color de fondo basado en la temperatura
         if (temperature <= 14) {
-          weatherContainer.style.backgroundColor = "blue"; // Azul para ≤ 15
+          weatherContainer.style.backgroundColor = "#64B5F6"; // Azul para ≤ 15
         } else if (temperature > 15 && temperature < 20) {
-          weatherContainer.style.backgroundColor = "orange"; // Naranja para > 15 y < 20
+          weatherContainer.style.backgroundColor = "#FDB72F"; // Naranja para > 15 y < 20
         } else if (temperature >= 20 && temperature <= 25) {
-          weatherContainer.style.backgroundColor = "red"; // Rojo para ≥ 20 y ≤ 25
+          weatherContainer.style.backgroundColor = "FF5353"; // Rojo para ≥ 20 y ≤ 25
         } else {
-          weatherContainer.style.backgroundColor = "red"; // Rojo para > 25
+          weatherContainer.style.backgroundColor = "FF0000"; // Rojo para > 25
         }
 
         // Mostrar el contenido del clima, solo si se encuentra el icono
