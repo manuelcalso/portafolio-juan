@@ -51,7 +51,6 @@ export default function Header() {
               </a>
             ))}
           </div>
-
           <div className="flex lg:hidden p-1">
             <button
               type="button"
@@ -74,7 +73,8 @@ export default function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 slide01 ">
+        <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
+
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -83,24 +83,23 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <Stacked/>
+                <Stacked />
               </button>
             </div>
-            <a
-              href="/"
+            <button
+              type="button" // Cambiar a tipo botón
               className="-m-1.5 p-1.5 shadow-lg rounded-md border border-gray-400 bg-black"
+              onClick={() => setMobileMenuOpen(false)}
             >
-              <span className="sr-only">Juan Portafolio</span>
               <img
                 className="h-10 w-auto rounded-full"
                 src="https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg"
                 alt="juan logo"
               />
-              Return
-            </a>
+              Cerrar
+            </button>
           </div>
           <div className="mt-4 space-y-2 kalnia-medium top-0 bg-white">
-            <Footer />
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -122,6 +121,7 @@ export default function Header() {
                 )}
               </a>
             ))}
+            <Footer />
           </div>
         </Dialog.Panel>
       </Dialog>

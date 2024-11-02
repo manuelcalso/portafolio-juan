@@ -33,8 +33,8 @@ const solutions = [
 export default function Stacked() {
   return (
     <Popover className="relative font-kalnia">
-      <Popover.Button className="inline-flex items-center gap-x-1 text-2xl font-bold text-gray-900 md:hover:text-white sm:hover:text-gray-900 slide01">
-        <span>Tools</span>
+      <Popover.Button className="inline-flex items-center gap-x-1 text-2xl font-bold text-gray-900 md:hover:text-white sm:hover:text-gray-900">
+        <span>Menu</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
       <Popover.Panel
@@ -42,19 +42,20 @@ export default function Stacked() {
         className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
       >
         <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
-          <div className="p-4">
+          <div className="p-4 m-5">
             {solutions.map((item) => (
               <div
                 key={item.name}
-                className="group relative flex gap-x-2 rounded-lg p-2 hover:bg-gray-50"
+                className="group relative flex gap-x-2 rounded-lg p-2 hover:bg-gray-50 "
               >
-                <div className="mr-4 flex h-10 w-10 flex-none items-center justify-center rounded-lg group-hover:bg-white">
+                <div className="mr-4 flex h-4 w-4 flex-none items-center justify-center rounded-lg group-hover:bg-white">
                   <item.icon
-                    className="h-4 w-4 text-green-400 group-hover:text-indigo-600"
+                    className="h-10 w-10 text-green-400 group-hover:text-indigo-600"
                     aria-hidden="true"
                   />
                 </div>
-                <div>
+                <div
+                  className="ml-5">
                   <a
                     href={item.href}
                     className="font-semibold text-black font-bellerose text-sm"
@@ -62,8 +63,11 @@ export default function Stacked() {
                     {item.name}
                     <span className="absolute inset-0" />
                   </a>
-                  <p className="text-gray-600 text-xs ">{item.description}</p>
+                  <p className="text-gray-600 text-xs ">
+                    {item.description}
+                  </p>
                 </div>
+
               </div>
             ))}
           </div>

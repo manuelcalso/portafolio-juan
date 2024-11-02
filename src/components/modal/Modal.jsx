@@ -21,7 +21,6 @@ const Modal = () => {
           }}
         >
           <button onClick={toggleModal}>Close</button>
-          <WhatsApp />
         </div>
       )}
       {isOpen && (
