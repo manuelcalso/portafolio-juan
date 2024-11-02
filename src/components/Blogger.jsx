@@ -1,5 +1,8 @@
 //BLOG
 import libro from "../assets/lacatedral.jpg"
+import Footer from "./Footer"
+import Header from "./Header"
+
 
 const posts = [
   {
@@ -43,6 +46,7 @@ const posts = [
 export default function Blogger() {
   return (
     <>
+      <Header />
       <div className="bg-gray-100 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -141,6 +145,7 @@ export default function Blogger() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

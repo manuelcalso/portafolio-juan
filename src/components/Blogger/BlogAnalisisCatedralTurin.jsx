@@ -1,5 +1,8 @@
 import { BookOpenIcon } from '@heroicons/react/20/solid'
 import libro from "../../assets/lacatedral.jpg"
+import Footer from '../Footer'
+
+
 
 
 export default function BlogAnalisisCatedralTurin() {
@@ -118,7 +121,6 @@ export default function BlogAnalisisCatedralTurin() {
               </div>
             </div>
           </div>
-
         </div>
 
       </div>
@@ -157,7 +159,7 @@ export default function BlogAnalisisCatedralTurin() {
           </div>
         </div>
       </div>
-
+      <Footer />
     </>
   )
 }

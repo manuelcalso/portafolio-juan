@@ -1,5 +1,5 @@
 import { LockClosedIcon, ServerIcon, CpuChipIcon } from '@heroicons/react/20/solid'
-
+import Footer from '../Footer'
 
 export default function BlogAppDelivery() {
   return (
@@ -156,7 +156,7 @@ export default function BlogAppDelivery() {
           </div>
         </div>
       </div>
-
+      <Footer />
     </>
   )
 }

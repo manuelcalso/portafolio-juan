@@ -38,7 +38,7 @@ export default function Footer() {
         <img
           src="https://storage.googleapis.com/portafilo/Let's%20work%20together!_transparent.png"
           alt="work together logo"
-          className="w-1/3 vibrate-01"
+          className="w-1/4 h-auto vibrate-01"
         />
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
