@@ -42,7 +42,7 @@ export default function Footer() {
         />
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
-          aria-label="Footer"
+          aria-label="Footerr"
         >
           {navigation.main.map((item, i) => (
             <>
