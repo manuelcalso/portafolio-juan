@@ -125,23 +125,7 @@ const posts = [
     },
     code: "",
   },
-  {
-    id: 7,
-    title: "HubSpot Server",
-    href: "https://hubspotapi.netlify.app",
-    description:
-      "Servidor que actúa como middleware para comunicarse con la API de HubSpot, permitiendo realizar operaciones como la creación, recuperación, actualización, búsqueda y eliminación de contactos.",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/Captura%20de%20pantalla%202024-09-03%20a%20la(s)%207.45.35%E2%80%AFa.m..png",
-    date: "2024 - current days",
-    datetime: "2024-06-14",
-    author: {
-      name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
-    },
-    code: "",
-  },
+  
 ];
 const projects = [
   {
