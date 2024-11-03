@@ -33,7 +33,7 @@ const solutions = [
 export default function Stacked() {
   return (
     <Popover className="relative font-kalnia">
-      <Popover.Button className="inline-flex items-center gap-x-1 text-2xl font-bold text-gray-900 md:hover:text-white sm:hover:text-gray-900 slide">
+      <Popover.Button className="inline-flex items-center gap-x-1 text-2xl font-bold text-gray-900 md:hover:text-white sm:hover:text-gray-900">
         <span className="sr-only">Menu</span>
         <ChevronDownIcon className="h-20 w-20" aria-hidden="true" />
       </Popover.Button>
