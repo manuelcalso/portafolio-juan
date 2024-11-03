@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-async function main() {
+async function createAssistant () {
   try {
     const assistant = await openai.assistants.create({
       name: "Math Tutor",

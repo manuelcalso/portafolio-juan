@@ -3,6 +3,7 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import "../../src/index.css";
 import plantillas from "../assets/Plantillas.png"
+import QRcode from "../assets/webqr.png"
 
 const posts = [
   {
@@ -252,11 +253,12 @@ export default function Blog() {
                 <br />
                 <picture>
                   <img
-                    src="https://storage.googleapis.com/portafilo/diploma-ucamp.JPG"
-                    alt="Diploma Ucamp"
-                    className="rounded-lg shadow-lg slide01"
+                    src={QRcode}
+                    alt="aptitudes curso udemy"
+                    className="rounded-lg shadow-lg w-1/2 h-1/2"
                   />
                 </picture>
+
                 <br />
                 Mi enfoque se caracteriza por una actitud positiva, creatividad
                 y habilidades técnicas, basado en la búsqueda de soluciones y
@@ -281,7 +283,7 @@ export default function Blog() {
                   <img
                     src="https://storage.googleapis.com/portafilo/UdemyCertificate.jpg"
                     alt="aptitudes curso udemy"
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg w-1/2 h-1/2"
                   />
                 </picture>
                 <br />
