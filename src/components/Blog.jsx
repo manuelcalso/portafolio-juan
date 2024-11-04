@@ -686,7 +686,7 @@ export default function Blog() {
               <p className="mt-2 text-gray-600">
                 Visita mi espacio personal, donde comparto reflexiones, investigaciones, teorías y novedades.
               </p>
-              <a href="/blog" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+              <a href="/blog" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black text-lg  hover:bg-orange-700 hover:text-white">
                 Leer Ahora
               </a>
             </div>
@@ -695,7 +695,7 @@ export default function Blog() {
               <p className="mt-2 text-gray-600">
                 Convierte texto en audio de alta calidad con nuestro generador de voz impulsado por inteligencia artificial.
               </p>
-              <a href="/voz-de-inteligencia-artificial" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+              <a href="/voz-de-inteligencia-artificial" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white">
                 Probar Generador
               </a>
             </div>
@@ -704,7 +704,7 @@ export default function Blog() {
               <p className="mt-2 text-gray-600">
                 Descubre nuestras herramientas de CSS diseñadas específicamente para mejorar la experiencia de entrega en tu aplicación.
               </p>
-              <a href="/developer-tools" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+              <a href="/developer-tools" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white">
                 Ver Herramientas
               </a>
             </div>
@@ -713,7 +713,7 @@ export default function Blog() {
               <p className="mt-2 text-gray-600">
                 Utiliza nuestra calculadora de interés compuesto para planificar tu futuro financiero y maximizar tus ahorros.
               </p>
-              <a href="/calculadora-de-interes-compuesto-online" className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700">
+              <a href="/calculadora-de-interes-compuesto-online" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white">
                 Calcular Ahora
               </a>
             </div>
