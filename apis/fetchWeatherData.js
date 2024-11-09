@@ -17,7 +17,7 @@ export const fetchWeatherData = async () => {
         const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 
         const temperature = data.main.temp;
-        
+
         // Cambiar el color de fondo basado en la temperatura
         if (temperature <= 14) {
           weatherContainer.style.backgroundColor = "#64B5F6"; // Azul para ≤ 15
@@ -26,7 +26,7 @@ export const fetchWeatherData = async () => {
         } else if (temperature >= 20 && temperature <= 25) {
           weatherContainer.style.backgroundColor = "FF5353"; // Rojo para ≥ 20 y ≤ 25
         } else {
-          weatherContainer.style.backgroundColor = "FF0000"; // Rojo para > 25
+          weatherContainer.style.backgroundColor = "FF5353"; // Rojo para > 25
         }
 
         // Mostrar el contenido del clima, solo si se encuentra el icono
@@ -35,11 +35,10 @@ export const fetchWeatherData = async () => {
           iconHtml = `<img src="${iconUrl}" alt="Weather Icon">`;
         }
 
-        weatherContainer.innerHTML = `<div class="weather-section">
-          <h1>Clima en ${data.name}</h1>
-          ${iconHtml}
+        weatherContainer.innerHTML = `<div class="weather-section kalnia-medium">
+          <h1>${data.name}</h1>
+          <div class="slide01">${iconHtml}</div>
           <p>${data.main.temp} °C</p>
-          
         </div>`;
       },
       (error) => {

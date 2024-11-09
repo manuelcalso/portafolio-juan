@@ -24,10 +24,10 @@ export default function Header() {
             alt="manuel calleros logo"
             className="w-40 slide01 p-0 m-0"
           />
-        </a>
+        </a>\
         <div className="flex">
           <div className="hidden lg:flex lg:gap-x-4 items-center">
-            <Stacked />
+            
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -50,6 +50,7 @@ export default function Header() {
                 )}
               </a>
             ))}
+            <Stacked />
           </div>
           <div className="flex lg:hidden p-1">
             <button
@@ -99,6 +100,7 @@ export default function Header() {
               Cerrar
             </button>
           </div>
+
           <div className="mt-4 space-y-2 kalnia-medium top-0 bg-white">
             {navigation.map((item) => (
               <a
@@ -123,6 +125,8 @@ export default function Header() {
             ))}
             <Footer />
           </div>
+
+          
         </Dialog.Panel>
       </Dialog>
     </header>

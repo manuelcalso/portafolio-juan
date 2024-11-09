@@ -564,21 +564,18 @@
 }
 
 .weather-section {
-  font-size: 3vw;
+  font-size: 1vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: auto;
-  margin-bottom: 2vw;
   color: #000000;
 }
 
 .weather-section p {
-  font-size: 3vw;
-  border: 1px solid gray;
-  padding: 2vw;
+  font-size: 2vw;
+  padding: 1vw;
   border-radius: 100%;
-  background-color: #d5d4d4;
   
 }
 

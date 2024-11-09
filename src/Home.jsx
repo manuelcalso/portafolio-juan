@@ -19,10 +19,11 @@ export default function Home() {
   useEffect(() => {
     fetchWeatherData();
   }, []);
-  
+
   return (
     <>
       <Header />
+      <div className="weather bg-white rounded-border-about absolute z-50 slide-in-top"></div>
       <div className="fixed bottom-10 right-5 z-50 flex justify-center items-center bg-transparent hover:bg-[#1B5E20] rounded-lg heartbeat01">
         <Fab
           color="success"
@@ -35,7 +36,7 @@ export default function Home() {
         </Fab>
       </div>
       <Blog />
-      <div className="weather"></div>
+
       <Footer />
     </>
   );
