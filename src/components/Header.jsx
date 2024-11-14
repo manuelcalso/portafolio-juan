@@ -24,10 +24,10 @@ export default function Header() {
             alt="manuel calleros logo"
             className="w-40 slide01 p-0 m-0"
           />
-        </a>\
+        </a>
         <div className="flex">
           <div className="hidden lg:flex lg:gap-x-4 items-center">
-            
+
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -126,7 +126,7 @@ export default function Header() {
             <Footer />
           </div>
 
-          
+
         </Dialog.Panel>
       </Dialog>
     </header>
