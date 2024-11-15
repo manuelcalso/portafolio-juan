@@ -4,10 +4,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Footer from "./Footer";
 import WhatsAppFAB from "./WhatsAppFAB";
 import Stacked from "./Stacked";
+import Tetris from "../components/tetris/Tetris";
 
 const navigation = [
   { name: "Blog 'El Escritorio'", href: "/blog" },
-  { name: "PlasticBeach.shop", href: "https://plasticbeach.shop/" },
+  { name: "Tetris", href: "/gran-clasico-juego-tetris-online" },
+  { name: "PlasticBeach", href: "https://plasticbeach.shop/" },
   { name: "English version", href: "https://juancalleros.vercel.app/" },
 ];
 export default function Header() {
@@ -22,12 +24,11 @@ export default function Header() {
           <img
             src="https://storage.googleapis.com/portafilo/img-zB3Sv3B0ZvJj8dLRukBcSl3t-removebg-preview.png"
             alt="manuel calleros logo"
-            className="w-40 slide01 p-0 m-0"
+            className="w-24 slide01 p-0 m-0"
           />
         </a>
         <div className="flex">
           <div className="hidden lg:flex lg:gap-x-4 items-center">
-
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -75,7 +76,6 @@ export default function Header() {
       >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 left-0 z-10 w-full overflow-y-auto bg-white px-6 py-6">
-
           <div className="flex items-center justify-between">
             <div className="flex flex-1">
               <button
@@ -125,8 +125,6 @@ export default function Header() {
             ))}
             <Footer />
           </div>
-
-
         </Dialog.Panel>
       </Dialog>
     </header>
