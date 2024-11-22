@@ -8,7 +8,7 @@ import Tetris from "../components/tetris/Tetris";
 
 const navigation = [
   { name: "Blog 'El Escritorio'", href: "/blog" },
-  { name: "Tetris Game", href: "/gran-clasico-juego-tetris-online" },
+  { name: "Tetris Game", href: "/juan-calleros-tetris-online" },
   { name: "PlasticBeach", href: "https://plasticbeach.shop/" },
   { name: "English", href: "https://juancalleros.vercel.app/" },
 ];

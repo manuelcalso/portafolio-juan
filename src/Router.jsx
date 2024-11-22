@@ -26,7 +26,7 @@ export default function Router() {
             element={<Calculator />}
           />
           <Route
-            path="/gran-clasico-juego-tetris-online"
+            path="/juan-calleros-tetris-online"
             element={<Tetris />}
           />
           <Route
