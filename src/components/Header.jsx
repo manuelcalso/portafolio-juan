@@ -10,6 +10,7 @@ const navigation = [
   { name: "Blog 'El Escritorio'", href: "/blog" },
   { name: "Tetris Game", href: "/juan-calleros-tetris-online" },
   { name: "PlasticBeach", href: "https://plasticbeach.shop/" },
+  { name: "NoFooter", href: "https://nofooter.com/" },
   { name: "English", href: "https://juancalleros.vercel.app/" },
 ];
 export default function Header() {
