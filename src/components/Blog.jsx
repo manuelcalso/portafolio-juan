@@ -110,8 +110,8 @@ const posts = [
   },
   {
     id: 6,
-    title: "Arquitectura Fotovoltaica",
-    href: "https://construccionaf.vercel.app/",
+    title: "Arquitectura",
+    href: "https://arquitecturafotovoltaica.netlify.app/ ",
     description:
       "Desarrollo web para un cliente, enfocado en proyectos de Construccion y reparaciones para residencial o negocios. (sitio en constuccion)",
     imageUrl:
