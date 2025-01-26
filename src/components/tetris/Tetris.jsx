@@ -7,7 +7,7 @@ const IframeComponent = () => {
     <>
       <Header />
       <div className="flex flex-col justify-center items-center bg-gradient-to-t from-orange-500 to-black animate-bg-pan-top  p-10">
-        <div className="w-98 bg-transparent flex flex-col justify-center items-center bg-gradient-to-t from-red-500 to-black animate-bg-pan-top ">
+        <div className="w-96 bg-transparent flex flex-col justify-center items-center bg-gradient-to-t from-red-500 to-black animate-bg-pan-top ">
           <h1 className="text-3xl font-bold mb-4 text-white">
             Juega Tetris: El clásico de siempre
           </h1>
