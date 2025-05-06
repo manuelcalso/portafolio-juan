@@ -21,20 +21,20 @@ const IframeComponent = () => {
               de tu teclado.
             </span>
           </p>
-        
-        <iframe
-          src="https://manuelcalso.github.io/tetris-game.github.io/"
-          width="480"
-          height="640"
-          className="border rounded-lg"
-          title="Tetris Game - Clásico Juego de Piezas"
-          loading="lazy"
-          aria-label="Juego de Tetris"
-        ></iframe>
-        <p className="text-white mt-4 text-center">
-          Un sencillo juego de Tetris que desarrollé con React. ¡Pruébalo y
-          mejora tu puntuación!
-        </p>
+
+          <iframe
+            src="https://manuelcalso.github.io/tetris-game.github.io/"
+            width="480"
+            height="640"
+            className="border rounded-lg"
+            title="Tetris Game - Clásico Juego de Piezas"
+            loading="lazy"
+            aria-label="Juego de Tetris"
+          ></iframe>
+          <p className="text-white mt-4 text-center">
+            Un sencillo juego de Tetris que desarrollé con React. ¡Pruébalo y
+            mejora tu puntuación!
+          </p>
         </div>
       </div>
     </>
