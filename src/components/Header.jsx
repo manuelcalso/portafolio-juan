@@ -8,8 +8,8 @@ import Tetris from "../components/tetris/Tetris";
 
 const navigation = [
   { name: "Blog 'El Escritorio'", href: "/blog" },
+  { name: "Shop", href: "https://proyecto-5-ecommerce.netlify.app/" },
   { name: "Tetris Game", href: "/juan-calleros-tetris-online" },
-  { name: "PlasticBeach", href: "https://plasticbeach.shop/" },
   { name: "English", href: "https://juancalleros.vercel.app/" },
 ];
 export default function Header() {

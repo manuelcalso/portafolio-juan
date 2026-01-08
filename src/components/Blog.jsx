@@ -58,23 +58,6 @@ const posts = [
     code: "https://github.com/manuelcalso/proyecto-dos-CRUD?tab=readme-ov-file",
   },
   {
-    id: 3,
-    title: "Proyecto Dashboard App",
-    href: "https://globaly-news.netlify.app/#",
-    description:
-      "Se desarrollo una aplicacion web la cual tiene conexion a una API financiera y la generacion de una grafica utilizando Chart.js ",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/dashboard_zhu8yu.jpg",
-    date: "Agosto-Septiembre 2023",
-    datetime: "2020-03-16",
-    author: {
-      name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
-    },
-    code: "https://github.com/manuelcalso/proyecto-dashbordapp/tree/master",
-  },
-  {
     id: 4,
     title: "Proyecto Restaurante App",
     href: "https://proyecto-restaurante-app.netlify.app/",
@@ -94,7 +77,7 @@ const posts = [
   {
     id: 5,
     title: "Proyecto Ecommerce",
-    href: "https://plasticbeach.shop/",
+    href: "https://proyecto-5-ecommerce.netlify.app/",
     description:
       "Desarrollo de una pagina web de ecommerce fullstack, implementando el uso de Mongodb para la base de datos y Stripe para los metodos de pago",
     imageUrl:
@@ -125,7 +108,7 @@ const posts = [
     },
     code: "",
   },
-  
+
 ];
 const projects = [
   {
@@ -220,98 +203,35 @@ export default function Blog() {
                 ¡Bienvenido a mi portafolio!
                 <br />
                 <br />
-                Soy un licenciado en administrador de empresas
-                quien encontró su pasión en el
+                Soy Licenciado en Administración de Empresas con especialización en{" "}
                 <span className="text-yellow-300">
-                  desarrollo de aplicaciones web y móviles
+                  desarrollo de aplicaciones web y móviles Full Stack
                 </span>{" "}
-                nivel fullstack {"(backend y frontend)"}.
+                (frontend y backend).
                 <br />
                 <br />
-                En 2023 curse mi estudios en Ucamp, el cual se basa en proyectos con React, Node.js,
-                Express.js, MongoDB, también en Next.js todo con librerías
-                como, Tailwind, Bootstrap, MaterialUI, Bulma, entre otros, sin
-                embargo, desde la pandemia de 2020 incluso antes había generado
-                mis primeras maquetas en HTML, CSS y JavaScript.
-                <br />
-                <br />
-                <picture>
-                  <img
-                    src={QRcode}
-                    alt="aptitudes curso udemy"
-                    className="rounded-lg shadow-lg w-1/2 h-1/2"
-                  />
-                </picture>
-
-                <br />
-                Mi enfoque se caracteriza por una actitud positiva, creatividad
-                y habilidades técnicas, basado en la búsqueda de soluciones y
-                análisis de problemas con metodologías agiles como ITIL, PMBOK y
-                Scrum. Conocimientos adquiridos en el Master en Gestion de
-                Tecnologias de la Informaicon en la Universidad TecMilenio previo
-                al bootcamp.
-                <br />
-                <br />
-                En este 2024, continuo con mi preparación en el área móvil,
-                terminando el curso de en{" "}
-                <span className="text-yellow-300">Udemy</span> de Juan Pablo De
-                la torre Valdez, basado en React Native adaptándose para Android
-                o iOS como sistemas operativos, en este curso abarcamos
-                diferentes dependencias y librerías las cuales busque
-                alternativas de solución a errores en actualizaciones y
-                adaptaciones de arranque que se ajustaran a diferentes
-                emuladores para iOS y para Android Studio.
-                <br />
-                <br />
-                <picture>
-                  <img
-                    src="https://storage.googleapis.com/portafilo/UdemyCertificate.jpg"
-                    alt="aptitudes curso udemy"
-                    className="rounded-lg shadow-lg w-1/2 h-1/2"
-                  />
-                </picture>
-                <br />
-                Busco poder trabajar en proyectos colaborativos y
-                poder desarrollar productos utiles al cliente final,
-                por lo que, si eres{" "}
-                <span className="text-yellow-300 text-3xl">reclutador</span> bueno,
-                comentar que soy comprometido, responsable, enfocado; por lo que
-                te pido me contactes si crees que pueda colaborar con un perfil
-                disponible.
-                <br />
-                <br />
-                Y si entraste para conocer mis proyectos, buscas algún
-                proyecto específico que te gustaría
-                <span className="text-yellow-300 text-3xl">
-                  desarrollar para tu negocio
+                Cuento con experiencia en el desarrollo de soluciones digitales utilizando{" "}
+                <span className="text-yellow-300">
+                  React, Node.js, Express.js, MongoDB y Next.js
                 </span>
-                , no dudes en contactarme y explorar las opciones para
-                posicionar e impulsar tus ideas de negocio.
+                , así como en la creación de interfaces modernas con Tailwind CSS,
+                Bootstrap y Material UI.
                 <br />
                 <br />
-                En este sitio utilizamos solo algunas áreas con secciones
-                comerciales, si te gustaría implementar anuncios publicitarios
-                en
-                <span className="text-yellow-300 text-3xl">
-                  tu sitio web y monetizarlo
-                </span>{" "}
-                o poder generar campañas publicitarias para conocer tu nicho de
-                mercado, ¡de igual forma contáctame y empecemos!
+                Mi formación se basa en proyectos reales y metodologías ágiles como Scrum,
+                ITIL y PMBOK, con un fuerte enfoque en análisis y resolución de problemas.
+                Durante 2024 reforcé mis habilidades en desarrollo móvil con{" "}
+                <span className="text-yellow-300">React Native</span>, creando aplicaciones
+                multiplataforma para Android e iOS y resolviendo retos de compatibilidad,
+                dependencias y configuración en distintos entornos.
                 <br />
                 <br />
-                Se aceptan aportaciones voluntarias{" "}
-                <a
-                  href="https://buy.stripe.com/4gwcOy6TXfnc7jG4gg"
-                  className="text-yellow-300"
-                >
-                  <span>a</span>
-                  <span>q</span>
-                  <span>u</span>
-                  <span>i</span>
-                </a>{" "}
-                o al final, ¡gracias y por tu visita!
+                Me caracterizo por ser una persona responsable, comprometida y orientada a
+                resultados, interesada en colaborar en proyectos donde la tecnología aporte
+                valor real al negocio y al usuario final.
               </p>
             </div>
+
           </div>
           <div className="mt-14 flex justify-end gap-6 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0 ">
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">
@@ -333,14 +253,7 @@ export default function Blog() {
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              <div className="relative pulse01">
-                <img
-                  src="https://storage.googleapis.com/portafilo/tec_arlqda.jpg"
-                  alt="titulo maestria"
-                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg float01"
-                />
-                <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-              </div>
+              
             </div>
             <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
               <div className="relative bounce01">
@@ -453,6 +366,7 @@ export default function Blog() {
               </>
             ))}
           </div>
+          {/*
           <div className="text-center my-10">
             <h1 className="text-4xl font-bold tracking-tight text-black sm:text-4xl kalnia-medium vibrate-01">
               Plantillas
@@ -470,13 +384,14 @@ export default function Blog() {
               </a>
             </picture>
           </div>
+          */}
           <br />
           <div className=" mb-5 mt-5 bg-orange-100">
             <h1 className="text-2xl font-bold tracking-tight text-black sm:text-2xl kalnia-medium vibrate-01">
               Nuestros productos
             </h1>
             <a
-              href="https://plasticbeach.shop/"
+              href="https://proyecto-5-ecommerce.netlify.app/"
               rel="noopener noreferrer"
               className="text-2xl italic title flex flex-row justify-center items-center gap-x-4"
             >
@@ -509,6 +424,7 @@ export default function Blog() {
             </a>
             <br />
           </div>
+          
           <br />
           <br />
           <Stack spacing={2}>
