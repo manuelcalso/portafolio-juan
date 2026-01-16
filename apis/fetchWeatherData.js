@@ -1,53 +1,70 @@
 export const fetchWeatherData = async () => {
+  const weatherContainer = document.querySelector(".weather");
+  if (!weatherContainer) return;
+
+  // Estado inicial
+  weatherContainer.innerHTML = "Cargando clima…";
+
   try {
     const apiKey = "612cbf06bf06319c9a453dfb40ec6f8e";
 
-    // Obtener la ubicación del usuario
-    navigator.geolocation.getCurrentPosition(
-      async (position) => {
-        const lat = position.coords.latitude;
-        const lon = position.coords.longitude;
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    // Envolver geolocalización en Promise
+    const getPosition = () =>
+      new Promise((resolve, reject) =>
+        navigator.geolocation.getCurrentPosition(resolve, reject)
+      );
 
-        const response = await fetch(url);
-        const data = await response.json();
+    const position = await getPosition();
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
 
-        const weatherContainer = document.querySelector(".weather");
-        const icon = data.weather[0].icon; // Icono del clima
-        const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=es`;
+    const response = await fetch(url);
+    const data = await response.json();
 
-        const temperature = data.main.temp;
+    if (!data || !data.main) throw new Error("Datos inválidos del clima");
 
-        // Cambiar el color de fondo basado en la temperatura
-        if (temperature <= 14) {
-          weatherContainer.style.backgroundColor = "#64B5F6"; // Azul para ≤ 15
-        } else if (temperature > 15 && temperature < 20) {
-          weatherContainer.style.backgroundColor = "#FDB72F"; // Naranja para > 15 y < 20
-        } else if (temperature >= 20 && temperature <= 25) {
-          weatherContainer.style.backgroundColor = "FF5353"; // Rojo para ≥ 20 y ≤ 25
-        } else {
-          weatherContainer.style.backgroundColor = "FF5353"; // Rojo para > 25
-        }
+    const temperature = Math.round(data.main.temp);
+    const icon = data.weather?.[0]?.icon;
+    const description = data.weather?.[0]?.description || "Clima actual";
+    const city = data.name || "";
 
-        // Mostrar el contenido del clima, solo si se encuentra el icono
-        let iconHtml = "";
-        if (icon) {
-          iconHtml = `<img src="${iconUrl}" alt="Weather Icon">`;
-        }
+    const iconUrl = icon
+      ? `https://openweathermap.org/img/wn/${icon}@2x.png`
+      : "";
 
-        weatherContainer.innerHTML = `<div class="weather-section kalnia-medium">
-        <h1>${data.name}</h1>
+    // 🎨 Color de fondo según temperatura
+    let bgColor = "#E0E0E0";
+    if (temperature <= 14) {
+      bgColor = "#64B5F6"; // frío
+    } else if (temperature < 20) {
+      bgColor = "#FDB72F"; // templado
+    } else {
+      bgColor = "#FF5353"; // cálido
+    }
+
+    weatherContainer.style.backgroundColor = bgColor;
+
+    weatherContainer.innerHTML = `
+      <div class="weather-section kalnia-medium">
+        <h1>${city}</h1>
         <div class="weather-icon slide01">
-          ${iconHtml}
+          ${
+            icon
+              ? `<img src="${iconUrl}" alt="${description}" />`
+              : ""
+          }
         </div>
-        <p>${Math.round(data.main.temp)}°C</p>
-      </div>`;
-      },
-      (error) => {
-        console.error("Error al obtener la ubicación:", error);
-      }
-    );
+        <p>${temperature}°C</p>
+      </div>
+    `;
   } catch (error) {
     console.error("Error al obtener el clima:", error);
+
+    weatherContainer.innerHTML = `
+      <div class="weather-section kalnia-medium">
+        <p>Clima no disponible</p>
+      </div>
+    `;
   }
 };
