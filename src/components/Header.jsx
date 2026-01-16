@@ -62,7 +62,9 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 target={item.type === "external" ? "_blank" : undefined}
-                rel={item.type === "external" ? "noopener noreferrer" : undefined}
+                rel={
+                  item.type === "external" ? "noopener noreferrer" : undefined
+                }
                 className="text-lg px-3 py-2 rounded-full hover:bg-green-800 hover:text-white transition"
               >
                 {item.name}
@@ -126,11 +128,9 @@ export default function Header() {
                   href={item.href}
                   target={item.type === "external" ? "_blank" : undefined}
                   rel={
-                    item.type === "external"
-                      ? "noopener noreferrer"
-                      : undefined
+                    item.type === "external" ? "noopener noreferrer" : undefined
                   }
-                  className="block text-center border border-gray-400 rounded-xl px-4 py-3 text-lg font-semibold hover:bg-green-800 hover:text-white transition"
+                  className="block text-center border border-gray-400 rounded-xl px-4 py-3 text-lg font-semibold bg-green-800 hover:text-white transition"
                 >
                   {item.name}
                 </a>

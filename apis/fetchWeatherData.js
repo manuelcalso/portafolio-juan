@@ -36,10 +36,12 @@ export const fetchWeatherData = async () => {
         }
 
         weatherContainer.innerHTML = `<div class="weather-section kalnia-medium">
-          <h1>${data.name}</h1>
-          <div class="slide01">${iconHtml}</div>
-          <p>${data.main.temp} °C</p>
-        </div>`;
+        <h1>${data.name}</h1>
+        <div class="weather-icon slide01">
+          ${iconHtml}
+        </div>
+        <p>${Math.round(data.main.temp)}°C</p>
+      </div>`;
       },
       (error) => {
         console.error("Error al obtener la ubicación:", error);
