@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css";
+import Whats from "./WhatsAppFAB";
 
 const navigation = {
   main: [{ name: "Contacto", href: "/" }],
@@ -22,24 +23,20 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <section className="custom-gradient">
+    <section className="custom-gradient mb-5">
       <div className="video-background">
         <video autoPlay muted loop>
           <source
-            src={
-              "https://storage.googleapis.com/portafilo/chichen.mp4"
-            }
+            src={"https://storage.googleapis.com/portafilo/chichen.mp4"}
             type="video/mp4"
           />
         </video>
         <div />
       </div>
       <div className="px-auto flex flex-col justify-center items-center">
-        <img
-          src="https://storage.googleapis.com/portafilo/Let's%20work%20together!_transparent.png"
-          alt="work together logo"
-          className="w-1/4 h-auto vibrate-01"
-        />
+        <div className="my-6 flex justify-center">
+          <Whats />
+        </div>
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
           aria-label="Footerr"

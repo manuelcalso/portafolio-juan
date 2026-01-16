@@ -17,16 +17,16 @@ const solutions = [
     icon: WrenchScrewdriverIcon,
   },
   {
-    name: "Calculadora de interes compuesto",
-    description: "Calcula el crecimiento de tu inversión",
-    href: "/calculadora-de-interes-compuesto-online",
-    icon: ChartBarIcon,
-  },
-  {
     name: "Voz de inteligencia artificial",
     description: "Prueba la voz generada con texto",
     href: "/voz-de-inteligencia-artificial",
     icon: SpeakerWaveIcon,
+  },
+  {
+    name: "Blog 'El Escritorio' ",
+    description: "Blog personal",
+    href: "/blog",
+    icon: ChevronDownIcon,
   },
 ];
 
