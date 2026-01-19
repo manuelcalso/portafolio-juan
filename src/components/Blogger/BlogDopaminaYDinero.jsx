@@ -80,11 +80,11 @@ export default function BlogDopaminaYDinero() {
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                 <p>
-                  La dopamina suele llamarse erróneamente “la hormona del placer”.
-                  En realidad, es el químico de la anticipación. Se activa cuando
-                  el cerebro espera una recompensa, no cuando la disfruta. Esto
-                  explica por qué planear una compra puede sentirse mejor que
-                  poseer el objeto.
+                  La dopamina suele llamarse erróneamente “la hormona del
+                  placer”. En realidad, es el químico de la anticipación. Se
+                  activa cuando el cerebro espera una recompensa, no cuando la
+                  disfruta. Esto explica por qué planear una compra puede
+                  sentirse mejor que poseer el objeto.
                 </p>
 
                 <p className="mt-6">
@@ -137,8 +137,8 @@ export default function BlogDopaminaYDinero() {
                       <strong className="font-semibold text-gray-900">
                         Ciclo dopamina–culpa–repetición:
                       </strong>{" "}
-                      El alivio es breve. Luego aparece la culpa, que paradójicamente
-                      puede detonar un nuevo gasto.
+                      El alivio es breve. Luego aparece la culpa, que
+                      paradójicamente puede detonar un nuevo gasto.
                     </span>
                   </li>
 
@@ -148,8 +148,8 @@ export default function BlogDopaminaYDinero() {
                       <strong className="font-semibold text-gray-900">
                         Sistemas diseñados para explotarlo:
                       </strong>{" "}
-                      Pagos en un clic, recompensas instantáneas, notificaciones y
-                      ofertas limitadas amplifican este comportamiento.
+                      Pagos en un clic, recompensas instantáneas, notificaciones
+                      y ofertas limitadas amplifican este comportamiento.
                     </span>
                   </li>
                 </ul>
@@ -229,8 +229,9 @@ export default function BlogDopaminaYDinero() {
                 ¿Por qué gastar da alivio momentáneo?
               </h4>
               <p className="mt-2">
-                Porque la dopamina se libera en la anticipación de la recompensa.
-                Una vez que el estímulo pasa, el cerebro vuelve a buscar otro.
+                Porque la dopamina se libera en la anticipación de la
+                recompensa. Una vez que el estímulo pasa, el cerebro vuelve a
+                buscar otro.
               </p>
             </div>
 
@@ -242,6 +243,62 @@ export default function BlogDopaminaYDinero() {
                 No. Sin conciencia emocional, mayores ingresos suelen amplificar
                 el mismo patrón de gasto.
               </p>
+            </div>
+          </div>
+        </div>
+        {/* Nueva sección */}
+        <div className="bg-gray-50 py-12 mt-5 mb-5">
+          <div className="mx-auto max-w-7xl px-6">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+              Explora más herramientas útiles
+            </h2>
+            <div className="mt-6 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6">
+              <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Calculadora de Interés Compuesto
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  Utiliza nuestra calculadora de interés compuesto para
+                  planificar tu futuro financiero y maximizar tus ahorros.
+                </p>
+                <a
+                  href="/calculadora-de-interes-compuesto-online"
+                  className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
+                >
+                  Calcular Ahora
+                </a>
+              </div>
+              <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Generador de Voz con IA
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  Convierte texto en audio de alta calidad con nuestro generador
+                  de voz impulsado por inteligencia artificial.
+                </p>
+                <a
+                  href="/voz-de-inteligencia-artificial"
+                  className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
+                >
+                  Probar Generador
+                </a>
+              </div>
+              <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
+                <h3 className="text-lg font-semibold text-gray-800">
+                  Herramientas de Delivery CSS
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  Descubre nuestras herramientas de CSS diseñadas
+                  específicamente para mejorar la experiencia de entrega en tu
+                  aplicación.
+                </p>
+                <a
+                  href="/developer-tools"
+                  className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
+                >
+                  Ver Herramientas
+                </a>
+              </div>
             </div>
           </div>
         </div>
