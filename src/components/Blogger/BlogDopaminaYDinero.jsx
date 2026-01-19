@@ -56,10 +56,11 @@ export default function BlogDopaminaYDinero() {
                   emocionalmente mal
                 </h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
-                  No siempre gastamos por necesidad. Muchas veces lo hacemos
-                  para aliviar emociones como el estrés, la tristeza o la
-                  ansiedad. En este artículo exploramos cómo la dopamina influye
-                  en nuestras decisiones financieras.
+                  El dinero no se gasta solo con lógica. Gran parte de nuestras
+                  decisiones financieras están influenciadas por emociones,
+                  química cerebral y sistemas diseñados para captar nuestra
+                  atención. Entender este proceso es clave para recuperar el
+                  control.
                 </p>
               </div>
             </div>
@@ -79,20 +80,27 @@ export default function BlogDopaminaYDinero() {
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                 <p>
-                  La dopamina no es la hormona del placer, sino de la
-                  anticipación. Se activa cuando el cerebro espera una
-                  recompensa. Comprar algo nuevo, recibir una notificación o
-                  aprovechar una oferta genera ese pico químico que nos impulsa
-                  a actuar.
+                  La dopamina suele llamarse erróneamente “la hormona del placer”.
+                  En realidad, es el químico de la anticipación. Se activa cuando
+                  el cerebro espera una recompensa, no cuando la disfruta. Esto
+                  explica por qué planear una compra puede sentirse mejor que
+                  poseer el objeto.
                 </p>
 
-                <br />
+                <p className="mt-6">
+                  Cuando atravesamos estrés, tristeza, ansiedad o vacío
+                  emocional, el cerebro entra en modo de supervivencia. Busca
+                  alivio inmediato, no soluciones a largo plazo. El dinero,
+                  especialmente en forma de compras rápidas o experiencias
+                  inmediatas, se convierte en un atajo químico.
+                </p>
 
-                <p>
-                  Cuando estamos emocionalmente mal, el cerebro busca alivio
-                  inmediato. El gasto se convierte en una forma rápida de
-                  recuperar control, distraernos o sentir una pequeña victoria
-                  momentánea, aunque el efecto dure poco.
+                <p className="mt-6">
+                  Este patrón no indica falta de disciplina ni ignorancia
+                  financiera. Es una respuesta humana predecible. El problema
+                  surge cuando el gasto emocional se vuelve repetitivo y
+                  automático, creando consecuencias financieras que agravan el
+                  malestar inicial.
                 </p>
 
                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
@@ -106,8 +114,9 @@ export default function BlogDopaminaYDinero() {
                       <strong className="font-semibold text-gray-900">
                         Compras impulsivas:
                       </strong>{" "}
-                      Gastar sin planificar para sentir alivio inmediato,
-                      seguido muchas veces de culpa.
+                      Adquirir productos o servicios sin planificación,
+                      motivados por una emoción intensa más que por una
+                      necesidad real.
                     </span>
                   </li>
 
@@ -115,9 +124,10 @@ export default function BlogDopaminaYDinero() {
                     <CubeIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Uso del dinero como anestesia:
+                        Uso del dinero como anestesia emocional:
                       </strong>{" "}
-                      Comprar para no sentir ansiedad, soledad o frustración.
+                      Gastar para evitar sentir aburrimiento, soledad,
+                      frustración o sensación de pérdida de control.
                     </span>
                   </li>
 
@@ -125,10 +135,10 @@ export default function BlogDopaminaYDinero() {
                     <CubeIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Ciclo dopamina–culpa:
+                        Ciclo dopamina–culpa–repetición:
                       </strong>{" "}
-                      El alivio es breve y genera la necesidad de repetir el
-                      comportamiento.
+                      El alivio es breve. Luego aparece la culpa, que paradójicamente
+                      puede detonar un nuevo gasto.
                     </span>
                   </li>
 
@@ -136,20 +146,43 @@ export default function BlogDopaminaYDinero() {
                     <CubeIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
                     <span>
                       <strong className="font-semibold text-gray-900">
-                        Sistema diseñado para explotarlo:
+                        Sistemas diseñados para explotarlo:
                       </strong>{" "}
-                      Pagos en un clic, ofertas limitadas y estímulos constantes
-                      refuerzan este patrón.
+                      Pagos en un clic, recompensas instantáneas, notificaciones y
+                      ofertas limitadas amplifican este comportamiento.
                     </span>
                   </li>
                 </ul>
 
                 <p className="mt-8">
-                  Romper este ciclo no se trata de fuerza de voluntad, sino de
-                  conciencia emocional. Identificar qué estás sintiendo antes de
-                  gastar, introducir pausas y buscar fuentes de dopamina más
-                  saludables puede cambiar radicalmente tu relación con el
-                  dinero.
+                  El verdadero problema no es gastar, sino gastar de forma
+                  inconsciente. Cuando no entendemos qué emoción estamos
+                  intentando regular, el dinero se convierte en una muleta
+                  emocional costosa.
+                </p>
+
+                <h3 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+                  Cómo romper el ciclo dopaminérgico del gasto
+                </h3>
+
+                <p className="mt-6">
+                  Romper este patrón no requiere fuerza de voluntad extrema.
+                  Requiere conciencia. Introducir pequeñas pausas entre el
+                  impulso y la acción reduce drásticamente la intensidad del
+                  deseo.
+                </p>
+
+                <p className="mt-6">
+                  Preguntas simples como “¿qué estoy sintiendo ahora?” o “¿esto
+                  seguirá siendo importante mañana?” activan la corteza
+                  prefrontal, la parte racional del cerebro, reduciendo la
+                  dominancia emocional.
+                </p>
+
+                <p className="mt-6">
+                  Además, sustituir fuentes de dopamina rápida por dopamina
+                  sostenible —ejercicio, aprendizaje, progreso personal—
+                  reconstruye una relación más sana con el dinero.
                 </p>
 
                 <h3 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
@@ -157,15 +190,22 @@ export default function BlogDopaminaYDinero() {
                 </h3>
 
                 <p className="mt-6">
-                  Cuando aprendes a regular tus emociones sin usar el dinero
-                  como escape, tus finanzas comienzan a ordenarse casi de forma
-                  natural. No se trata de ganar más, sino de gastar con
-                  intención.
+                  Cuando dejas de usar el dinero para regular emociones, tus
+                  finanzas comienzan a ordenarse casi sin esfuerzo. Ahorrar deja
+                  de sentirse como sacrificio y gastar se vuelve una decisión
+                  consciente, no reactiva.
+                </p>
+
+                <p className="mt-6">
+                  El objetivo no es eliminar el placer del dinero, sino dejar de
+                  depender de él para sentirte bien. Ahí es donde ocurre el
+                  verdadero crecimiento financiero y personal.
                 </p>
               </div>
             </div>
           </div>
         </div>
+
         {/* FAQ */}
         <div className="mt-16 px-20">
           <h3 className="text-2xl font-bold tracking-tight text-gray-900">
@@ -178,114 +218,30 @@ export default function BlogDopaminaYDinero() {
                 ¿Qué es el gasto emocional?
               </h4>
               <p className="mt-2">
-                El gasto emocional ocurre cuando usamos el dinero para regular
-                emociones como ansiedad, tristeza, aburrimiento o frustración.
-                No responde a una necesidad real, sino a una búsqueda de alivio
-                momentáneo.
+                Es el uso del dinero como mecanismo para regular emociones
+                difíciles. No responde a una necesidad real, sino a una búsqueda
+                de alivio inmediato.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold text-gray-900">
-                ¿La dopamina es mala para las finanzas?
+                ¿Por qué gastar da alivio momentáneo?
               </h4>
               <p className="mt-2">
-                No. La dopamina es necesaria para la motivación y la acción. El
-                problema surge cuando dependemos exclusivamente de estímulos
-                rápidos, como compras impulsivas, para sentir bienestar.
+                Porque la dopamina se libera en la anticipación de la recompensa.
+                Una vez que el estímulo pasa, el cerebro vuelve a buscar otro.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold text-gray-900">
-                ¿Por qué gastar dinero me hace sentir mejor solo por un momento?
+                ¿Esto se soluciona ganando más dinero?
               </h4>
               <p className="mt-2">
-                Porque la dopamina se libera en la anticipación de la
-                recompensa, no en su disfrute prolongado. Una vez que el
-                estímulo desaparece, el cerebro vuelve a buscar otra fuente de
-                alivio.
+                No. Sin conciencia emocional, mayores ingresos suelen amplificar
+                el mismo patrón de gasto.
               </p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-gray-900">
-                ¿Cómo puedo evitar gastar cuando estoy emocionalmente mal?
-              </h4>
-              <p className="mt-2">
-                El primer paso es reconocer la emoción antes de gastar.
-                Introducir una pausa consciente, retrasar la compra y buscar
-                alternativas como caminar, escribir o hacer ejercicio puede
-                romper el patrón automático.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-gray-900">
-                ¿Esto significa que necesito ganar más dinero?
-              </h4>
-              <p className="mt-2">
-                No necesariamente. Muchas personas con ingresos altos siguen
-                atrapadas en el gasto emocional. La clave está en la relación
-                con el dinero, no solo en la cantidad que ganas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA herramientas */}
-      <div className="bg-gray-50 py-12 mt-5 mb-5">
-        <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-            Explora más herramientas útiles
-          </h2>
-
-          <div className="mt-6 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6">
-            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800">
-                Calculadora de Interés Compuesto
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Visualiza cómo pequeñas decisiones financieras pueden crecer con
-                el tiempo.
-              </p>
-              <a
-                href="/calculadora-de-interes-compuesto-online"
-                className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
-              >
-                Calcular ahora
-              </a>
-            </div>
-
-            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800">
-                Generador de Voz con IA
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Convierte texto en audio con ayuda de inteligencia artificial.
-              </p>
-              <a
-                href="/voz-de-inteligencia-artificial"
-                className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
-              >
-                Probar generador
-              </a>
-            </div>
-
-            <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800">
-                Herramientas para desarrolladores
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Recursos prácticos para optimizar tus proyectos digitales.
-              </p>
-              <a
-                href="/developer-tools"
-                className="mt-4 inline-block rounded bg-orange-600 px-4 py-2 text-white hover:bg-orange-700"
-              >
-                Ver herramientas
-              </a>
             </div>
           </div>
         </div>
