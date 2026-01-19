@@ -1,5 +1,6 @@
 //BLOG
 import libro from "../assets/lacatedral.jpg"
+import libro2 from "../assets/dopamoney.png"
 import Footer from "./Footer"
 import Header from "./Header"
 
@@ -40,6 +41,24 @@ const posts = [
       imageUrl:
         'https://storage.googleapis.com/portafilo/Foto_flfttc.jpg',
     },
+  },
+  {
+    id: 3,
+    title: 'La dopamina y el dinero: por qué gastamos cuando estamos emocionalmente mal',
+    href: '/blog-dopamina-y-dinero',
+    description:
+      'Descubre cómo la dopamina influye en nuestras decisiones financieras y por qué tendemos a gastar más cuando estamos emocionalmente mal. Este artículo explora el gasto emocional desde la neurociencia y la psicología, revelando el ciclo dopamina–culpa–gasto y ofreciendo estrategias prácticas para recuperar el control de tus finanzas desde la conciencia emocional.',
+    imageUrl: libro2, // imagen relacionada con dopamina y finanzas
+    date: 'Enero 19, 2026',
+    datetime: '2026-01-19',
+    category: { title: 'Finanzas personales', href: '#' },
+    author: {
+      name: 'Juan Manuel Calleros',
+      role: 'CTO & Creador de Contenido',
+      href: 'https://juancalleros.com/',
+      imageUrl:
+        'https://storage.googleapis.com/portafilo/Foto_flfttc.jpg',
+    }
   }
 ]
 

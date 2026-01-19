@@ -9,6 +9,7 @@ import BlogAnalisisCatedralTurin from "./components/Blogger/BlogAnalisisCatedral
 import Tetris from "./components/tetris/Tetris";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
+import BlogDopaminaYDinero from "./components/Blogger/BlogDopaminaYDinero";
 
 export default function Router() {
   return (
@@ -18,6 +19,7 @@ export default function Router() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blogger />} />
           <Route path="/blog-app-delivery" element={<BlogAppDelivery />} />
+          <Route path="/blog-dopamina-y-dinero" element={<BlogDopaminaYDinero />} />
           <Route
             path="/blog-analisis-libro-catedral-de-turin"
             element={<BlogAnalisisCatedralTurin />}

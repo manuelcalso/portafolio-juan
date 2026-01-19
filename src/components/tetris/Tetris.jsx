@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header";
-
+import Footer from "../Footer";
 
 const IframeComponent = () => {
   return (
@@ -12,13 +12,11 @@ const IframeComponent = () => {
             Juega Tetris: El clásico de siempre
           </h1>
           <p className="text-lg text-gray-300 mb-4">
-            Disfruta de una versión de Tetris desarrollada con React. Desafía tus
-            habilidades y compite por la puntuación más alta.
-            <br />
-            {" "}
+            Disfruta de una versión de Tetris desarrollada con React. Desafía
+            tus habilidades y compite por la puntuación más alta.
+            <br />{" "}
             <span style={{ color: "yellowgreen" }}>
-              Da click y usa WASD
-              de tu teclado.
+              Da click y usa WASD de tu teclado.
             </span>
           </p>
 
@@ -37,6 +35,7 @@ const IframeComponent = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
