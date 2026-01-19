@@ -7,6 +7,8 @@ import Blogger from "./components/Blogger";
 import BlogAppDelivery from "./components/Blogger/BlogAppDelivery";
 import BlogAnalisisCatedralTurin from "./components/Blogger/BlogAnalisisCatedralTurin";
 import Tetris from "./components/tetris/Tetris";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsAndConditions from "./components/TermsAndConditions";
 
 export default function Router() {
   return (
@@ -32,6 +34,14 @@ export default function Router() {
           <Route
             path="/voz-de-inteligencia-artificial"
             element={<VoiceGenerator />}
+          />
+          <Route
+            path="/politica-de-privacidad"
+            element={<PrivacyPolicy />}
+          />
+          <Route
+            path="/terminos-y-condiciones"
+            element={<TermsAndConditions />}
           />
         </Routes>
       </BrowserRouter>

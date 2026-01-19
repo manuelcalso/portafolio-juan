@@ -1,6 +1,8 @@
 import React from "react";
 import "../index.css";
 import Whats from "./WhatsAppFAB";
+import TermsAndConditions from "./TermsAndConditions";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 const navigation = {
   main: [{ name: "Contacto", href: "/" }],
@@ -117,6 +119,21 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <div className="mt-4 flex flex-wrap justify-center gap-6 text-sm">
+          <a
+            href="/politica-de-privacidad"
+            className="text-black underline hover:text-green-500"
+          >
+            Política de Privacidad
+          </a>
+          <a
+            href="/terminos-y-condiciones"
+            className="text-black underline hover:text-green-500"
+          >
+            Términos y Condiciones
+          </a>
+        </div>
+
         <p className="m-2 text-center text-xs leading-5 text-black hover:text-green-500 italic">
           &copy; 2023 Juan Calleros, Inc. All rights reserved.
         </p>

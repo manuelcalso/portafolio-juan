@@ -2,8 +2,8 @@ import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import "../../src/index.css";
-import plantillas from "../assets/Plantillas.png"
-import QRcode from "../assets/webqr.png"
+import plantillas from "../assets/Plantillas.png";
+import QRcode from "../assets/webqr.png";
 
 const posts = [
   {
@@ -12,14 +12,12 @@ const posts = [
     href: "https://manuelcalso.github.io/JuanRetoSemana2.github.io/",
     description:
       "En este proyecto se ejercito el uso de HTML, CSS para el maquetado, tomando como ejemplo la pagina landing de spotify Mexico.*(No Responsivo)",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/spoty_vu6oeu.jpg",
+    imageUrl: "https://storage.googleapis.com/portafilo/spoty_vu6oeu.jpg",
     date: "Mayo 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
+      imageUrl: "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/JuanRetoSemana2.github.io/tree/main",
   },
@@ -29,14 +27,12 @@ const posts = [
     href: "https://proyecto-landing-ventas-juan.netlify.app/",
     description:
       "En este proyecto realizamos una langin page para una libreria, se utiliza el maquetado con HTML5 y CSS, incluyendo responsive design.",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/libreria_yiuvw6.jpg",
+    imageUrl: "https://storage.googleapis.com/portafilo/libreria_yiuvw6.jpg",
     date: "Junio 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
+      imageUrl: "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-landing-ventas-juan.github.io",
   },
@@ -46,14 +42,12 @@ const posts = [
     href: "https://proyecto-crud-juan.netlify.app/",
     description:
       "En este proyecto realizamos una pagina CRUD(Create, Read, Update, Delete), se utiliza el maquetado con HTML5, CSS, javaScript, incluyendo responsive design, guardado la informacion en localStorage.",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/crud_pi7rtr.jpg",
+    imageUrl: "https://storage.googleapis.com/portafilo/crud_pi7rtr.jpg",
     date: "Julio 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
+      imageUrl: "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-dos-CRUD?tab=readme-ov-file",
   },
@@ -63,14 +57,12 @@ const posts = [
     href: "https://proyecto-restaurante-app.netlify.app/",
     description:
       "Desarrollo de una aplicación que cuente con la presentación de un restaurante, su menú, información de contacto. Así mismo, se integra un sistema para que los clientes puedan reservar una mesa",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/restaurante_r7hlkc.jpg",
+    imageUrl: "https://storage.googleapis.com/portafilo/restaurante_r7hlkc.jpg",
     date: "Octubre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
+      imageUrl: "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/fullstack-proyecto-restaurante",
   },
@@ -80,14 +72,12 @@ const posts = [
     href: "https://proyecto-5-ecommerce.netlify.app/",
     description:
       "Desarrollo de una pagina web de ecommerce fullstack, implementando el uso de Mongodb para la base de datos y Stripe para los metodos de pago",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/pb_s25bkl.jpg",
+    imageUrl: "https://storage.googleapis.com/portafilo/pb_s25bkl.jpg",
     date: "Noviembre-Diciembre 2023",
     datetime: "2020-03-16",
     author: {
       name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
+      imageUrl: "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "https://github.com/manuelcalso/proyecto-ecommerce-fullstack/tree/master",
   },
@@ -97,18 +87,15 @@ const posts = [
     href: "https://arquitecturafotovoltaica.netlify.app/ ",
     description:
       "Desarrollo web para un cliente, enfocado en proyectos de Construccion y reparaciones para residencial o negocios. (sitio en constuccion)",
-    imageUrl:
-      "https://storage.googleapis.com/portafilo/construccionafpage.png",
+    imageUrl: "https://storage.googleapis.com/portafilo/construccionafpage.png",
     date: "2024 - current days",
     datetime: "2024-06-14",
     author: {
       name: "Juan Calleros",
-      imageUrl:
-        "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
+      imageUrl: "https://storage.googleapis.com/portafilo/icono_tbcmzg.jpg",
     },
     code: "",
   },
-
 ];
 const projects = [
   {
@@ -129,8 +116,7 @@ const projects = [
     `,
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
-    videoSrc:
-      "https://storage.googleapis.com/portafilo/criptomonedas.mp4",
+    videoSrc: "https://storage.googleapis.com/portafilo/criptomonedas.mp4",
   },
   {
     title: "App de alojamiento",
@@ -139,8 +125,7 @@ const projects = [
     `,
     extra: "App con actualizacion de dependencias y componentes del curso",
     link: "https://www.udemy.com/course/react-native-crea-aplicaciones-para-android-y-ios-con-react/?couponCode=LEADERSALE24B",
-    videoSrc:
-      "https://storage.googleapis.com/portafilo/Hospedajes.mp4",
+    videoSrc: "https://storage.googleapis.com/portafilo/Hospedajes.mp4",
   },
   {
     title: "Planificador de Gastos",
@@ -203,35 +188,48 @@ export default function Blog() {
                 ¡Bienvenido a mi portafolio!
                 <br />
                 <br />
-                Soy Licenciado en Administración de Empresas con especialización en{" "}
+                Soy <strong>
+                  Licenciado en Administración de Empresas
+                </strong>{" "}
+                con especialización en{" "}
                 <span className="text-yellow-300">
                   desarrollo de aplicaciones web y móviles Full Stack
                 </span>{" "}
-                (frontend y backend).
+                (frontend y backend), enfocado en crear soluciones digitales
+                funcionales, escalables y orientadas a resultados reales.
                 <br />
                 <br />
-                Cuento con experiencia en el desarrollo de soluciones digitales utilizando{" "}
+                En este sitio comparto proyectos, herramientas y desarrollos
+                propios, incluyendo aplicaciones web, aplicaciones móviles y
+                utilidades prácticas pensadas para mejorar procesos, optimizar
+                recursos y facilitar la toma de decisiones tanto a nivel técnico
+                como de negocio.
+                <br />
+                <br />
+                Tengo experiencia desarrollando soluciones con{" "}
                 <span className="text-yellow-300">
                   React, Node.js, Express.js, MongoDB y Next.js
                 </span>
-                , así como en la creación de interfaces modernas con Tailwind CSS,
-                Bootstrap y Material UI.
+                , así como en la creación de interfaces modernas, accesibles y
+                responsivas utilizando Tailwind CSS, Bootstrap y Material UI.
                 <br />
                 <br />
-                Mi formación se basa en proyectos reales y metodologías ágiles como Scrum,
-                ITIL y PMBOK, con un fuerte enfoque en análisis y resolución de problemas.
-                Durante 2024 reforcé mis habilidades en desarrollo móvil con{" "}
-                <span className="text-yellow-300">React Native</span>, creando aplicaciones
-                multiplataforma para Android e iOS y resolviendo retos de compatibilidad,
-                dependencias y configuración en distintos entornos.
+                Mi formación se basa en proyectos reales y en el uso de
+                metodologías ágiles como Scrum, ITIL y PMBOK, aplicando
+                análisis, planeación y resolución de problemas de forma
+                estructurada. Durante 2024 reforcé mis habilidades en desarrollo
+                móvil con <span className="text-yellow-300">React Native</span>,
+                creando aplicaciones multiplataforma para Android e iOS y
+                resolviendo retos de compatibilidad, dependencias y
+                configuración en distintos entornos.
                 <br />
                 <br />
-                Me caracterizo por ser una persona responsable, comprometida y orientada a
-                resultados, interesada en colaborar en proyectos donde la tecnología aporte
-                valor real al negocio y al usuario final.
+                Me caracterizo por ser una persona responsable, comprometida y
+                orientada a resultados, interesada en colaborar y desarrollar
+                proyectos donde la tecnología genere valor real tanto para el
+                negocio como para el usuario final.
               </p>
             </div>
-
           </div>
           <div className="mt-14 flex justify-end gap-6 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0 ">
             <div className="ml-auto w-32 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80  ">
@@ -253,7 +251,6 @@ export default function Blog() {
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              
             </div>
             <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
               <div className="relative bounce01">
@@ -424,7 +421,7 @@ export default function Blog() {
             </a>
             <br />
           </div>
-          
+
           <br />
           <br />
           <Stack spacing={2}>
@@ -595,41 +592,67 @@ export default function Blog() {
       {/* Nueva sección */}
       <div className="bg-gray-50 py-12 mt-5 mb-5">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900">Explora más herramientas útiles</h2>
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+            Explora más herramientas útiles
+          </h2>
           <div className="mt-6 grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-x-6">
             <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800">Reflexiones y Creaciones en "El Escritorio"</h3>
+              <h3 className="text-lg font-semibold text-gray-800">
+                Reflexiones y Creaciones en "El Escritorio"
+              </h3>
               <p className="mt-2 text-gray-600">
-                Visita mi espacio personal, donde comparto reflexiones, investigaciones, teorías y novedades.
+                Visita mi espacio personal, donde comparto reflexiones,
+                investigaciones, teorías y novedades.
               </p>
-              <a href="/blog" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black text-lg  hover:bg-orange-700 hover:text-white">
+              <a
+                href="/blog"
+                className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black text-lg  hover:bg-orange-700 hover:text-white"
+              >
                 Leer Ahora
               </a>
             </div>
             <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800">Generador de Voz con IA</h3>
+              <h3 className="text-lg font-semibold text-gray-800">
+                Generador de Voz con IA
+              </h3>
               <p className="mt-2 text-gray-600">
-                Convierte texto en audio de alta calidad con nuestro generador de voz impulsado por inteligencia artificial.
+                Convierte texto en audio de alta calidad con nuestro generador
+                de voz impulsado por inteligencia artificial.
               </p>
-              <a href="/voz-de-inteligencia-artificial" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white">
+              <a
+                href="/voz-de-inteligencia-artificial"
+                className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white"
+              >
                 Probar Generador
               </a>
             </div>
             <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800">Herramientas de Delivery CSS</h3>
+              <h3 className="text-lg font-semibold text-gray-800">
+                Herramientas de Delivery CSS
+              </h3>
               <p className="mt-2 text-gray-600">
-                Descubre nuestras herramientas de CSS diseñadas específicamente para mejorar la experiencia de entrega en tu aplicación.
+                Descubre nuestras herramientas de CSS diseñadas específicamente
+                para mejorar la experiencia de entrega en tu aplicación.
               </p>
-              <a href="/developer-tools" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white">
+              <a
+                href="/developer-tools"
+                className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white"
+              >
                 Ver Herramientas
               </a>
             </div>
             <div className="rounded-lg border border-gray-300 bg-white p-6 shadow-md">
-              <h3 className="text-lg font-semibold text-gray-800">Calculadora de Interés Compuesto</h3>
+              <h3 className="text-lg font-semibold text-gray-800">
+                Calculadora de Interés Compuesto
+              </h3>
               <p className="mt-2 text-gray-600">
-                Utiliza nuestra calculadora de interés compuesto para planificar tu futuro financiero y maximizar tus ahorros.
+                Utiliza nuestra calculadora de interés compuesto para planificar
+                tu futuro financiero y maximizar tus ahorros.
               </p>
-              <a href="/calculadora-de-interes-compuesto-online" className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white">
+              <a
+                href="/calculadora-de-interes-compuesto-online"
+                className="mt-4 inline-block rounded bg-green-100 px-4 py-2 text-black hover:bg-orange-700 hover:text-white"
+              >
                 Calcular Ahora
               </a>
             </div>
