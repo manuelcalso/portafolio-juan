@@ -1,4 +1,4 @@
-import { BookOpenIcon } from "@heroicons/react/20/solid";
+import { BookOpenIcon, CubeIcon } from "@heroicons/react/20/solid";
 import libro2 from "../../assets/dopamoney.png";
 import Footer from "../Footer";
 import Header from "../Header";
@@ -101,43 +101,43 @@ export default function BlogDopaminaYDinero() {
                   </h2>
 
                   <li className="flex gap-x-3">
-                    <BookOpenIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
+                    <CubeIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
                     <span>
                       <strong className="font-semibold text-gray-900">
                         Compras impulsivas:
-                      </strong>
+                      </strong>{" "}
                       Gastar sin planificar para sentir alivio inmediato,
                       seguido muchas veces de culpa.
                     </span>
                   </li>
 
                   <li className="flex gap-x-3">
-                    <BookOpenIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
+                    <CubeIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
                     <span>
                       <strong className="font-semibold text-gray-900">
                         Uso del dinero como anestesia:
-                      </strong>
+                      </strong>{" "}
                       Comprar para no sentir ansiedad, soledad o frustración.
                     </span>
                   </li>
 
                   <li className="flex gap-x-3">
-                    <BookOpenIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
+                    <CubeIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
                     <span>
                       <strong className="font-semibold text-gray-900">
                         Ciclo dopamina–culpa:
-                      </strong>
+                      </strong>{" "}
                       El alivio es breve y genera la necesidad de repetir el
                       comportamiento.
                     </span>
                   </li>
 
                   <li className="flex gap-x-3">
-                    <BookOpenIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
+                    <CubeIcon className="mt-1 h-5 w-5 flex-none text-orange-600" />
                     <span>
                       <strong className="font-semibold text-gray-900">
                         Sistema diseñado para explotarlo:
-                      </strong>
+                      </strong>{" "}
                       Pagos en un clic, ofertas limitadas y estímulos constantes
                       refuerzan este patrón.
                     </span>
@@ -163,6 +163,72 @@ export default function BlogDopaminaYDinero() {
                   intención.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* FAQ */}
+        <div className="mt-16 px-20">
+          <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+            Preguntas frecuentes sobre dopamina y dinero
+          </h3>
+
+          <div className="mt-8 space-y-8 text-gray-700">
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                ¿Qué es el gasto emocional?
+              </h4>
+              <p className="mt-2">
+                El gasto emocional ocurre cuando usamos el dinero para regular
+                emociones como ansiedad, tristeza, aburrimiento o frustración.
+                No responde a una necesidad real, sino a una búsqueda de alivio
+                momentáneo.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                ¿La dopamina es mala para las finanzas?
+              </h4>
+              <p className="mt-2">
+                No. La dopamina es necesaria para la motivación y la acción. El
+                problema surge cuando dependemos exclusivamente de estímulos
+                rápidos, como compras impulsivas, para sentir bienestar.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                ¿Por qué gastar dinero me hace sentir mejor solo por un momento?
+              </h4>
+              <p className="mt-2">
+                Porque la dopamina se libera en la anticipación de la
+                recompensa, no en su disfrute prolongado. Una vez que el
+                estímulo desaparece, el cerebro vuelve a buscar otra fuente de
+                alivio.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                ¿Cómo puedo evitar gastar cuando estoy emocionalmente mal?
+              </h4>
+              <p className="mt-2">
+                El primer paso es reconocer la emoción antes de gastar.
+                Introducir una pausa consciente, retrasar la compra y buscar
+                alternativas como caminar, escribir o hacer ejercicio puede
+                romper el patrón automático.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900">
+                ¿Esto significa que necesito ganar más dinero?
+              </h4>
+              <p className="mt-2">
+                No necesariamente. Muchas personas con ingresos altos siguen
+                atrapadas en el gasto emocional. La clave está en la relación
+                con el dinero, no solo en la cantidad que ganas.
+              </p>
             </div>
           </div>
         </div>
