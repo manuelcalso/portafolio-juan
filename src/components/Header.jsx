@@ -11,6 +11,11 @@ const navigation = [
     type: "cta",
   },
   {
+    name: "Blog",
+    href: "/blog",
+    type: "internal",
+  },
+  {
     name: "Tetris",
     href: "/juan-calleros-tetris-online",
     type: "internal",
