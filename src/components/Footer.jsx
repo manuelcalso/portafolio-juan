@@ -1,8 +1,6 @@
 import React from "react";
 import "../index.css";
 import Whats from "./WhatsAppFAB";
-import TermsAndConditions from "./TermsAndConditions";
-import PrivacyPolicy from "./PrivacyPolicy";
 
 const navigation = {
   main: [{ name: "Contacto", href: "/" }],
@@ -36,9 +34,6 @@ export default function Footer() {
         <div />
       </div>
       <div className="px-auto flex flex-col justify-center items-center">
-        <div className="my-6 flex justify-center">
-          <Whats />
-        </div>
         <nav
           className=" bg-white slide-in-top rounded-t-md  flex justify-center  shadow-xl"
           aria-label="Footerr"
@@ -76,22 +71,28 @@ export default function Footer() {
             </>
           ))}
         </nav>
-        <div className="mt-0 flex items-center rounded-md bg-gray-300 slide-in-top shadow-lg">
+        <div className="mt-2 flex items-center rounded-md bg-gray-300 slide-in-top shadow-lg">
           {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-black hover:text-green-500"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon
-                className="h-auto w-1/4 hover:text-green-500"
-                aria-hidden="true"
-              />
-            </a>
+            <>
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-black hover:text-green-500"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon
+                  className="h-auto w-1/4 hover:text-green-500"
+                  aria-hidden="true"
+                />
+              </a>
+              <Whats />
+            </>
           ))}
+
           <div>
-            <a href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/">
+            <a
+              href="https://www.linkedin.com/in/juan-manuel-calleros-solache-790133254/"
+            >
               <svg
                 height="84"
                 viewBox="0 0 1240 1240"

@@ -11,13 +11,13 @@ const navigation = [
     type: "cta",
   },
   {
-    name: "Blog",
-    href: "/blog",
+    name: "Minigames",
+    href: "/play-sand-online",
     type: "internal",
   },
   {
     name: "Tetris",
-    href: "/juan-calleros-tetris-online",
+    href: "/play-tetris-online",
     type: "internal",
   },
   {

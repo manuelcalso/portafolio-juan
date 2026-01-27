@@ -10,6 +10,7 @@ import Tetris from "./components/tetris/Tetris";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
 import BlogDopaminaYDinero from "./components/Blogger/BlogDopaminaYDinero";
+import Play from "./components/Play";
 
 export default function Router() {
   return (
@@ -30,8 +31,12 @@ export default function Router() {
             element={<Calculator />}
           />
           <Route
-            path="/juan-calleros-tetris-online"
+            path="/play-tetris-online"
             element={<Tetris />}
+          />
+          <Route
+            path="/play-sand-online"
+            element={<Play />}
           />
           <Route
             path="/voz-de-inteligencia-artificial"

@@ -11,7 +11,7 @@ function WhatsAppFAB() {
   };
 
   return (
-    <div className="flex justify-center items-center py-6">
+    <div className="flex justify-center items-center ">
       <Fab
         variant="extended"
         onClick={handleClick}

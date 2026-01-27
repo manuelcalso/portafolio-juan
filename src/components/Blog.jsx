@@ -2,8 +2,6 @@ import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import "../../src/index.css";
-import plantillas from "../assets/Plantillas.png";
-import QRcode from "../assets/webqr.png";
 
 const posts = [
   {
