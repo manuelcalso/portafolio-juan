@@ -1,6 +1,13 @@
 import { useRef, useEffect, useState } from "react";
 import useCanvasResize from "./useCanvasResize";
 
+// 👇 IMPORTA VARIAS IMÁGENES
+import tiger1 from "../../assets/tiger.jpg";
+import tiger2 from "../../assets/zen.jpg";
+import tiger3 from "../../assets/river.jpg";
+
+const BACKGROUNDS = [tiger2, tiger3, tiger1];
+
 const PARTICLES_DESKTOP = 2200;
 const PARTICLES_MOBILE = 1100;
 const MAX_PARTICLES = 8000;
@@ -24,12 +31,14 @@ export default function SandGame() {
   const mouseRef = useRef({ x: 0, y: 0, active: false });
   const explodeRef = useRef(() => {});
   const resetRef = useRef(() => {});
+  const bgRevealRef = useRef(0);
+  const bgImageRef = useRef(null);
 
   const [grainCount, setGrainCount] = useState(0);
-  const [mode, setMode] = useState("relax"); // relax | chaos
-  const [intensity, setIntensity] = useState("media"); // suave | media | fuerte
-  const [density, setDensity] = useState("normal"); // baja | normal | alta
-  const [colorMode, setColorMode] = useState("warm"); // warm | cool | random
+  const [mode, setMode] = useState("relax");
+  const [intensity, setIntensity] = useState("media");
+  const [density, setDensity] = useState("normal");
+  const [colorMode, setColorMode] = useState("warm");
   const [story] = useState(
     STORIES[Math.floor(Math.random() * STORIES.length)]
   );
@@ -40,16 +49,21 @@ export default function SandGame() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d", { alpha: false });
 
+    // 🎲 Elegir imagen aleatoria SOLO al cargar
+    const randomBg =
+      BACKGROUNDS[Math.floor(Math.random() * BACKGROUNDS.length)];
+
+    const img = new Image();
+    img.src = randomBg;
+    bgImageRef.current = img;
+
     const isMobile = window.innerWidth < 768;
-    const BASE_INITIAL =
-      isMobile ? PARTICLES_MOBILE : PARTICLES_DESKTOP;
+    const BASE_INITIAL = isMobile ? PARTICLES_MOBILE : PARTICLES_DESKTOP;
 
     const densityMultiplier =
       density === "baja" ? 0.6 : density === "alta" ? 1.4 : 1;
 
-    const INITIAL_COUNT = Math.floor(
-      BASE_INITIAL * densityMultiplier
-    );
+    const INITIAL_COUNT = Math.floor(BASE_INITIAL * densityMultiplier);
 
     const addParticles = (x, y, amount) => {
       const allowed = Math.min(
@@ -79,18 +93,18 @@ export default function SandGame() {
 
     const resetSand = () => {
       particlesRef.current = [];
+      bgRevealRef.current = 0;
       setGrainCount(0);
-      addParticles(
-        canvas.width / 2,
-        canvas.height / 2,
-        INITIAL_COUNT
-      );
+      addParticles(canvas.width / 2, canvas.height / 2, INITIAL_COUNT);
     };
 
     resetRef.current = resetSand;
     resetSand();
 
     explodeRef.current = (x, y) => {
+      // 👇 LÍMITE DE OPACIDAD (20%)
+      bgRevealRef.current = Math.min(bgRevealRef.current + 0.07, 0.2);
+
       const intensityFactor =
         intensity === "suave" ? 0.4 : intensity === "fuerte" ? 1.4 : 1;
 
@@ -112,9 +126,6 @@ export default function SandGame() {
           const f = (1 - d / radius) * force;
           p.vx += (dx / d) * f;
           p.vy += (dy / d) * f;
-          if (colorMode === "random") {
-            p.hue = Math.random() * 360;
-          }
         }
       }
 
@@ -125,17 +136,28 @@ export default function SandGame() {
 
     let rafId;
     const animate = () => {
+      // 🖼 Fondo revelable
+      if (bgImageRef.current?.complete) {
+        ctx.save();
+        ctx.globalAlpha = bgRevealRef.current;
+        ctx.drawImage(
+          bgImageRef.current,
+          0,
+          0,
+          canvas.width,
+          canvas.height
+        );
+        ctx.restore();
+      }
+
       ctx.fillStyle =
         mode === "relax"
           ? "rgba(10,10,10,0.18)"
           : "rgba(12,12,12,0.28)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      const friction =
-        mode === "relax" ? 0.97 : 0.94;
-
-      const radius =
-        mode === "relax" ? BASE_RADIUS * 0.6 : BASE_RADIUS;
+      const friction = mode === "relax" ? 0.97 : 0.94;
+      const radius = mode === "relax" ? BASE_RADIUS * 0.6 : BASE_RADIUS;
 
       const { x: mx, y: my, active } = mouseRef.current;
 
@@ -185,10 +207,9 @@ export default function SandGame() {
     ctx.fillText("Created with mylittlezen", 12, canvas.height - 12);
     ctx.restore();
 
-    const date = new Date().toISOString().split("T")[0];
-    const name = `Sand-${date}-${mode}.png`;
-
+    const name = `Sand-${new Date().toISOString().slice(0, 10)}-${mode}.png`;
     const url = canvas.toDataURL("image/png");
+
     const a = document.createElement("a");
     a.href = url;
     a.download = name;
@@ -213,19 +234,31 @@ export default function SandGame() {
         </button>
 
         <div className="space-y-1">
-          <select onChange={(e) => setIntensity(e.target.value)} className="w-full bg-black/40">
+          <select
+            value={intensity}
+            onChange={(e) => setIntensity(e.target.value)}
+            className="w-full bg-black/40"
+          >
             <option value="suave">Intensidad: Suave</option>
-            <option value="media" selected>Intensidad: Media</option>
+            <option value="media">Intensidad: Media</option>
             <option value="fuerte">Intensidad: Fuerte</option>
           </select>
 
-          <select onChange={(e) => setDensity(e.target.value)} className="w-full bg-black/40">
+          <select
+            value={density}
+            onChange={(e) => setDensity(e.target.value)}
+            className="w-full bg-black/40"
+          >
             <option value="baja">Densidad: Baja</option>
-            <option value="normal" selected>Densidad: Normal</option>
+            <option value="normal">Densidad: Normal</option>
             <option value="alta">Densidad: Alta</option>
           </select>
 
-          <select onChange={(e) => setColorMode(e.target.value)} className="w-full bg-black/40">
+          <select
+            value={colorMode}
+            onChange={(e) => setColorMode(e.target.value)}
+            className="w-full bg-black/40"
+          >
             <option value="warm">Color: Cálido</option>
             <option value="cool">Color: Frío</option>
             <option value="random">Color: Random</option>
