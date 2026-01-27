@@ -198,7 +198,7 @@ export default function SandGame() {
   return (
     <div className="relative h-full w-full">
       {/* UI */}
-      <div className="absolute top-4 left-4 z-10 text-sm text-white space-y-2 max-w-xs">
+      <div className="absolute top-4 left-4 z-10 text-xs text-white space-y-2 max-w-xs">
         <div className="opacity-80">
           🌾 {grainCount.toLocaleString()} granos
         </div>
