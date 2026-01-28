@@ -16,8 +16,8 @@ const navigation = [
     type: "internal",
   },
   {
-    name: "Tetris",
-    href: "/play-tetris-online",
+    name: "Blog",
+    href: "/blog",
     type: "internal",
   },
   {
