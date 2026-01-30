@@ -16,14 +16,19 @@ const navigation = [
     type: "internal",
   },
   {
-    name: "Blog",
-    href: "/blog",
+    name: "Tetris",
+    href: "/play-tetris-online",
     type: "internal",
   },
   {
     name: "Shop",
     href: "https://proyecto-5-ecommerce.netlify.app/",
     type: "external",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+    type: "internal",
   },
   {
     name: "English",
