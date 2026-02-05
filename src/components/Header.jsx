@@ -11,11 +11,6 @@ const navigation = [
     type: "cta",
   },
   {
-    name: "Minigames",
-    href: "/play-sand-online",
-    type: "internal",
-  },
-  {
     name: "Tetris",
     href: "/play-tetris-online",
     type: "internal",
